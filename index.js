@@ -57,13 +57,15 @@ app.get("/messages/:collectionName", async (req, res) => {
     const messages = await collection
       .aggregate([
         {
-          $unwind: {
-            path: "$timestamp_ms",
+          $addFields: {
+            timestamp: {
+              $toDate: "$timestamp_ms",
+            },
           },
         },
         {
           $sort: {
-            timestamp_ms: 1,
+            timestamp: 1,
           },
         },
       ])
