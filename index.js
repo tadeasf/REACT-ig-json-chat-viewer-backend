@@ -64,7 +64,7 @@ app.get("/messages/:collectionName", async (req, res) => {
         {
           $addFields: {
             timestamp: {
-              $toDate: "$timestamp",
+              $toDate: "$timestamp_ms",
             },
           },
         },
