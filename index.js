@@ -58,7 +58,6 @@ app.get("/messages/:collectionName", async (req, res) => {
       .aggregate([
         { $set: { timestamp_ms: { $toInt: "$timestamp_ms.$numberLong" } } },
         { $sort: { timestamp_ms: 1 } },
-        { $match: {} },
       ])
       .toArray();
 
