@@ -55,7 +55,11 @@ app.get("/messages/:collectionName", async (req, res) => {
     const collection = db.collection(collectionName);
 
     const messages = await collection
-      .aggregate([{ $sort: { timestamp: 1 } }, { $match: {} }])
+      .aggregate([
+        { $set: { timestamp_ms: { $toInt: "$timestamp_ms.$numberLong" } } },
+        { $sort: { timestamp_ms: 1 } },
+        { $match: {} },
+      ])
       .toArray();
 
     res.status(200).json(messages);
