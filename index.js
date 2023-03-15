@@ -57,9 +57,16 @@ app.get("/messages/:collectionName", async (req, res) => {
     const messages = await collection
       .aggregate([
         {
-          $addFields: { timestamp_ms: { $toInt: "$timestamp_ms.$numberLong" } },
+          $addFields: {
+            timestamp_ms_int: {
+              $convert: {
+                input: "$timestamp_ms.$numberLong",
+                to: "int",
+              },
+            },
+          },
         },
-        { $sort: { timestamp_ms: 1 } },
+        { $sort: { timestamp_ms_int: 1 } },
       ])
       .toArray();
 
