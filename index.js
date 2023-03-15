@@ -68,7 +68,7 @@ app.get("/messages/:collectionName", async (req, res) => {
         },
       ])
       .toArray();
-
+    console.log(messages);
     res.status(200).json(messages);
   } catch (error) {
     console.error(error);
