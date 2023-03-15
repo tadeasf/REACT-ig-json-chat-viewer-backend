@@ -25,6 +25,7 @@ app.get("/collections", async (req, res) => {
     const collections = await db.listCollections().toArray();
 
     const collectionNames = collections.map((collection) => collection.name);
+    console.log(collectionNames);
     res.status(200).json(collectionNames);
   } catch (error) {
     console.error(error);
