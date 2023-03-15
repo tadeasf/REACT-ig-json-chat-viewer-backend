@@ -18,6 +18,22 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });
 
+app.get("/collections", async (req, res) => {
+  try {
+    await client.connect();
+    const db = client.db("messages");
+    const collections = await db.listCollections().toArray();
+
+    const collectionNames = collections.map((collection) => collection.name);
+    res.status(200).json(collectionNames);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error fetching collections");
+  } finally {
+    await client.close();
+  }
+});
+
 app.get("/messages/:collectionName", async (req, res) => {
   const collectionName = req.params.collectionName;
 
