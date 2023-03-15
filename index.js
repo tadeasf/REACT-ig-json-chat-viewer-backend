@@ -24,7 +24,18 @@ app.get("/collections", async (req, res) => {
     const db = client.db("messages");
     const collections = await db.listCollections().toArray();
 
-    const collectionNames = collections.map((collection) => collection.name);
+    const collectionNames = collections
+      .map((collection) => collection.name)
+      .sort((a, b) => {
+        // sort collections by name
+        if (a < b) {
+          return -1;
+        }
+        if (a > b) {
+          return 1;
+        }
+        return 0;
+      });
     console.log(collectionNames);
     res.status(200).json(collectionNames);
   } catch (error) {
