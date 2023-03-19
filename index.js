@@ -8,7 +8,11 @@ const port = process.env.PORT || 3000; // use Heroku-provided port or default to
 
 app.use(
   cors({
-    origin: "https://kocouratko.cz",
+    origin: [
+      "https://kocouratko.cz",
+      "http://localhost:5009",
+      "http://193.86.152.148:5009",
+    ],
   })
 );
 
