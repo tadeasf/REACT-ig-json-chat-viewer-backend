@@ -57,6 +57,13 @@ app.get("/messages/:collectionName", async (req, res) => {
     const messages = await collection
       .aggregate([
         {
+          $addFields: {
+            sender_id_INTERNAL: {
+              $ifNull: ["$sender_id_INTERNAL", 0],
+            },
+          },
+        },
+        {
           $sort: {
             timestamp_ms: 1,
           },
