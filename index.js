@@ -143,7 +143,7 @@ app.post("/upload", upload.single("file"), async (req, res) => {
   }
 });
 
-app.delete("/dropCollection/:collectionName", async (req, res) => {
+app.delete("/delete/:collectionName", async (req, res) => {
   const collectionName = req.params.collectionName;
 
   try {
