@@ -91,6 +91,48 @@ app.get("/messages/:collectionName", async (req, res) => {
   }
 });
 
+app.post("/uploadMessages", express.json(), async (req, res) => {
+  const { participants, messages } = req.body;
+  if (!participants || !messages) {
+    res.status(400).send("Invalid request body");
+    return;
+  }
+
+  const collectionName = participants[0].name;
+
+  try {
+    await client.connect();
+    const db = client.db("messages");
+    const collection = db.collection(collectionName);
+
+    await collection.insertMany(messages);
+    res.status(200).send(`Messages uploaded to collection: ${collectionName}`);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error uploading messages");
+  } finally {
+    await client.close();
+  }
+});
+
+app.delete("/dropCollection/:collectionName", async (req, res) => {
+  const collectionName = req.params.collectionName;
+
+  try {
+    await client.connect();
+    const db = client.db("messages");
+    const collection = db.collection(collectionName);
+
+    await collection.drop();
+    res.status(200).send(`Collection dropped: ${collectionName}`);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error dropping collection");
+  } finally {
+    await client.close();
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
