@@ -15,6 +15,8 @@ app.use(
       "https://kocouratko.cz",
       "http://localhost:5009",
       "http://193.86.152.148:5009",
+      "http://193.86.152.148:3000",
+      "http://localhost:3000",
     ],
   })
 );
