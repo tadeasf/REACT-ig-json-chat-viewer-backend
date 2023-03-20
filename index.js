@@ -5,6 +5,9 @@ const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000; // use Heroku-provided port or default to 3000
+const multer = require("multer");
+const fs = require("fs").promises;
+const upload = multer({ dest: "uploads/" });
 
 app.use(
   cors({
@@ -91,10 +94,33 @@ app.get("/messages/:collectionName", async (req, res) => {
   }
 });
 
-app.post("/uploadMessages", express.json(), async (req, res) => {
-  const { participants, messages } = req.body;
+app.post("/upload", upload.single("file"), async (req, res) => {
+  if (!req.file) {
+    res.status(400).send("No file provided");
+    return;
+  }
+
+  let fileContent;
+  try {
+    fileContent = await fs.readFile(req.file.path, "utf-8");
+  } catch (error) {
+    console.error("Error reading file:", error);
+    res.status(500).send("Error reading file");
+    return;
+  }
+
+  let jsonData;
+  try {
+    jsonData = JSON.parse(fileContent);
+  } catch (error) {
+    console.error("Error parsing JSON:", error);
+    res.status(400).send("Invalid JSON file");
+    return;
+  }
+
+  const { participants, messages } = jsonData;
   if (!participants || !messages) {
-    res.status(400).send("Invalid request body");
+    res.status(400).send("Invalid JSON structure");
     return;
   }
 
@@ -112,6 +138,8 @@ app.post("/uploadMessages", express.json(), async (req, res) => {
     res.status(500).send("Error uploading messages");
   } finally {
     await client.close();
+    // Delete the temporary file
+    await fs.unlink(req.file.path);
   }
 });
 
