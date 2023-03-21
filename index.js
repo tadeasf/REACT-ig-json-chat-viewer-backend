@@ -159,10 +159,6 @@ app.get("/messages/:collectionName", async (req, res) => {
   }
 });
 
-const fs1 = require("fs").promises;
-const { FacebookIO } = require("./FacebookIO");
-const { combine_and_convert_json_files } = require("./json_combiner");
-
 app.post("/upload", upload, async (req, res) => {
   if (!req.files || req.files.length === 0) {
     res.status(400).json({ message: "No files provided" });
