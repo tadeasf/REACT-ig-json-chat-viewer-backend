@@ -158,12 +158,19 @@ app.delete("/delete/:collectionName", async (req, res) => {
     await client.connect();
     const db = client.db("messages");
     const collection = db.collection(collectionName);
+    const pipeline = [
+      {
+        $count: "total_documents",
+      },
+    ];
 
+    const result = await collection.aggregate(pipeline).toArray();
+    const count = result.length > 0 ? result[0].total_documents : 0;
     await collection.drop();
     res.status(200).json({
       message: `Collection dropped: ${collectionName}`,
       collectionName: collectionName,
-      messagesLost: messages.length,
+      messagesLost: count,
     });
   } catch (error) {
     console.error(error);
