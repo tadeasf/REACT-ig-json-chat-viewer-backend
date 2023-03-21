@@ -16,9 +16,24 @@ const iconv = require("iconv-lite");
 
 class FacebookIO {
   static async decodeFile(filePath) {
-    const data = await fs2.readFile(filePath);
-    const decodedData = iconv.decode(data, "utf-8");
-    return decodedData;
+    const data = await fs2.readFile(filePath, "utf-8");
+    let newData = "";
+    let i = 0;
+    while (i < data.length) {
+      if (data.startsWith("\\u00", i)) {
+        let newChar = "";
+        while (data.startsWith("\\u00", i)) {
+          const hex = parseInt(data.slice(i + 4, i + 6), 16);
+          newChar += String.fromCharCode(hex);
+          i += 6;
+        }
+        newData += newChar;
+      } else {
+        newData += data[i];
+        i += 1;
+      }
+    }
+    return newData;
   }
 }
 
@@ -144,6 +159,10 @@ app.get("/messages/:collectionName", async (req, res) => {
   }
 });
 
+const fs1 = require("fs").promises;
+const { FacebookIO } = require("./FacebookIO");
+const { combine_and_convert_json_files } = require("./json_combiner");
+
 app.post("/upload", upload, async (req, res) => {
   if (!req.files || req.files.length === 0) {
     res.status(400).json({ message: "No files provided" });
@@ -151,10 +170,16 @@ app.post("/upload", upload, async (req, res) => {
   }
 
   try {
-    // Combine, convert, and decode the JSON files
-    const combinedJson = await combine_and_convert_json_files(
-      req.files.map((file) => file.path)
+    // Decode, combine, and convert the JSON files
+    const decodedFilePaths = await Promise.all(
+      req.files.map(async (file) => {
+        const decodedContent = await FacebookIO.decodeFile(file.path);
+        await fs1.writeFile(file.path, decodedContent);
+        return file.path;
+      })
     );
+
+    const combinedJson = await combine_and_convert_json_files(decodedFilePaths);
 
     const { participants, messages } = combinedJson;
     if (!participants || !messages) {
