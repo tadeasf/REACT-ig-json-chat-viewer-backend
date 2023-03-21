@@ -6,8 +6,8 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000; // use Heroku-provided port or default to 3000
 const multer = require("multer");
-const fs = require("fs").promises;
-const fs = require("fs/promises");
+const fs1 = require("fs").promises;
+const fs2 = require("fs/promises");
 const upload = multer({ dest: "uploads/" }).array("files");
 const path = require("path");
 const os = require("os");
@@ -16,7 +16,7 @@ const iconv = require("iconv-lite");
 
 class FacebookIO {
   static async decodeFile(filePath) {
-    const data = await fs.readFile(filePath);
+    const data = await fs2.readFile(filePath);
     const decodedData = iconv.decode(data, "utf-8");
     return decodedData;
   }
@@ -196,7 +196,7 @@ app.post("/upload", upload, async (req, res) => {
 
     // Delete the temporary files
     for (const file of req.files) {
-      await fs.unlink(file.path);
+      await fs1.unlink(file.path);
     }
   }
 });
