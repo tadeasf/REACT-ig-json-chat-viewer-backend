@@ -24,7 +24,7 @@ class FacebookIO {
         let newChar = "";
         while (data.startsWith("\\u00", i)) {
           const hex = parseInt(data.slice(i + 4, i + 6), 16);
-          newChar += String.fromCharCode(hex);
+          newChar += String.fromCodePoint(hex);
           i += 6;
         }
         newData += newChar;
@@ -37,7 +37,7 @@ class FacebookIO {
   }
 }
 
-async function combine_and_convert_json_files(filePaths) {
+async function combine_and_convert_json_files(fileContents) {
   let combinedJson = {
     participants: [],
     messages: [],
@@ -47,9 +47,8 @@ async function combine_and_convert_json_files(filePaths) {
     magic_words: [],
   };
 
-  for (const filePath of filePaths) {
-    const decodedFile = await FacebookIO.decodeFile(filePath);
-    const data = JSON.parse(decodedFile);
+  for (const content of fileContents) {
+    const data = JSON.parse(content);
     if (!combinedJson.participants.length) {
       combinedJson.participants = data.participants;
       combinedJson.title = data.title;
@@ -166,16 +165,18 @@ app.post("/upload", upload, async (req, res) => {
   }
 
   try {
-    // Decode, combine, and convert the JSON files
-    const decodedFilePaths = await Promise.all(
+    // Read and decode the JSON files
+    const decodedFileContents = await Promise.all(
       req.files.map(async (file) => {
         const decodedContent = await FacebookIO.decodeFile(file.path);
-        await fs1.writeFile(file.path, decodedContent);
-        return file.path;
+        return decodedContent;
       })
     );
 
-    const combinedJson = await combine_and_convert_json_files(decodedFilePaths);
+    // Combine and convert the decoded JSON files
+    const combinedJson = await combine_and_convert_json_files(
+      decodedFileContents
+    );
 
     const { participants, messages } = combinedJson;
     if (!participants || !messages) {
