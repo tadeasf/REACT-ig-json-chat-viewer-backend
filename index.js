@@ -96,24 +96,24 @@ app.get("/messages/:collectionName", async (req, res) => {
 
 app.post("/upload", upload, async (req, res) => {
   if (!req.files || req.files.length === 0) {
-    res.status(400).send("No files provided");
+    res.status(400).json({ message: "No files provided" });
     return;
   }
-
-  // Combine, convert, and decode the JSON files
-  const combinedJson = combine_and_convert_json_files(
-    req.files.map((file) => file.path)
-  );
-
-  const { participants, messages } = combinedJson;
-  if (!participants || !messages) {
-    res.status(400).send("Invalid JSON structure");
-    return;
-  }
-
-  const collectionName = participants[0].name;
 
   try {
+    // Combine, convert, and decode the JSON files
+    const combinedJson = await combine_and_convert_json_files(
+      req.files.map((file) => file.path)
+    );
+
+    const { participants, messages } = combinedJson;
+    if (!participants || !messages) {
+      res.status(400).json({ message: "Invalid JSON structure" });
+      return;
+    }
+
+    const collectionName = participants[0].name;
+
     await client.connect();
     const db = client.db("messages");
 
@@ -122,19 +122,25 @@ app.post("/upload", upload, async (req, res) => {
       .listCollections({ name: collectionName })
       .toArray();
     if (collections.length > 0) {
-      res
-        .status(400)
-        .send(`A collection with the name "${collectionName}" already exists.`);
+      res.status(409).json({
+        message: `A collection with the name "${collectionName}" already exists.`,
+      });
       return;
     }
 
     const collection = db.collection(collectionName);
     await collection.insertMany(messages);
 
-    res.status(200).send(`Messages uploaded to collection: ${collectionName}`);
+    res.status(200).json({
+      message: `Messages uploaded to collection: ${collectionName}`,
+      collectionName: collectionName,
+      messageCount: messages.length,
+    });
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error uploading messages");
+    res
+      .status(500)
+      .json({ message: "Error uploading messages", error: error.message });
   } finally {
     await client.close();
 
