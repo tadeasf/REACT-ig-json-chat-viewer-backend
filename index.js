@@ -24,7 +24,7 @@ class FacebookIO {
         let newChar = "";
         while (data.startsWith("\\u00", i)) {
           const hex = parseInt(data.slice(i + 4, i + 6), 16);
-          newChar += String.fromCodePoint(hex);
+          newChar += String.fromCharCode(hex);
           i += 6;
         }
         newData += newChar;
