@@ -52,7 +52,7 @@ app.get("/collections", async (req, res) => {
     res.status(200).json(collectionNames);
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error fetching collections");
+    res.status(500).json({ error: error });
   } finally {
     await client.close();
   }
@@ -88,7 +88,7 @@ app.get("/messages/:collectionName", async (req, res) => {
     res.status(200).json(messages);
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error querying messages");
+    res.status(500).json({ error: error });
   } finally {
     await client.close();
   }
@@ -165,11 +165,9 @@ app.delete("/delete/:collectionName", async (req, res) => {
       collectionName: collectionName,
       messagesLost: messages.length,
     });
-    res.status(200).send(`Collection dropped: ${collectionName}`);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
-    res.status(500).send("Error dropping collection");
   } finally {
     await client.close();
   }
