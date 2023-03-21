@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000; // use Heroku-provided port or default to 3000
 const multer = require("multer");
 const fs = require("fs").promises;
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "uploads/" }).array("files");
 
 app.use(
   cors({
@@ -91,53 +91,76 @@ app.get("/messages/:collectionName", async (req, res) => {
   }
 });
 
-app.post("/upload", upload.single("file"), async (req, res) => {
-  if (!req.file) {
-    res.status(400).send("No file provided");
+app.post("/upload", upload, async (req, res) => {
+  if (!req.files || req.files.length === 0) {
+    res.status(400).send("No files provided");
     return;
   }
 
-  let fileContent;
-  try {
-    fileContent = await fs.readFile(req.file.path, "utf-8");
-  } catch (error) {
-    console.error("Error reading file:", error);
-    res.status(500).send("Error reading file");
-    return;
+  let uploadResults = [];
+
+  // Process each file in a loop
+  for (const file of req.files) {
+    let fileContent;
+
+    try {
+      fileContent = await fs.readFile(file.path, "utf-8");
+    } catch (error) {
+      console.error("Error reading file:", error);
+      uploadResults.push({
+        fileName: file.originalname,
+        status: "Error reading file",
+      });
+      continue;
+    }
+
+    let jsonData;
+    try {
+      jsonData = JSON.parse(fileContent);
+    } catch (error) {
+      console.error("Error parsing JSON:", error);
+      uploadResults.push({
+        fileName: file.originalname,
+        status: "Invalid JSON file",
+      });
+      continue;
+    }
+
+    const { participants, messages } = jsonData;
+    if (!participants || !messages) {
+      uploadResults.push({
+        fileName: file.originalname,
+        status: "Invalid JSON structure",
+      });
+      continue;
+    }
+
+    const collectionName = participants[0].name;
+
+    try {
+      await client.connect();
+      const db = client.db("messages");
+      const collection = db.collection(collectionName);
+
+      await collection.insertMany(messages);
+      uploadResults.push({
+        fileName: file.originalname,
+        status: `Messages uploaded to collection: ${collectionName}`,
+      });
+    } catch (error) {
+      console.error(error);
+      uploadResults.push({
+        fileName: file.originalname,
+        status: "Error uploading messages",
+      });
+    } finally {
+      await client.close();
+      // Delete the temporary file
+      await fs.unlink(file.path);
+    }
   }
 
-  let jsonData;
-  try {
-    jsonData = JSON.parse(fileContent);
-  } catch (error) {
-    console.error("Error parsing JSON:", error);
-    res.status(400).send("Invalid JSON file");
-    return;
-  }
-
-  const { participants, messages } = jsonData;
-  if (!participants || !messages) {
-    res.status(400).send("Invalid JSON structure");
-    return;
-  }
-
-  const collectionName = participants[0].name;
-
-  try {
-    await client.connect();
-    const db = client.db("messages");
-    const collection = db.collection(collectionName);
-
-    await collection.insertMany(messages);
-    res.status(200).send(`Messages uploaded to collection: ${collectionName}`);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error uploading messages");
-  } finally {
-    await client.close();
-    // Delete the temporary file
-    await fs.unlink(req.file.path);
-  }
+  res.status(200).json(uploadResults);
 });
 
 app.delete("/delete/:collectionName", async (req, res) => {
