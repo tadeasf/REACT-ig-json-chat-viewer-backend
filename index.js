@@ -160,9 +160,15 @@ app.delete("/delete/:collectionName", async (req, res) => {
     const collection = db.collection(collectionName);
 
     await collection.drop();
+    res.status(200).json({
+      message: `Collection dropped: ${collectionName}`,
+      collectionName: collectionName,
+      messagesLost: messages.length,
+    });
     res.status(200).send(`Collection dropped: ${collectionName}`);
   } catch (error) {
     console.error(error);
+    res.status(500).json({ error: error.message });
     res.status(500).send("Error dropping collection");
   } finally {
     await client.close();
