@@ -64,27 +64,23 @@ app.get("/messages/:collectionName", async (req, res) => {
     const collection = db.collection(collectionName);
 
     const messages = await collection
-      .aggregate([
-        {
-          $addFields: {
-            sender_id_INTERNAL: {
-              $ifNull: ["$sender_id_INTERNAL", 0],
+      .aggregate(
+        [
+          {
+            $sort: {
+              timestamp_ms: 1,
             },
           },
-        },
-        {
-          $sort: {
-            timestamp_ms: 1,
-          },
-        },
-        {
-          $addFields: {
-            timestamp: {
-              $toDate: "$timestamp_ms",
+          {
+            $addFields: {
+              timestamp: {
+                $toDate: "$timestamp_ms",
+              },
             },
           },
-        },
-      ])
+        ],
+        { allowDiskUse: true }
+      )
       .toArray();
     console.log(messages);
     res.status(200).json(messages);
