@@ -82,7 +82,6 @@ app.get("/messages/:collectionName", async (req, res) => {
         { allowDiskUse: true }
       )
       .toArray();
-    console.log(messages);
     res.status(200).json(messages);
   } catch (error) {
     console.error(error);
@@ -160,5 +159,5 @@ app.delete("/delete/:collectionName", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+  console.log(`Server listening on port number: ${port}`);
 });
