@@ -6,61 +6,8 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000; // use Heroku-provided port or default to 3000
 const multer = require("multer");
-const fs1 = require("fs").promises;
-const fs2 = require("fs/promises");
+const fs = require("fs").promises;
 const upload = multer({ dest: "uploads/" }).array("files");
-const path = require("path");
-const os = require("os");
-const moment = require("moment");
-const iconv = require("iconv-lite");
-
-class FacebookIO {
-  static async decodeFile(filePath) {
-    const data = await fs2.readFile(filePath);
-    const decodedData = iconv.decode(data, "utf-8");
-    const utf8Data = iconv.decode(Buffer.from(decodedData, "latin1"), "utf-8");
-    return utf8Data;
-  }
-}
-
-async function combine_and_convert_json_files(fileContents) {
-  let combinedJson = {
-    participants: [],
-    messages: [],
-    title: "",
-    is_still_participant: true,
-    thread_path: "",
-    magic_words: [],
-  };
-
-  for (const content of fileContents) {
-    const data = JSON.parse(content);
-    if (!combinedJson.participants.length) {
-      combinedJson.participants = data.participants;
-      combinedJson.title = data.title;
-      combinedJson.is_still_participant = data.is_still_participant;
-      combinedJson.thread_path = data.thread_path;
-      combinedJson.magic_words = data.magic_words;
-    }
-    combinedJson.messages.push(...data.messages);
-  }
-
-  combinedJson.messages.forEach((message) => {
-    if (message.timestamp_ms) {
-      message.timestamp = moment(message.timestamp_ms).format(
-        "HH:mm DD/MM/YYYY"
-      );
-    }
-  });
-
-  combinedJson.messages.sort((a, b) => {
-    return moment(a.timestamp, "HH:mm DD/MM/YYYY").diff(
-      moment(b.timestamp, "HH:mm DD/MM/YYYY")
-    );
-  });
-
-  return combinedJson;
-}
 
 app.use(
   cors({
@@ -102,7 +49,7 @@ app.get("/collections", async (req, res) => {
     res.status(200).json(collectionNames);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: error });
+    res.status(500).send("Error fetching collections");
   } finally {
     await client.close();
   }
@@ -138,7 +85,7 @@ app.get("/messages/:collectionName", async (req, res) => {
     res.status(200).json(messages);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: error });
+    res.status(500).send("Error querying messages");
   } finally {
     await client.close();
   }
@@ -146,32 +93,24 @@ app.get("/messages/:collectionName", async (req, res) => {
 
 app.post("/upload", upload, async (req, res) => {
   if (!req.files || req.files.length === 0) {
-    res.status(400).json({ message: "No files provided" });
+    res.status(400).send("No files provided");
     return;
   }
 
+  // Combine, convert, and decode the JSON files
+  const combinedJson = combine_and_convert_json_files(
+    req.files.map((file) => file.path)
+  );
+
+  const { participants, messages } = combinedJson;
+  if (!participants || !messages) {
+    res.status(400).send("Invalid JSON structure");
+    return;
+  }
+
+  const collectionName = participants[0].name;
+
   try {
-    // Read and decode the JSON files
-    const decodedFileContents = await Promise.all(
-      req.files.map(async (file) => {
-        const decodedContent = await FacebookIO.decodeFile(file.path);
-        return decodedContent;
-      })
-    );
-
-    // Combine and convert the decoded JSON files
-    const combinedJson = await combine_and_convert_json_files(
-      decodedFileContents
-    );
-
-    const { participants, messages } = combinedJson;
-    if (!participants || !messages) {
-      res.status(400).json({ message: "Invalid JSON structure" });
-      return;
-    }
-
-    const collectionName = participants[0].name;
-
     await client.connect();
     const db = client.db("messages");
 
@@ -180,31 +119,25 @@ app.post("/upload", upload, async (req, res) => {
       .listCollections({ name: collectionName })
       .toArray();
     if (collections.length > 0) {
-      res.status(409).json({
-        message: `A collection with the name "${collectionName}" already exists.`,
-      });
+      res
+        .status(400)
+        .send(`A collection with the name "${collectionName}" already exists.`);
       return;
     }
 
     const collection = db.collection(collectionName);
     await collection.insertMany(messages);
 
-    res.status(200).json({
-      message: `Messages uploaded to collection: ${collectionName}`,
-      collectionName: collectionName,
-      messageCount: messages.length,
-    });
+    res.status(200).send(`Messages uploaded to collection: ${collectionName}`);
   } catch (error) {
     console.error(error);
-    res
-      .status(500)
-      .json({ message: "Error uploading messages", error: error.message });
+    res.status(500).send("Error uploading messages");
   } finally {
     await client.close();
 
     // Delete the temporary files
     for (const file of req.files) {
-      await fs1.unlink(file.path);
+      await fs.unlink(file.path);
     }
   }
 });
@@ -216,14 +149,12 @@ app.delete("/delete/:collectionName", async (req, res) => {
     await client.connect();
     const db = client.db("messages");
     const collection = db.collection(collectionName);
+
     await collection.drop();
-    res.status(200).json({
-      message: `Collection "${collectionName}" deleted.`,
-      collectionName: collectionName,
-    });
+    res.status(200).send(`Collection dropped: ${collectionName}`);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: error.message });
+    res.status(500).send("Error dropping collection");
   } finally {
     await client.close();
   }

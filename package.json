@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "entities": "^4.4.0",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "iconv-lite": "^0.6.3",
@@ -18,6 +19,7 @@
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.21",
     "os": "^0.1.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "python-shell": "^5.0.0"
   }
 }
