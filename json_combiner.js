@@ -1,28 +1,24 @@
 /** @format */
 
-const fs = require("fs/promises");
 const moment = require("moment");
+const fs = require("fs");
+const iconv = require("iconv-lite");
 
 class FacebookIO {
   static async decodeFile(filePath) {
-    const data = await fs.readFile(filePath, "utf-8");
-    let newData = "";
-    let i = 0;
-    while (i < data.length) {
-      if (data.startsWith("\\u00", i)) {
-        let newChar = "";
-        while (data.startsWith("\\u00", i)) {
-          const hex = parseInt(data.slice(i + 4, i + 6), 16);
-          newChar += String.fromCharCode(hex);
-          i += 6;
-        }
-        newData += newChar;
-      } else {
-        newData += data[i];
-        i += 1;
-      }
-    }
-    return newData;
+    const data = await fs.promises.readFile(filePath);
+
+    // Replace all \u00hh JSON sequences with the byte the last two hex digits represent
+    const binaryData = data
+      .toString()
+      .replace(/\\u00([0-9a-fA-F]{2})/g, (_, hex) => {
+        return String.fromCharCode(parseInt(hex, 16));
+      });
+
+    // Convert the binary data from 'binary' encoding to 'utf-8' using iconv-lite
+    const utf8Data = iconv.decode(Buffer.from(binaryData, "binary"), "utf-8");
+
+    return utf8Data;
   }
 }
 
