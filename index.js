@@ -181,6 +181,7 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
 
     // Assuming that the document with the 'photo' field is the first document in the collection
     const photoDocument = await collection.findOne();
+    console.log(photoDocument);
 
     // If there's no document or the document doesn't have a 'photo' field, return an error
     if (!photoDocument || !photoDocument.photo) {
