@@ -171,6 +171,33 @@ app.delete("/delete/:collectionName", async (req, res) => {
   }
 });
 
+app.get("/messages/:collectionName/photo", async (req, res) => {
+  const collectionName = req.params.collectionName;
+
+  try {
+    await client.connect();
+    const db = client.db("messages");
+    const collection = db.collection(collectionName);
+
+    // Assuming that the document with the 'photo' field is the first document in the collection
+    const photoDocument = await collection.findOne();
+
+    // If there's no document or the document doesn't have a 'photo' field, return an error
+    if (!photoDocument || !photoDocument.photo) {
+      res.status(404).json({ message: "Photo not found" });
+      return;
+    }
+
+    // Return the photo
+    res.status(200).json({ photo: photoDocument.photo });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  } finally {
+    await client.close();
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port number: ${port}`);
 });
