@@ -195,6 +195,8 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
       return;
     }
 
+    console.log(result[0].photo);
+
     // Return the photo
     res.status(200).json(result[0].photo);
   } catch (error) {
