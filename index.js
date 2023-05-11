@@ -190,7 +190,7 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
     }
 
     // Return the photo
-    res.status(200).json({ photo: photoDocument.photo });
+    res.status(200).json(photoDocument.photo);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
