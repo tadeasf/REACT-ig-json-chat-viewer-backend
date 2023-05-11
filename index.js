@@ -179,18 +179,24 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
     const db = client.db("messages");
     const collection = db.collection(collectionName);
 
-    // Assuming that the document with the 'photo' field is the first document in the collection
-    const photoDocument = await collection.findOne();
-    console.log(photoDocument.photo);
+    const result = await collection
+      .aggregate([
+        {
+          $match: { photo: { $exists: true } },
+        },
+        {
+          $project: { _id: 0, photo: 1 },
+        },
+      ])
+      .toArray();
 
-    // If there's no document or the document doesn't have a 'photo' field, return an error
-    if (!photoDocument || !photoDocument.photo) {
+    if (result.length === 0) {
       res.status(404).json({ message: "Photo not found" });
       return;
     }
 
     // Return the photo
-    res.status(200).json(photoDocument.photo);
+    res.status(200).json(result[0].photo);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
