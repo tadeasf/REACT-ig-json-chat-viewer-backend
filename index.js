@@ -33,7 +33,7 @@ const client = new MongoClient(uri, {
 app.get("/collections", async (req, res) => {
   try {
     await client.connect();
-    const db = client.db("messages");
+    const db = client.db("messagesV2");
     const collections = await db.listCollections().toArray();
 
     const collectionNames = collections
