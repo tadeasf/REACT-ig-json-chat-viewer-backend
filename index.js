@@ -33,7 +33,7 @@ const client = new MongoClient(uri, {
 app.get("/collections", async (req, res) => {
   try {
     await client.connect();
-    const db = client.db("messagesV2");
+    const db = client.db("messages");
     const collections = await db.listCollections().toArray();
 
     const collectionNames = collections
@@ -63,7 +63,7 @@ app.get("/messages/:collectionName", async (req, res) => {
 
   try {
     await client.connect();
-    const db = client.db("messagesV2");
+    const db = client.db("messages");
     const collection = db.collection(collectionName);
 
     const messages = await collection
@@ -115,7 +115,7 @@ app.post("/upload", upload, async (req, res) => {
     const collectionName = participants[0].name;
 
     await client.connect();
-    const db = client.db("messagesV2");
+    const db = client.db("messages");
 
     // Check if the collection already exists
     const collections = await db
@@ -156,7 +156,7 @@ app.delete("/delete/:collectionName", async (req, res) => {
 
   try {
     await client.connect();
-    const db = client.db("messagesV2");
+    const db = client.db("messages");
     const collection = db.collection(collectionName);
     await collection.drop();
     res.status(200).json({
@@ -176,7 +176,7 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
 
   try {
     await client.connect();
-    const db = client.db("messagesV2");
+    const db = client.db("messages");
     const collection = db.collection(collectionName);
 
     const result = await collection
