@@ -4,7 +4,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const app = express();
-const port = process.env.PORT || "3000"; // use Heroku-provided port or default to 3000
+const port = process.env.PORT || 3335;
 const multer = require("multer");
 const fs = require("fs").promises;
 const upload = multer({ dest: "uploads/" }).array("files");
@@ -20,6 +20,8 @@ app.use(
       "http://193.86.152.148:5009",
       "http://193.86.152.148:3000",
       "http://localhost:3000",
+      "http://localhost:3001",
+      "http://localhost:3335",
     ],
   })
 );
