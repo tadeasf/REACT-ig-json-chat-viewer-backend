@@ -4,7 +4,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const app = express();
-const port = process.env.PORT || 3335;
+const port = process.env.PORT || 5555;
 const multer = require("multer");
 const fs = require("fs").promises;
 const upload = multer({ dest: "uploads/" }).array("files");
@@ -16,12 +16,24 @@ app.use(
   cors({
     origin: [
       "https://kocouratko.cz",
+      "https://www.kocouratko.cz",
+      "https://kocouratko.cz:5009",
+      "https://www.kocouratko.cz:5009",
+      "https://kocouratko.cz:3000",
+      "https://www.kocouratko.cz:3000",
+      "http://kocouratko.cz",
+      "http://www.kocouratko.cz",
+      "http://kocouratko.cz:5009",
+      "http://www.kocouratko.cz:5009",
+      "http://kocouratko.cz:3000",
+      "http://www.kocouratko.cz:3000",
       "http://localhost:5009",
       "http://193.86.152.148:5009",
       "http://193.86.152.148:3000",
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:3335",
+      "http://localhost:3336",
     ],
   })
 );
