@@ -16,24 +16,15 @@ app.use(
   cors({
     origin: [
       "https://kocouratko.cz",
-      "https://www.kocouratko.cz",
-      "https://kocouratko.cz:5009",
-      "https://www.kocouratko.cz:5009",
-      "https://kocouratko.cz:3000",
-      "https://www.kocouratko.cz:3000",
-      "http://kocouratko.cz",
-      "http://www.kocouratko.cz",
-      "http://kocouratko.cz:5009",
-      "http://www.kocouratko.cz:5009",
-      "http://kocouratko.cz:3000",
-      "http://www.kocouratko.cz:3000",
+      "https://server.kocouratko.eu",
       "http://localhost:5009",
       "http://193.86.152.148:5009",
       "http://193.86.152.148:3000",
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:3335",
-      "http://localhost:3336",
+      "app://.",
+      "tauri://localhost",
     ],
   })
 );
@@ -43,6 +34,22 @@ const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "photos/");
+  },
+  filename: function (req, file, cb) {
+    const fileExtension = path.extname(file.originalname); // Get the file's original extension
+    const sanitizedCollectionName = req.params.collectionName.replace(
+      /\s+/g,
+      ""
+    ); // Remove spaces from collection name
+    cb(null, `${sanitizedCollectionName}${fileExtension}`);
+  },
+});
+
+const upload_photo = multer({ storage: storage });
 
 app.get("/collections", async (req, res) => {
   try {
@@ -100,6 +107,7 @@ app.get("/messages/:collectionName", async (req, res) => {
       )
       .toArray();
     res.status(200).json(messages);
+    console.log("Messages sent");
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error });
@@ -111,6 +119,7 @@ app.get("/messages/:collectionName", async (req, res) => {
 app.post("/upload", upload, async (req, res) => {
   if (!req.files || req.files.length === 0) {
     res.status(400).json({ message: "No files provided" });
+    console.log("No files provided");
     return;
   }
 
@@ -150,6 +159,7 @@ app.post("/upload", upload, async (req, res) => {
       collectionName: collectionName,
       messageCount: messages.length,
     });
+    console.log("Messages uploaded");
   } catch (error) {
     console.error(error);
     res
@@ -177,6 +187,7 @@ app.delete("/delete/:collectionName", async (req, res) => {
       message: `Collection "${collectionName}" deleted.`,
       collectionName: collectionName,
     });
+    console.log("Collection deleted");
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
@@ -193,31 +204,75 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
     const db = client.db("messages");
     const collection = db.collection(collectionName);
 
-    const result = await collection
-      .aggregate([
-        {
-          $match: { photo: { $exists: true } },
-        },
-        {
-          $project: { _id: 0, photo: 1 },
-        },
-      ])
-      .toArray();
+    const result = await collection.findOne({ photo: true });
 
-    if (result.length === 0) {
-      res.status(404).json({ message: "Photo not found" });
+    if (!result) {
+      res.status(200).json({ isPhotoAvailable: false, photoUrl: null });
       return;
     }
 
-    console.log(result[0].photo);
-
-    // Return the photo
-    res.status(200).json(result[0].photo);
+    // Return that a photo is available and its URL
+    const photoUrl = `${req.protocol}://${req.get(
+      "host"
+    )}/serve/photo/${collectionName}`;
+    res.status(200).json({ isPhotoAvailable: true, photoUrl: photoUrl });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
   } finally {
     await client.close();
+  }
+});
+
+app.post(
+  "/upload/photo/:collectionName",
+  upload_photo.single("photo"),
+  async (req, res) => {
+    if (!req.file) {
+      res.status(400).json({ message: "No photo provided" });
+      return;
+    }
+
+    try {
+      await client.connect();
+      const db = client.db("messages");
+      const collection = db.collection(req.params.collectionName);
+
+      // Update the collection to indicate that a photo exists
+      await collection.updateOne(
+        {},
+        { $set: { photo: true } },
+        { upsert: true }
+      );
+
+      res.status(200).json({ message: "Photo uploaded successfully" });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: error.message });
+    } finally {
+      await client.close();
+    }
+  }
+);
+
+app.get("/serve/photo/:collectionName", async (req, res) => {
+  const collectionName = req.params.collectionName.replace(/\s+/g, ""); // Remove spaces from collection name
+  const photoDir = path.join(__dirname, "photos");
+
+  try {
+    const files = await fs.readdir(photoDir);
+    const photoFile = files.find((file) => file.startsWith(collectionName)); // Find the file that starts with the collection name
+
+    if (!photoFile) {
+      res.status(404).json({ message: "Photo not found" });
+      return;
+    }
+
+    const photoPath = path.join(photoDir, photoFile);
+    res.sendFile(photoPath);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
   }
 });
 
