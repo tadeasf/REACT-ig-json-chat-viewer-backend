@@ -35,12 +35,22 @@ const client = new MongoClient(uri, {
   writeConcern: { w: 'majority', wtimeout: 5000 }
 });
 
+function sizeof(object) {
+  const stringifiedObject = JSON.stringify(object);
+  const bytes = Buffer.from(stringifiedObject).length;
+  return bytes;
+}
+
 const cacheOptions = {
   maxSize: 8 * 1024 * 1024 * 1024, // 4GB
   ttl: 7 * 24 * 60 * 60 * 1000, // 12 hours
   sizeCalculation: (value) => {
     // Assuming each message is a JSON string, adjust if needed
     return Buffer.from(JSON.stringify(value)).length;
+  },
+  length: (value) => {
+    // Return the number of objects in the cached collection
+    return Array.isArray(value) ? value.length : 1;
   },
   dispose: (value, key) => {
     // Handle any cleanup if needed when an item is removed from cache
@@ -179,29 +189,57 @@ async function logError(error) {
 }
 
 async function cacheAllCollections() {
+  const startTime = Date.now();
   const db = client.db("messages");
   const collections = await db.listCollections().toArray();
-  const collectionNames = collections.map((collection) => collection.name);
+  
+  const collectionData = [];
+  let totalMessages = 0;
 
-  for (const collectionName of collectionNames) {
-    const collection = db.collection(collectionName);
-    const messages = await collection
+  for (const collection of collections) {
+    const collectionName = collection.name;
+    const messages = await db.collection(collectionName)
       .aggregate(
         [
           { $sort: { timestamp_ms: 1 } },
           { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
-        ],
-        { allowDiskUse: true }
+        ]
       )
       .toArray();
+    totalMessages += messages.length;
+    
+    // Cache the messages for each collection
+    cache.set(`messages-${collectionName}`, messages);
 
-    cache.set(collectionName, messages);
+    const count = await db.collection(collectionName).countDocuments();
+    collectionData.push({
+      name: collectionName,
+      messageCount: count
+    });
   }
+
+  // Sort collections by message count in descending order
+  collectionData.sort((a, b) => b.messageCount - a.messageCount);
+
+  // Cache the sorted list of collection data (name and message count)
+  cache.set("collections", collectionData);
+  
+  const endTime = Date.now();
+  const timeTaken = (endTime - startTime) / 1000; // in seconds
+  
+  // Calculate the total size of the cache in bytes
+  let totalSize = 0;
+  cache.forEach((value) => {
+    totalSize += sizeof(value);
+  });
+  // totalSize in MB as integer (rounded down)
+  const totalSizeMB = Math.floor(totalSize / 1024 / 1024);
+
+  console.log(`Cached ${collections.length} collections with ${totalMessages} messages in ${timeTaken} seconds. Total cache size: ${totalSizeMB} MB`);
 }
 
-// Call this function on server start
-cacheAllCollections();
 
+cacheAllCollections();
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
@@ -212,15 +250,29 @@ app.get("/collections", async (req, res) => {
     return res.status(200).json(cachedData);
   }
 
-  const db = client.db("messages");
+  const db = client.db("messages");x
   const collections = await db.listCollections().toArray();
-  const collectionNames = collections.map((collection) => collection.name).sort();
+  
+  const collectionData = [];
+  for (const collection of collections) {
+    const count = await db.collection(collection.name).countDocuments();
+    collectionData.push({
+      name: collection.name,
+      messageCount: count
+    });
+  }
 
-  cache.set(cacheKey, collectionNames);
+  console.log(collectionData);
+  // Sort collections by message count
+  collectionData.sort((a, b) => b.messageCount - a.messageCount);
+
+  cache.set(cacheKey, collectionData);
 
   logEndpointInfo(req, res, "GET /collections");
-  res.status(200).json(collectionNames);
+  res.status(200).json(collectionData);
 });
+
+
 
 // Endpoint to get messages by collection name
 
@@ -240,8 +292,7 @@ app.get("/messages/:collectionName", async (req, res) => {
       [
         { $sort: { timestamp_ms: 1 } },
         { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
-      ],
-      { allowDiskUse: true }
+      ]
     )
     .toArray();
 
@@ -276,6 +327,17 @@ app.post("/upload", upload.array("files"), async (req, res) => {
     collectionName: collectionName,
     messageCount: messages.length,
   });
+  // After inserting messages
+  const count = await collection.countDocuments();
+  const cachedCollections = cache.get("collections") || [];
+  const updatedCollections = cachedCollections.filter(col => col.name !== collectionName);
+  updatedCollections.push({
+    name: collectionName,
+    messageCount: count
+  }); 
+cache.set("collections", updatedCollections);
+
+  
 });
 
 // Endpoint to delete a collection
@@ -291,6 +353,10 @@ app.delete("/delete/:collectionName", async (req, res) => {
     message: `Collection "${collectionName}" deleted.`,
     collectionName: collectionName,
   });
+  // After dropping the collection
+  const cachedCollections = cache.get("collections") || [];
+  const updatedCollections = cachedCollections.filter(col => col.name !== collectionName);
+  cache.set("collections", updatedCollections);
 });
 
 // Endpoint to check if a photo is available for a collection
@@ -365,6 +431,16 @@ app.put("/rename/:currentCollectionName", async (req, res) => {
 
   logEndpointInfo(req, res, `PUT /rename/${req.params.currentCollectionName}`);
   res.status(200).json({ message: `Collection renamed to ${newCollectionName}` });
+  // After renaming the collection
+  const count = await db.collection(newCollectionName).countDocuments();
+  const cachedCollections = cache.get("collections") || [];
+  const updatedCollections = cachedCollections.filter(col => col.name !== currentCollectionName);
+  updatedCollections.push({
+    name: newCollectionName,
+    messageCount: count
+  });
+  cache.set("collections", updatedCollections);
+
 });
 
 // Endpoint to delete a photo for a collection
