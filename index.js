@@ -178,6 +178,31 @@ async function logError(error) {
   return errorLog;
 }
 
+async function cacheAllCollections() {
+  const db = client.db("messages");
+  const collections = await db.listCollections().toArray();
+  const collectionNames = collections.map((collection) => collection.name);
+
+  for (const collectionName of collectionNames) {
+    const collection = db.collection(collectionName);
+    const messages = await collection
+      .aggregate(
+        [
+          { $sort: { timestamp_ms: 1 } },
+          { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
+        ],
+        { allowDiskUse: true }
+      )
+      .toArray();
+
+    cache.set(collectionName, messages);
+  }
+}
+
+// Call this function on server start
+cacheAllCollections();
+
+
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
   const cacheKey = "collections";
@@ -362,6 +387,23 @@ app.delete("/delete/photo/:collectionName", async (req, res) => {
   res.status(200).json({ message: "Photo deleted successfully" });
 });
 
+app.get("/cross-search/:searchTerm", async (req, res) => {
+  const searchTerm = req.params.searchTerm;
+  const allResults = [];
+
+  cache.forEach((messages, collectionName) => {
+    const matchingMessages = messages.filter((message) =>
+      message.content.includes(searchTerm)
+    );
+    allResults.push(...matchingMessages);
+  });
+
+  // Sort the results by timestamp
+  allResults.sort((a, b) => a.timestamp_ms - b.timestamp_ms);
+
+  logEndpointInfo(req, res, `GET /cross-search/${searchTerm}`);
+  res.status(200).json(allResults);
+});
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
