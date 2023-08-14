@@ -14,6 +14,41 @@ const os = require("os");
 const bodyParser = require("body-parser");
 const { combine_and_convert_json_files } = require("./json_combiner");
 const { LRUCache } = require('lru-cache')
+//const client = require("prom-client"); // -> enable this later if we'd like
+
+// // Create a new Registry which registers the metrics
+// const register = new client.Registry();
+
+// // Add a default label with the service name to all metrics.
+// register.setDefaultLabels({
+//   app: 'express_app'
+// });
+
+// // Create the metrics you want to track. For instance:
+// const numRequests = new client.Counter({
+//   name: 'num_requests',
+//   help: 'Total number of requests made',
+// });
+
+// const httpRequestDurationMicroseconds = new client.Histogram({
+//   name: 'http_request_duration_seconds',
+//   help: 'Duration of HTTP requests in microseconds',
+//   labelNames: ['method', 'route', 'code'],
+//   buckets: [0.1, 0.3, 0.5, 0.7, 1, 5, 10],  // buckets for response time from 0.1s to 10s
+// });
+
+// app.use((req, res, next) => {
+//   const end = httpRequestDurationMicroseconds.startTimer();
+//   res.on('finish', () => {
+//     // response status code
+//     const route = req.route ? req.route.path : 'unknown_route';
+//     const method = req.method;
+//     const code = res.statusCode;
+//     end({ route, method, code });
+//     numRequests.inc();
+//   });
+//   next();
+// });
 
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
@@ -42,8 +77,8 @@ function sizeof(object) {
 }
 
 const cacheOptions = {
-  maxSize: 8 * 1024 * 1024 * 1024, // 4GB
-  ttl: 7 * 24 * 60 * 60 * 1000, // 12 hours
+  maxSize: 12 * 1024 * 1024 * 1024, // 8
+  ttl: 1 * 24 * 60 * 60 * 1000, // 1 day
   sizeCalculation: (value) => {
     // Assuming each message is a JSON string, adjust if needed
     return Buffer.from(JSON.stringify(value)).length;
@@ -62,24 +97,35 @@ const cache = new LRUCache(cacheOptions);
 
 client.connect();
 
+// app.use(cors({
+//   origin: [
+//     "https://kocouratko.cz",
+//     "https://server.kocouratko.eu",
+//     "http://localhost:5009",
+//     "http://193.86.152.148:5009",
+//     "http://193.86.152.148:3000",
+//     "http://localhost:3000",
+//     "http://localhost:3001",
+//     "http://localhost:3335",
+//     "app://.",
+//     "tauri://localhost",
+//   ],
+// }));
+
+// ALLOW CORS FOR LOAD BALANCER
 app.use(cors({
-  origin: [
-    "https://kocouratko.cz",
-    "https://server.kocouratko.eu",
-    "http://localhost:5009",
-    "http://193.86.152.148:5009",
-    "http://193.86.152.148:3000",
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:3335",
-    "app://.",
-    "tauri://localhost",
-  ],
+  origin: "*"
 }));
+
 
 app.use(morgan("combined")); // Using Morgan for logging
 
 app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+  res.send('Hi, Blackbox, grab some data! omnomnomnom...');
+});
+
 
 app.use("/photos", express.static(path.join(__dirname, "photos"))); // Serving static photos
 
@@ -134,13 +180,13 @@ function formatTimeDifference(startTime) {
   return `${hh}:${mm}:${ss}`;
 }
 
-// Utility function to log endpoint info
 function logEndpointInfo(req, res, endpoint) {
   const timeTaken = formatTimeDifference(req.startTime);
+  const requesterIP = req.ip; // Get the IP address of the requester
   console.log(
     `Endpoint: ${endpoint}, Request Contents: ${JSON.stringify(
       req.body
-    )}, Requester URL: ${req.get("origin")}, Time Taken: ${timeTaken}`
+    )}, Requester IP: ${requesterIP}, Time Taken: ${timeTaken}`
   );
 }
 
@@ -239,7 +285,7 @@ async function cacheAllCollections() {
 }
 
 
-cacheAllCollections();
+// cacheAllCollections(); // -> too heavy now, turn of for perf testing
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
@@ -250,7 +296,7 @@ app.get("/collections", async (req, res) => {
     return res.status(200).json(cachedData);
   }
 
-  const db = client.db("messages");x
+  const db = client.db("messages");
   const collections = await db.listCollections().toArray();
   
   const collectionData = [];
@@ -273,6 +319,38 @@ app.get("/collections", async (req, res) => {
 });
 
 
+app.get("/load-cpu", (req, res) => {
+  let total = 0;
+  
+  // Simulate CPU-intensive task
+  for (let i = 0; i < 7000000; i++) {
+    total += Math.sqrt(i) * Math.random();
+  }
+
+  res.send(`The result of the CPU intensive task is ${total}\n`);
+});
+
+app.get("/load-io", async (req, res) => {
+  try {
+    const imageDirectory = path.join(__dirname, 'generated_images');
+    const imageFiles = await fs.readdir(imageDirectory);
+
+    let totalImages = 0;
+
+    for (const imageFile of imageFiles) {
+      const imagePath = path.join(imageDirectory, imageFile);
+
+      // Simulate I/O operation by reading each image
+      await fs.readFile(imagePath);
+
+      totalImages++;
+    }
+
+    res.send(`Read ${totalImages} images as part of the I/O intensive task.\n`);
+  } catch (err) {
+    res.status(500).send("An error occurred");
+  }
+});
 
 // Endpoint to get messages by collection name
 
@@ -290,8 +368,7 @@ app.get("/messages/:collectionName", async (req, res) => {
   const messages = await collection
     .aggregate(
       [
-        { $sort: { timestamp_ms: 1 } },
-        { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
+        { $sort: { timestamp: 1 } },
       ]
     )
     .toArray();
@@ -480,6 +557,16 @@ app.get("/cross-search/:searchTerm", async (req, res) => {
   logEndpointInfo(req, res, `GET /cross-search/${searchTerm}`);
   res.status(200).json(allResults);
 });
+
+// app.get('/metrics', async (req, res) => {
+//   try {
+//     res.set('Content-Type', register.contentType);
+//     res.end(await register.metrics());
+//   } catch (ex) {
+//     res.status(500).end(ex);
+//   }
+// });
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
