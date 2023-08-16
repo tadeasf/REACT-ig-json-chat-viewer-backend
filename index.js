@@ -112,7 +112,7 @@ client.connect();
 //   ],
 // }));
 
-// ALLOW CORS FOR LOAD BALANCER
+//ALLOW CORS FOR LOAD BALANCER
 app.use(cors({
   origin: "*"
 }));
