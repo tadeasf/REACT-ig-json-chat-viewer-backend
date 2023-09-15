@@ -15,6 +15,7 @@ const bodyParser = require("body-parser");
 const { combine_and_convert_json_files } = require("./json_combiner");
 const { LRUCache } = require("lru-cache");
 const { v4: uuidv4 } = require("uuid");
+const compression = require("compression");
 //const client = require("prom-client"); // -> enable this later if we'd like
 
 // // Create a new Registry which registers the metrics
@@ -118,7 +119,7 @@ app.use(
 );
 
 app.use(morgan("combined")); // Using Morgan for logging
-
+app.use(compression());
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
@@ -351,7 +352,10 @@ app.get("/messages/:collectionName", async (req, res) => {
   const db = client.db("messages");
   const collection = db.collection(collectionName);
   const messages = await collection
-    .aggregate([{ $sort: { timestamp_ms: 1 } }])
+    .aggregate([
+      { $sort: { timestamp_ms: 1 } },
+      { $project: { _id: 0, timestamp: 1, sender_name: 1, content: 1 } }, // Only retrieve field1 and field2
+    ])
     .toArray();
 
   cache.set(cacheKey, messages);
