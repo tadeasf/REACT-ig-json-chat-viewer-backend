@@ -1,3 +1,10 @@
 node_modules
 .DS_Store
 .env
+/photos/*
+/logs/*
+/uploads/*
+/generated_images
+image-generator.py
+stress-test.py
+package-lock.json
