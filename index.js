@@ -354,7 +354,15 @@ app.get("/messages/:collectionName", async (req, res) => {
   const messages = await collection
     .aggregate([
       { $sort: { timestamp_ms: 1 } },
-      { $project: { _id: 0, timestamp: 1, sender_name: 1, content: 1 } }, // Only retrieve field1 and field2
+      {
+        $project: {
+          _id: 0,
+          timestamp: 1,
+          timestamp_ms: 1,
+          sender_name: 1,
+          content: 1,
+        },
+      }, // Only retrieve field1 and field2
     ])
     .toArray();
 
