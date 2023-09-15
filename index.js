@@ -13,7 +13,8 @@ const path = require("path");
 const os = require("os");
 const bodyParser = require("body-parser");
 const { combine_and_convert_json_files } = require("./json_combiner");
-const { LRUCache } = require('lru-cache')
+const { LRUCache } = require("lru-cache");
+const { v4: uuidv4 } = require("uuid");
 //const client = require("prom-client"); // -> enable this later if we'd like
 
 // // Create a new Registry which registers the metrics
@@ -55,10 +56,8 @@ const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  connectTimeoutMS: 30000,
-  socketTimeoutMS: 360000,
-  compressors: ['zlib'],
-  zlibCompressionLevel: 6,
+  connectTimeoutMS: 3600,
+  socketTimeoutMS: 3600,
   maxPoolSize: 50,
   minPoolSize: 10,
   maxConnecting: 5,
@@ -67,7 +66,7 @@ const client = new MongoClient(uri, {
   retryReads: true,
   retryWrites: true,
   directConnection: false,
-  writeConcern: { w: 'majority', wtimeout: 5000 }
+  writeConcern: { w: "majority", wtimeout: 5000 },
 });
 
 function sizeof(object) {
@@ -89,11 +88,10 @@ const cacheOptions = {
   },
   dispose: (value, key) => {
     // Handle any cleanup if needed when an item is removed from cache
-  }
+  },
 };
 
 const cache = new LRUCache(cacheOptions);
-
 
 client.connect();
 
@@ -113,26 +111,29 @@ client.connect();
 // }));
 
 //ALLOW CORS FOR LOAD BALANCER
-app.use(cors({
-  origin: "*"
-}));
-
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.use(morgan("combined")); // Using Morgan for logging
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Hi, Blackbox, grab some data! omnomnomnom...');
+app.get("/", (req, res) => {
+  res.send("Hi, Blackbox, grab some data! omnomnomnom...");
 });
-
 
 app.use("/photos", express.static(path.join(__dirname, "photos"))); // Serving static photos
 
 // Middleware for file uploads with structured directory
 const storage = multer.diskStorage({
   destination: async function (req, file, cb) {
-    const dir = `uploads/${req.get("host")}`;
+    // Generate a UUID for the subdirectory
+    const uniqueSubdir = uuidv4();
+
+    const dir = `uploads/${uniqueSubdir}/${req.get("host")}`;
     await fs.mkdir(dir, { recursive: true });
     cb(null, dir);
   },
@@ -140,10 +141,6 @@ const storage = multer.diskStorage({
     cb(null, file.originalname);
   },
 });
-
-function sanitizeName(name) {
-  return name.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_]/g, "");
-}
 
 // Middleware for photo uploads with structured naming
 const photoStorage = multer.diskStorage({
@@ -160,7 +157,6 @@ const photoStorage = multer.diskStorage({
 });
 
 const upload_photo = multer({ storage: photoStorage });
-
 
 const upload = multer({ storage: storage });
 
@@ -238,29 +234,28 @@ async function cacheAllCollections() {
   const startTime = Date.now();
   const db = client.db("messages");
   const collections = await db.listCollections().toArray();
-  
+
   const collectionData = [];
   let totalMessages = 0;
 
   for (const collection of collections) {
     const collectionName = collection.name;
-    const messages = await db.collection(collectionName)
-      .aggregate(
-        [
-          { $sort: { timestamp_ms: 1 } },
-          { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
-        ]
-      )
+    const messages = await db
+      .collection(collectionName)
+      .aggregate([
+        { $sort: { timestamp_ms: 1 } },
+        { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
+      ])
       .toArray();
     totalMessages += messages.length;
-    
+
     // Cache the messages for each collection
     cache.set(`messages-${collectionName}`, messages);
 
     const count = await db.collection(collectionName).countDocuments();
     collectionData.push({
       name: collectionName,
-      messageCount: count
+      messageCount: count,
     });
   }
 
@@ -269,10 +264,10 @@ async function cacheAllCollections() {
 
   // Cache the sorted list of collection data (name and message count)
   cache.set("collections", collectionData);
-  
+
   const endTime = Date.now();
   const timeTaken = (endTime - startTime) / 1000; // in seconds
-  
+
   // Calculate the total size of the cache in bytes
   let totalSize = 0;
   cache.forEach((value) => {
@@ -281,47 +276,37 @@ async function cacheAllCollections() {
   // totalSize in MB as integer (rounded down)
   const totalSizeMB = Math.floor(totalSize / 1024 / 1024);
 
-  console.log(`Cached ${collections.length} collections with ${totalMessages} messages in ${timeTaken} seconds. Total cache size: ${totalSizeMB} MB`);
+  console.log(
+    `Cached ${collections.length} collections with ${totalMessages} messages in ${timeTaken} seconds. Total cache size: ${totalSizeMB} MB`
+  );
 }
-
 
 // cacheAllCollections(); // -> too heavy now, turn of for perf testing
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
-  const cacheKey = "collections";
-  const cachedData = cache.get(cacheKey);
-
-  if (cachedData) {
-    return res.status(200).json(cachedData);
-  }
-
   const db = client.db("messages");
   const collections = await db.listCollections().toArray();
-  
+
   const collectionData = [];
   for (const collection of collections) {
     const count = await db.collection(collection.name).countDocuments();
     collectionData.push({
       name: collection.name,
-      messageCount: count
+      messageCount: count,
     });
   }
 
-  console.log(collectionData);
   // Sort collections by message count
   collectionData.sort((a, b) => b.messageCount - a.messageCount);
-
-  cache.set(cacheKey, collectionData);
 
   logEndpointInfo(req, res, "GET /collections");
   res.status(200).json(collectionData);
 });
 
-
 app.get("/load-cpu", (req, res) => {
   let total = 0;
-  
+
   // Simulate CPU-intensive task
   for (let i = 0; i < 7000000; i++) {
     total += Math.sqrt(i) * Math.random();
@@ -332,7 +317,7 @@ app.get("/load-cpu", (req, res) => {
 
 app.get("/load-io", async (req, res) => {
   try {
-    const imageDirectory = path.join(__dirname, 'generated_images');
+    const imageDirectory = path.join(__dirname, "generated_images");
     const imageFiles = await fs.readdir(imageDirectory);
 
     let totalImages = 0;
@@ -366,11 +351,7 @@ app.get("/messages/:collectionName", async (req, res) => {
   const db = client.db("messages");
   const collection = db.collection(collectionName);
   const messages = await collection
-    .aggregate(
-      [
-        { $sort: { timestamp: 1 } },
-      ]
-    )
+    .aggregate([{ $sort: { timestamp_ms: 1 } }])
     .toArray();
 
   cache.set(cacheKey, messages);
@@ -381,12 +362,16 @@ app.get("/messages/:collectionName", async (req, res) => {
 
 // Endpoint to upload messages
 app.post("/upload", upload.array("files"), async (req, res) => {
-  const combinedJson = await combine_and_convert_json_files(req.files.map((file) => file.path));
+  const combinedJson = await combine_and_convert_json_files(
+    req.files.map((file) => file.path)
+  );
   const { participants, messages } = combinedJson;
   const collectionName = participants[0].name;
 
   const db = client.db("messages");
-  const collections = await db.listCollections({ name: collectionName }).toArray();
+  const collections = await db
+    .listCollections({ name: collectionName })
+    .toArray();
   if (collections.length > 0) {
     logEndpointInfo(req, res, "POST /upload");
     res.status(409).json({
@@ -405,16 +390,16 @@ app.post("/upload", upload.array("files"), async (req, res) => {
     messageCount: messages.length,
   });
   // After inserting messages
-  const count = await collection.countDocuments();
-  const cachedCollections = cache.get("collections") || [];
-  const updatedCollections = cachedCollections.filter(col => col.name !== collectionName);
-  updatedCollections.push({
-    name: collectionName,
-    messageCount: count
-  }); 
-cache.set("collections", updatedCollections);
-
-  
+  // const count = await collection.countDocuments();
+  // const cachedCollections = cache.get("collections") || [];
+  // const updatedCollections = cachedCollections.filter(
+  //   (col) => col.name !== collectionName
+  // );
+  // updatedCollections.push({
+  //   name: collectionName,
+  //   messageCount: count,
+  // });
+  // cache.set("collections", updatedCollections);
 });
 
 // Endpoint to delete a collection
@@ -432,7 +417,9 @@ app.delete("/delete/:collectionName", async (req, res) => {
   });
   // After dropping the collection
   const cachedCollections = cache.get("collections") || [];
-  const updatedCollections = cachedCollections.filter(col => col.name !== collectionName);
+  const updatedCollections = cachedCollections.filter(
+    (col) => col.name !== collectionName
+  );
   cache.set("collections", updatedCollections);
 });
 
@@ -445,35 +432,57 @@ app.get("/messages/:collectionName/photo", async (req, res) => {
   const result = await collection.findOne({ photo: true });
 
   if (!result) {
-    logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}/photo`);
+    logEndpointInfo(
+      req,
+      res,
+      `GET /messages/${req.params.collectionName}/photo`
+    );
     res.status(200).json({ isPhotoAvailable: false, photoUrl: null });
     return;
   }
 
-  const photoUrl = `${req.protocol}://${req.get("host")}/serve/photo/${collectionName}`;
+  const photoUrl = `${req.protocol}://${req.get(
+    "host"
+  )}/serve/photo/${collectionName}`;
   logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}/photo`);
   res.status(200).json({ isPhotoAvailable: true, photoUrl: photoUrl });
 });
 
 // Endpoint to upload a photo for a collection
-app.post("/upload/photo/:collectionName", upload_photo.single("photo"), async (req, res) => {
-  if (!req.file) {
-    logEndpointInfo(req, res, `POST /upload/photo/${req.params.collectionName}`);
-    res.status(400).json({ message: "No photo provided" });
-    return;
+app.post(
+  "/upload/photo/:collectionName",
+  upload_photo.single("photo"),
+  async (req, res) => {
+    if (!req.file) {
+      logEndpointInfo(
+        req,
+        res,
+        `POST /upload/photo/${req.params.collectionName}`
+      );
+      res.status(400).json({ message: "No photo provided" });
+      return;
+    }
+
+    const db = client.db("messages");
+    const collection = db.collection(
+      decodeURIComponent(req.params.collectionName)
+    );
+    await collection.updateOne({}, { $set: { photo: true } }, { upsert: true });
+
+    logEndpointInfo(
+      req,
+      res,
+      `POST /upload/photo/${req.params.collectionName}`
+    );
+    res.status(200).json({ message: "Photo uploaded successfully" });
   }
-
-  const db = client.db("messages");
-  const collection = db.collection(decodeURIComponent(req.params.collectionName));
-  await collection.updateOne({}, { $set: { photo: true } }, { upsert: true });
-
-  logEndpointInfo(req, res, `POST /upload/photo/${req.params.collectionName}`);
-  res.status(200).json({ message: "Photo uploaded successfully" });
-});
+);
 
 // Endpoint to serve a photo for a collection
 app.get("/serve/photo/:collectionName", async (req, res) => {
-  const collectionName = sanitizeName(decodeURIComponent(req.params.collectionName));
+  const collectionName = sanitizeName(
+    decodeURIComponent(req.params.collectionName)
+  );
   const photoDir = path.join(__dirname, "photos");
   const files = await fs.readdir(photoDir);
   const photoFile = files.find((file) => file.startsWith(collectionName));
@@ -491,11 +500,17 @@ app.get("/serve/photo/:collectionName", async (req, res) => {
 
 // Endpoint to rename a collection
 app.put("/rename/:currentCollectionName", async (req, res) => {
-  const currentCollectionName = decodeURIComponent(req.params.currentCollectionName);
+  const currentCollectionName = decodeURIComponent(
+    req.params.currentCollectionName
+  );
   const newCollectionName = req.body.newCollectionName.trim();
 
   if (!newCollectionName || !/^[a-zA-Z0-9_]+$/.test(newCollectionName)) {
-    logEndpointInfo(req, res, `PUT /rename/${req.params.currentCollectionName}`);
+    logEndpointInfo(
+      req,
+      res,
+      `PUT /rename/${req.params.currentCollectionName}`
+    );
     res.status(400).json({
       message: "Invalid collection name: Does not match naming convention",
     });
@@ -507,28 +522,37 @@ app.put("/rename/:currentCollectionName", async (req, res) => {
   await currentCollection.rename(newCollectionName);
 
   logEndpointInfo(req, res, `PUT /rename/${req.params.currentCollectionName}`);
-  res.status(200).json({ message: `Collection renamed to ${newCollectionName}` });
+  res
+    .status(200)
+    .json({ message: `Collection renamed to ${newCollectionName}` });
   // After renaming the collection
   const count = await db.collection(newCollectionName).countDocuments();
   const cachedCollections = cache.get("collections") || [];
-  const updatedCollections = cachedCollections.filter(col => col.name !== currentCollectionName);
+  const updatedCollections = cachedCollections.filter(
+    (col) => col.name !== currentCollectionName
+  );
   updatedCollections.push({
     name: newCollectionName,
-    messageCount: count
+    messageCount: count,
   });
   cache.set("collections", updatedCollections);
-
 });
 
 // Endpoint to delete a photo for a collection
 app.delete("/delete/photo/:collectionName", async (req, res) => {
-  const collectionName = sanitizeName(decodeURIComponent(req.params.collectionName));
+  const collectionName = sanitizeName(
+    decodeURIComponent(req.params.collectionName)
+  );
   const photoDir = path.join(__dirname, "photos");
   const files = await fs.readdir(photoDir);
   const photoFile = files.find((file) => file.startsWith(collectionName));
 
   if (!photoFile) {
-    logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
+    logEndpointInfo(
+      req,
+      res,
+      `DELETE /delete/photo/${req.params.collectionName}`
+    );
     res.status(404).json({ message: "Photo not found" });
     return;
   }
@@ -536,7 +560,11 @@ app.delete("/delete/photo/:collectionName", async (req, res) => {
   const photoPath = path.join(photoDir, photoFile);
   await fs.unlink(photoPath);
 
-  logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
+  logEndpointInfo(
+    req,
+    res,
+    `DELETE /delete/photo/${req.params.collectionName}`
+  );
   res.status(200).json({ message: "Photo deleted successfully" });
 });
 
@@ -570,7 +598,7 @@ app.get("/cross-search/:searchTerm", async (req, res) => {
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).send("Something broke!");
 });
 
 app.listen(port, () => {
