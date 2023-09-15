@@ -16,41 +16,7 @@ const { combine_and_convert_json_files } = require("./json_combiner");
 const { LRUCache } = require("lru-cache");
 const { v4: uuidv4 } = require("uuid");
 const compression = require("compression");
-//const client = require("prom-client"); // -> enable this later if we'd like
-
-// // Create a new Registry which registers the metrics
-// const register = new client.Registry();
-
-// // Add a default label with the service name to all metrics.
-// register.setDefaultLabels({
-//   app: 'express_app'
-// });
-
-// // Create the metrics you want to track. For instance:
-// const numRequests = new client.Counter({
-//   name: 'num_requests',
-//   help: 'Total number of requests made',
-// });
-
-// const httpRequestDurationMicroseconds = new client.Histogram({
-//   name: 'http_request_duration_seconds',
-//   help: 'Duration of HTTP requests in microseconds',
-//   labelNames: ['method', 'route', 'code'],
-//   buckets: [0.1, 0.3, 0.5, 0.7, 1, 5, 10],  // buckets for response time from 0.1s to 10s
-// });
-
-// app.use((req, res, next) => {
-//   const end = httpRequestDurationMicroseconds.startTimer();
-//   res.on('finish', () => {
-//     // response status code
-//     const route = req.route ? req.route.path : 'unknown_route';
-//     const method = req.method;
-//     const code = res.statusCode;
-//     end({ route, method, code });
-//     numRequests.inc();
-//   });
-//   next();
-// });
+const diacritics = require("diacritics");
 
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
@@ -283,6 +249,65 @@ async function cacheAllCollections() {
 }
 
 // cacheAllCollections(); // -> too heavy now, turn of for perf testing
+
+async function sanitizeCollections() {
+  try {
+    await client.connect();
+    const db = client.db("messages");
+
+    // Fetch all collection names
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map((c) => c.name);
+
+    const promises = collectionNames.map(async (collectionName) => {
+      // Get the total count of documents that meet the criteria
+      const totalCount = await db.collection(collectionName).countDocuments({
+        content: { $exists: true, $ne: null },
+        sanitizedContent: { $exists: false },
+      });
+
+      // Process all documents that meet the criteria using bulk updates
+      const bulkOps = [];
+      const batchSize = 100; // Adjust the batch size as needed
+
+      for (let skip = 0; skip < totalCount; skip += batchSize) {
+        const documents = await db
+          .collection(collectionName)
+          .find({
+            content: { $exists: true, $ne: null },
+            sanitizedContent: { $exists: false },
+          })
+          .skip(skip)
+          .limit(batchSize)
+          .toArray();
+
+        for (const doc of documents) {
+          const sanitizedContent = diacritics.remove(doc.content);
+          bulkOps.push({
+            updateOne: {
+              filter: { _id: doc._id },
+              update: { $set: { sanitizedContent } },
+            },
+          });
+        }
+      }
+
+      if (bulkOps.length > 0) {
+        await db.collection(collectionName).bulkWrite(bulkOps);
+      }
+    });
+
+    // Execute all promises in parallel
+    await Promise.all(promises);
+
+    console.log("Collections sanitized successfully.");
+  } catch (error) {
+    console.error("Error during sanitization:", error);
+  }
+}
+
+// Start the sanitization process when the server starts
+sanitizeCollections();
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
@@ -580,32 +605,63 @@ app.delete("/delete/photo/:collectionName", async (req, res) => {
   res.status(200).json({ message: "Photo deleted successfully" });
 });
 
-app.get("/cross-search/:searchTerm", async (req, res) => {
-  const searchTerm = req.params.searchTerm;
-  const allResults = [];
+app.post("/search", express.json(), async (req, res) => {
+  const query = req.body.query;
+  const db = client.db("messages");
 
-  cache.forEach((messages, collectionName) => {
-    const matchingMessages = messages.filter((message) =>
-      message.content.includes(searchTerm)
-    );
-    allResults.push(...matchingMessages);
-  });
+  try {
+    // Fetch all collection names
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map((c) => c.name);
 
-  // Sort the results by timestamp
-  allResults.sort((a, b) => a.timestamp_ms - b.timestamp_ms);
+    // Construct the initial pipeline with $match for the first collection
+    const initialPipeline = [
+      {
+        $match: {
+          sanitizedContent: {
+            $regex: new RegExp(diacritics.remove(query), "i"),
+          },
+        },
+      },
+    ];
 
-  logEndpointInfo(req, res, `GET /cross-search/${searchTerm}`);
-  res.status(200).json(allResults);
+    // Dynamically add $unionWith stages for the remaining collections
+    const unionWithStages = collectionNames.slice(1).map((collectionName) => ({
+      $unionWith: {
+        coll: collectionName,
+        pipeline: [
+          {
+            $match: {
+              sanitizedContent: {
+                $regex: new RegExp(diacritics.remove(query), "i"),
+              },
+            },
+          },
+        ],
+      },
+    }));
+
+    const finalPipeline = initialPipeline.concat(unionWithStages);
+
+    const potentialMatches = await db
+      .collection(collectionNames[0])
+      .aggregate(finalPipeline)
+      .toArray();
+
+    // Filter out sanitizedContent and convert to lowercase
+    const actualMatches = potentialMatches.map((doc) => {
+      const { sanitizedContent, ...rest } = doc;
+      return { ...rest };
+    });
+
+    res.json(actualMatches);
+  } catch (error) {
+    console.error("Error during aggregation:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while performing the search." });
+  }
 });
-
-// app.get('/metrics', async (req, res) => {
-//   try {
-//     res.set('Content-Type', register.contentType);
-//     res.end(await register.metrics());
-//   } catch (ex) {
-//     res.status(500).end(ex);
-//   }
-// });
 
 // Error handling middleware
 app.use((err, req, res, next) => {
