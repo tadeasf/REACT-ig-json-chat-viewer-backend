@@ -398,24 +398,34 @@ app.get("/messages/:collectionName", async (req, res) => {
 });
 
 // Endpoint to upload messages
+const normalizeAndSanitize = (str) => {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "");
+};
+
 app.post("/upload", upload.array("files"), async (req, res) => {
   const combinedJson = await combine_and_convert_json_files(
     req.files.map((file) => file.path)
   );
   const { participants, messages } = combinedJson;
-  const collectionName = participants[0].name;
+  let collectionName = normalizeAndSanitize(participants[0].name);
 
   const db = client.db("messages");
-  const collections = await db
-    .listCollections({ name: collectionName })
-    .toArray();
-  if (collections.length > 0) {
-    logEndpointInfo(req, res, "POST /upload");
-    res.status(409).json({
-      message: `A collection with the name "${collectionName}" already exists.`,
-    });
-    return;
-  }
+
+  let index = 0;
+  let originalCollectionName = collectionName;
+  let collections;
+
+  do {
+    collections = await db.listCollections({ name: collectionName }).toArray();
+
+    if (collections.length > 0) {
+      index++;
+      collectionName = `${originalCollectionName}_${index}`;
+    }
+  } while (collections.length > 0);
 
   const collection = db.collection(collectionName);
   await collection.insertMany(messages);
@@ -426,17 +436,6 @@ app.post("/upload", upload.array("files"), async (req, res) => {
     collectionName: collectionName,
     messageCount: messages.length,
   });
-  // After inserting messages
-  // const count = await collection.countDocuments();
-  // const cachedCollections = cache.get("collections") || [];
-  // const updatedCollections = cachedCollections.filter(
-  //   (col) => col.name !== collectionName
-  // );
-  // updatedCollections.push({
-  //   name: collectionName,
-  //   messageCount: count,
-  // });
-  // cache.set("collections", updatedCollections);
 });
 
 // Endpoint to delete a collection
@@ -614,13 +613,18 @@ app.post("/search", express.json(), async (req, res) => {
     const collections = await db.listCollections().toArray();
     const collectionNames = collections.map((c) => c.name);
 
-    // Construct the initial pipeline with $match for the first collection
+    // Construct the initial pipeline with $match and $addFields for the first collection
     const initialPipeline = [
       {
         $match: {
           sanitizedContent: {
             $regex: new RegExp(diacritics.remove(query), "i"),
           },
+        },
+      },
+      {
+        $addFields: {
+          collectionName: collectionNames[0], // <-- Add the collection name here
         },
       },
     ];
@@ -635,6 +639,11 @@ app.post("/search", express.json(), async (req, res) => {
               sanitizedContent: {
                 $regex: new RegExp(diacritics.remove(query), "i"),
               },
+            },
+          },
+          {
+            $addFields: {
+              collectionName: collectionName, // <-- Add the collection name here
             },
           },
         ],
