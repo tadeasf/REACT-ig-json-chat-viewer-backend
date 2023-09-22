@@ -36,6 +36,8 @@ const client = new MongoClient(uri, {
   writeConcern: { w: "majority", wtimeout: 5000 },
 });
 
+const MESSAGE_DATABASE = "kocouratciMessenger";
+
 function sizeof(object) {
   const stringifiedObject = JSON.stringify(object);
   const bytes = Buffer.from(stringifiedObject).length;
@@ -92,8 +94,14 @@ app.get("/", (req, res) => {
   res.send("Hi, Blackbox, grab some data! omnomnomnom...");
 });
 
-app.use("/photos", express.static(path.join(__dirname, "photos"))); // Serving static photos
-
+// Function to sanitize collection names
+const sanitizeName = (name) => {
+  return name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "")
+    .replace(/[^a-zA-Z0-9]/g, "");
+};
 // Middleware for file uploads with structured directory
 const storage = multer.diskStorage({
   destination: async function (req, file, cb) {
@@ -117,8 +125,9 @@ const photoStorage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     const collectionName = decodeURIComponent(req.params.collectionName);
-    const sanitizedCollectionName = sanitizeName(collectionName); // Assuming you have a sanitizeName function
-    const filename = `${sanitizedCollectionName}-${file.originalname}`;
+    const sanitizedCollectionName = sanitizeName(collectionName);
+    const extension = path.extname(file.originalname); // Get the extension of the original file
+    const filename = `${sanitizedCollectionName}${extension}`; // Construct the filename using only the sanitized collection name and extension
     cb(null, filename);
   },
 });
@@ -199,7 +208,7 @@ async function logError(error) {
 
 async function cacheAllCollections() {
   const startTime = Date.now();
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
   const collections = await db.listCollections().toArray();
 
   const collectionData = [];
@@ -253,7 +262,7 @@ async function cacheAllCollections() {
 async function sanitizeCollections() {
   try {
     await client.connect();
-    const db = client.db("messages");
+    const db = client.db(MESSAGE_DATABASE);
 
     // Fetch all collection names
     const collections = await db.listCollections().toArray();
@@ -311,7 +320,7 @@ sanitizeCollections();
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
   const collections = await db.listCollections().toArray();
 
   const collectionData = [];
@@ -374,7 +383,7 @@ app.get("/messages/:collectionName", async (req, res) => {
     return res.status(200).json(cachedData);
   }
 
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
   const collection = db.collection(collectionName);
   const messages = await collection
     .aggregate([
@@ -412,7 +421,7 @@ app.post("/upload", upload.array("files"), async (req, res) => {
   const { participants, messages } = combinedJson;
   let collectionName = normalizeAndSanitize(participants[0].name);
 
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
 
   let index = 0;
   let originalCollectionName = collectionName;
@@ -442,7 +451,7 @@ app.post("/upload", upload.array("files"), async (req, res) => {
 app.delete("/delete/:collectionName", async (req, res) => {
   const collectionName = decodeURIComponent(req.params.collectionName);
 
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
   const collection = db.collection(collectionName);
   await collection.drop();
 
@@ -462,26 +471,28 @@ app.delete("/delete/:collectionName", async (req, res) => {
 // Endpoint to check if a photo is available for a collection
 app.get("/messages/:collectionName/photo", async (req, res) => {
   const collectionName = decodeURIComponent(req.params.collectionName);
+  const sanitizedCollectionName = sanitizeName(collectionName); // Sanitize the collection name
 
-  const db = client.db("messages");
-  const collection = db.collection(collectionName);
+  const db = client.db(MESSAGE_DATABASE);
+  const collection = db.collection(sanitizedCollectionName); // Use sanitized name for MongoDB collection
   const result = await collection.findOne({ photo: true });
 
   if (!result) {
-    logEndpointInfo(
-      req,
-      res,
-      `GET /messages/${req.params.collectionName}/photo`
-    );
+    // logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}/photo`);
     res.status(200).json({ isPhotoAvailable: false, photoUrl: null });
+    console.log("Photo not found");
     return;
   }
 
-  const photoUrl = `${req.protocol}://${req.get(
+  // Use sanitized name for photo URL
+  const photoUrl = `https://${req.get(
     "host"
-  )}/serve/photo/${collectionName}`;
-  logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}/photo`);
+  )}/serve/photo/${sanitizedCollectionName}`;
+
+  // logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}/photo`);
   res.status(200).json({ isPhotoAvailable: true, photoUrl: photoUrl });
+  console.log("Photo found");
+  console.log(photoUrl);
 });
 
 // Endpoint to upload a photo for a collection
@@ -490,49 +501,77 @@ app.post(
   upload_photo.single("photo"),
   async (req, res) => {
     if (!req.file) {
-      logEndpointInfo(
-        req,
-        res,
-        `POST /upload/photo/${req.params.collectionName}`
-      );
+      // logEndpointInfo(req, res, `POST /upload/photo/${req.params.collectionName}`);
       res.status(400).json({ message: "No photo provided" });
       return;
     }
 
-    const db = client.db("messages");
-    const collection = db.collection(
+    const sanitizedCollectionName = sanitizeName(
       decodeURIComponent(req.params.collectionName)
     );
+    const db = client.db(MESSAGE_DATABASE);
+    const collection = db.collection(sanitizedCollectionName);
     await collection.updateOne({}, { $set: { photo: true } }, { upsert: true });
 
-    logEndpointInfo(
-      req,
-      res,
-      `POST /upload/photo/${req.params.collectionName}`
-    );
+    // logEndpointInfo(req, res, `POST /upload/photo/${req.params.collectionName}`);
     res.status(200).json({ message: "Photo uploaded successfully" });
   }
 );
 
 // Endpoint to serve a photo for a collection
 app.get("/serve/photo/:collectionName", async (req, res) => {
-  const collectionName = sanitizeName(
+  const sanitizedCollectionName = sanitizeName(
     decodeURIComponent(req.params.collectionName)
   );
+
   const photoDir = path.join(__dirname, "photos");
   const files = await fs.readdir(photoDir);
-  const photoFile = files.find((file) => file.startsWith(collectionName));
+
+  const photoFile = files.find((file) =>
+    file.startsWith(sanitizedCollectionName)
+  );
 
   if (!photoFile) {
-    logEndpointInfo(req, res, `GET /serve/photo/${req.params.collectionName}`);
+    // logEndpointInfo(req, res, `GET /serve/photo/${req.params.collectionName}`);
+    res.status(404).json({ message: "Photo not found" });
+    console.log("Photo not found");
+    return;
+  }
+
+  const photoPath = path.join(photoDir, photoFile);
+  // logEndpointInfo(req, res, `GET /serve/photo/${req.params.collectionName}`);
+  res.sendFile(photoPath);
+  console.log("Photo found");
+});
+
+// Endpoint to delete a photo for a collection
+app.delete("/delete/photo/:collectionName", async (req, res) => {
+  const sanitizedCollectionName = sanitizeName(
+    decodeURIComponent(req.params.collectionName)
+  );
+
+  const photoDir = path.join(__dirname, "photos");
+  const files = await fs.readdir(photoDir);
+
+  const photoFile = files.find((file) =>
+    file.startsWith(sanitizedCollectionName)
+  );
+
+  if (!photoFile) {
+    // logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
     res.status(404).json({ message: "Photo not found" });
     return;
   }
 
   const photoPath = path.join(photoDir, photoFile);
-  logEndpointInfo(req, res, `GET /serve/photo/${req.params.collectionName}`);
-  res.sendFile(photoPath);
+  await fs.unlink(photoPath);
+
+  // logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
+  res.status(200).json({ message: "Photo deleted successfully" });
 });
+
+// Serving static photos
+app.use("/photos", express.static(path.join(__dirname, "photos")));
 
 // Endpoint to rename a collection
 app.put("/rename/:currentCollectionName", async (req, res) => {
@@ -553,7 +592,7 @@ app.put("/rename/:currentCollectionName", async (req, res) => {
     return;
   }
 
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
   const currentCollection = db.collection(currentCollectionName);
   await currentCollection.rename(newCollectionName);
 
@@ -574,39 +613,9 @@ app.put("/rename/:currentCollectionName", async (req, res) => {
   cache.set("collections", updatedCollections);
 });
 
-// Endpoint to delete a photo for a collection
-app.delete("/delete/photo/:collectionName", async (req, res) => {
-  const collectionName = sanitizeName(
-    decodeURIComponent(req.params.collectionName)
-  );
-  const photoDir = path.join(__dirname, "photos");
-  const files = await fs.readdir(photoDir);
-  const photoFile = files.find((file) => file.startsWith(collectionName));
-
-  if (!photoFile) {
-    logEndpointInfo(
-      req,
-      res,
-      `DELETE /delete/photo/${req.params.collectionName}`
-    );
-    res.status(404).json({ message: "Photo not found" });
-    return;
-  }
-
-  const photoPath = path.join(photoDir, photoFile);
-  await fs.unlink(photoPath);
-
-  logEndpointInfo(
-    req,
-    res,
-    `DELETE /delete/photo/${req.params.collectionName}`
-  );
-  res.status(200).json({ message: "Photo deleted successfully" });
-});
-
 app.post("/search", express.json(), async (req, res) => {
   const query = req.body.query;
-  const db = client.db("messages");
+  const db = client.db(MESSAGE_DATABASE);
 
   try {
     // Fetch all collection names
