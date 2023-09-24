@@ -1,0 +1,85 @@
+{
+  "participants": [
+    {
+      "name": "Andr\u00c3\u00a9 Heller"
+    },
+    {
+      "name": "Ji\u00c5\u0099\u00c3\u00ad-Jakub Z\u00c3\u00a9vl"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Ji\u00c5\u0099\u00c3\u00ad-Jakub Z\u00c3\u00a9vl",
+      "timestamp_ms": 1365867413388,
+      "content": "ty jo... j\u00c3\u00a1 v\u00c5\u00afbec netu\u00c5\u00a1\u00c3\u00adm :-D....\nM\u00c5\u00af\u00c5\u00bee\u00c5\u00a1 \u00c5\u0099\u00c3\u00adct, \u00c5\u00bee m\u00c3\u00a1m hez\u00c4\u008d\u00c3\u00ad b\u00c5\u0099\u00c3\u00ad\u00c5\u00a1ko, ne\u00c5\u00be b\u00c3\u00bdvalo... te\u00c4\u008f se mi to tro\u00c5\u00a1ku vyr\u00c3\u00bdsovalo a myslim, \u00c5\u00bee jsem se tim i chlubil :-D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1365834658864,
+      "content": "Z toho 12 hodin basket :D :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andr\u00c3\u00a9 Heller",
+      "timestamp_ms": 1365834293838,
+      "content": "to jeste jde... ale gratuluju :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1365834131711,
+      "content": "26 hodin bez spanku :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1365834120566,
+      "content": "ale jsem prilis ospalej na to abych premyslel"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1365834095237,
+      "content": "jako jo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andr\u00c3\u00a9 Heller",
+      "timestamp_ms": 1365833998757,
+      "content": "p\u00c5\u0099e\u00c4\u008det sis jeji status?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andr\u00c3\u00a9 Heller",
+      "timestamp_ms": 1365833993809,
+      "content": "no ptal sem se hlavne tebe"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1365805493529,
+      "content": "Ehm, co tu delam??:D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andr\u00c3\u00a9 Heller",
+      "timestamp_ms": 1365795060662,
+      "content": "Vzhledem k Niky statusu,a to \u00c5\u00bee j z\u00c3\u00adtra uvid\u00c3\u00adm na lajn\u00c4\u009b pot\u00c5\u0099ebuju od v\u00c3\u00a1s v\u00c4\u009bd\u00c4\u009bt neco co bych nevid\u00c4\u009bl jinak ne\u00c5\u00be kdybych vas fakt videl... tak mi prosim poradte at to dotahnem do konce.. :D"
+    }
+  ],
+  "title": "Andr\u00c3\u00a9 and Ji\u00c5\u0099\u00c3\u00ad-Jakub",
+  "is_still_participant": true,
+  "thread_path": "inbox/andreandjirijakub_131410230381506",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

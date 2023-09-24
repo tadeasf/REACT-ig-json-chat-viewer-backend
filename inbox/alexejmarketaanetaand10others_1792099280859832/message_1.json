@@ -1,0 +1,270 @@
+{
+  "participants": [
+    {
+      "name": "Alexej Chalupn\u00c3\u00adk"
+    },
+    {
+      "name": "Mark\u00c3\u00a9ta Svobodov\u00c3\u00a1"
+    },
+    {
+      "name": "Aneta Dou\u00c5\u00a1kov\u00c3\u00a1"
+    },
+    {
+      "name": "Abdel Fattah Sharabati"
+    },
+    {
+      "name": "Krist\u00c3\u00bdna Zinkov\u00c3\u00a1"
+    },
+    {
+      "name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1"
+    },
+    {
+      "name": "Roman Jord\u00c3\u00a1n"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    },
+    {
+      "name": "B\u00c3\u00a1ra Fi\u00c5\u00a1erov\u00c3\u00a1"
+    },
+    {
+      "name": "Oleksandr Lutsenko"
+    },
+    {
+      "name": "Ad\u00c3\u00a9la Kalusov\u00c3\u00a1"
+    },
+    {
+      "name": "Veronika \u00c4\u008cechov\u00c3\u00a1"
+    },
+    {
+      "name": "Adam Vrzal"
+    },
+    {
+      "name": "Kristina Tvrd\u00c3\u00a1"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "B\u00c3\u00a1ra Fi\u00c5\u00a1erov\u00c3\u00a1",
+      "timestamp_ms": 1532451367197,
+      "content": "V Rakousku"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1532382562814,
+      "content": "Jsem v Beskydech :)",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krist\u00c3\u00bdna Zinkov\u00c3\u00a1",
+      "timestamp_ms": 1532374547148,
+      "content": "Vy jste k\u00c5\u0099upky :("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Oleksandr Lutsenko",
+      "timestamp_ms": 1532374098206,
+      "content": "Nejsem v \u00c4\u008cech\u00c3\u00a1ch \u00f0\u009f\u0098\u009e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Abdel Fattah Sharabati",
+      "timestamp_ms": 1532374084228,
+      "content": "Nav\u00c3\u00adc no Vrzi\u00c4\u0087 no party"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532374080389,
+      "content": "No \u00c5\u00a1\u00c3\u00a1la, no party",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Adam Vrzal"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Abdel Fattah Sharabati"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374076111,
+      "content": "Jdu na pivo, p\u00c5\u0099eb\u00c3\u00adr\u00c3\u00a1 to za m\u00c4\u009b @Krist\u00c3\u00bdna"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374064970,
+      "content": ":(( nebu\u00c4\u008fte takov\u00c3\u00bd"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532374053103,
+      "content": "Nep\u00c5\u0099\u00c3\u00adtel m\u00c3\u00a9ho"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Adam Vrzal",
+      "timestamp_ms": 1532374042924,
+      "content": "I m\u00c5\u00afj nep\u00c5\u0099\u00c3\u00adtel nem\u00c5\u00af\u00c5\u00bee"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374039909,
+      "content": "Abdule, tvrd\u00c3\u00bd j\u00c3\u00a1dro?! Notak!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Adam Vrzal",
+      "timestamp_ms": 1532374036542,
+      "content": "Achjo \u00f0\u009f\u0098\u009e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Abdel Fattah Sharabati",
+      "timestamp_ms": 1532374030016,
+      "content": "Vysocina",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374022934,
+      "content": "Bre\u00c4\u008d\u00c3\u00adm"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374018835,
+      "content": ":((((("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374014300,
+      "content": "J\u00c3\u00a1 t\u00c4\u009b tam chci!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Adam Vrzal",
+      "timestamp_ms": 1532374013905,
+      "content": "Jsi trefil jedin\u00c3\u00bd den, kdy jsem busy tento t\u00c3\u00bdden \u00f0\u009f\u0098\u009e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532374011304,
+      "content": "Pitka v hostelu je ok"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374010888,
+      "content": ":\u00e2\u0080\u0099("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374009265,
+      "content": "Notak"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374006217,
+      "content": "Adame, p\u00c5\u0099ije\u00c4\u008f!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532374001750,
+      "content": "Pitka v hostelu, chapu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532374000791,
+      "content": "Bych se t\u00c5\u0099eba zastavil"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532373995009,
+      "content": "Ale na chvilku"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1532373988581,
+      "content": "M\u00c3\u00a1m no\u00c4\u008dn\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532373987446,
+      "content": "Neeeee"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Adam Vrzal",
+      "timestamp_ms": 1532373982883,
+      "content": "Ve \u00c4\u008dtvrtek jsem busy \u00f0\u009f\u0098\u009e",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532373971306,
+      "content": "@Krist\u00c3\u00bdna Zinkov\u00c3\u00a1 se styd\u00c3\u00ad obepisovat lidi, tak to supluju za n\u00c3\u00ad. Kdy\u00c5\u00be si na n\u00c4\u009bkoho vzpomenete, tak ho p\u00c5\u0099idejte, u\u00c5\u00be me to p\u00c5\u0099estalo bavit. J\u00c3\u00a1 bych teda \u00c5\u00a1el!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532373937044,
+      "content": "Pitka ve \u00c4\u008dtvrtek?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1532373936130,
+      "content": "You created the group."
+    }
+  ],
+  "title": "Alexej, Mark\u00c3\u00a9ta, Aneta and 10 others",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexejmarketaanetaand10others_1792099280859832",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

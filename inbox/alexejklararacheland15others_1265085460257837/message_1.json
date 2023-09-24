@@ -1,0 +1,378 @@
+{
+  "participants": [
+    {
+      "name": "Alexej Chalupn\u00c3\u00adk"
+    },
+    {
+      "name": "Kl\u00c3\u00a1ra Smitkov\u00c3\u00a1"
+    },
+    {
+      "name": "Rachel Rachel"
+    },
+    {
+      "name": "Andrea \u00c5\u00bdi\u00c5\u00bekov\u00c3\u00a1"
+    },
+    {
+      "name": "Aneta Dou\u00c5\u00a1kov\u00c3\u00a1"
+    },
+    {
+      "name": "Magdal\u00c3\u00a9na Hrab\u00c4\u009btov\u00c3\u00a1"
+    },
+    {
+      "name": "Anna \u00c5\u00a0upov\u00c3\u00a1"
+    },
+    {
+      "name": "Nikola Hronov\u00c3\u00a1"
+    },
+    {
+      "name": "Abdel Fattah Sharabati"
+    },
+    {
+      "name": "Josef Oom"
+    },
+    {
+      "name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    },
+    {
+      "name": "Jirka Vobr"
+    },
+    {
+      "name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1"
+    },
+    {
+      "name": "David \u00c5\u00a0vr\u00c4\u008dek"
+    },
+    {
+      "name": "Veronika \u00c4\u008cechov\u00c3\u00a1"
+    },
+    {
+      "name": "Marie \u00c5\u00a0upov\u00c3\u00a1"
+    },
+    {
+      "name": "Adam Vrzal"
+    },
+    {
+      "name": "Lucie Vinarska"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "T\u00c3\u00bdna Rinc\u00c3\u00b3nov\u00c3\u00a1",
+      "timestamp_ms": 1520606707818,
+      "content": "T\u00c3\u00bdna Rinc\u00c3\u00b3nov\u00c3\u00a1 left the group.",
+      "users": [
+        {
+          "name": "T\u00c3\u00bdna Rinc\u00c3\u00b3nov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Aneta \u00c5\u00a0tokrov\u00c3\u00a1",
+      "timestamp_ms": 1520605356259,
+      "content": "Aneta \u00c5\u00a0tokrov\u00c3\u00a1 left the group.",
+      "users": [
+        {
+          "name": "Aneta \u00c5\u00a0tokrov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Aneta \u00c5\u00a0tokrov\u00c3\u00a1",
+      "timestamp_ms": 1520605350841,
+      "content": "Nemuzu, jsem pryc. Enjoy"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Abdel Fattah Sharabati",
+      "timestamp_ms": 1520605135305,
+      "content": "Budu do 11 v pr\u00c3\u00a1ci",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520604921128,
+      "content": "You added Abdel Fattah Sharabati to the group.",
+      "users": [
+        {
+          "name": "Abdel Fattah Sharabati"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520604685525,
+      "content": "pozv\u00c3\u00a1nku m\u00c3\u00a1\u00c5\u00a1, dala jsi, \u00c5\u00bee t\u00c4\u009b to zaj\u00c3\u00adm\u00c3\u00a1 a tak no..\u00f0\u009f\u0098\u0080 neva"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Magdal\u00c3\u00a9na Hrab\u00c4\u009btov\u00c3\u00a1",
+      "timestamp_ms": 1520604667459,
+      "content": "J\u00c3\u00a1 v\u00c5\u00afbec nev\u00c3\u00adm, o co jde, ani co tady d\u00c4\u009bl\u00c3\u00a1m..."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Pavel Sv\u00c4\u009btl\u00c3\u00adk",
+      "timestamp_ms": 1520604250162,
+      "content": "Pavel Sv\u00c4\u009btl\u00c3\u00adk left the group.",
+      "users": [
+        {
+          "name": "Pavel Sv\u00c4\u009btl\u00c3\u00adk"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520604214999,
+      "content": "Hey \u00c4\u008dten\u00c3\u00a1\u00c5\u0099i, j\u00c3\u00a1 chci reakci \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1",
+      "timestamp_ms": 1520604057838,
+      "content": "Tak abych to kdy\u00c5\u00betak stihla \u00f0\u009f\u0092\u0081\u00f0\u009f\u008f\u00bc",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Jirka Vobr"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520604056049,
+      "content": "Je to kousek od m\u00c3\u00adr\u00c3\u00a1ku, tam by ti m\u00c4\u009bla jet p\u00c5\u0099\u00c3\u00adm\u00c3\u00a1 tramvaj?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520604020443,
+      "content": "V kolik?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1",
+      "timestamp_ms": 1520604010679,
+      "content": "Vyzvedne m\u00c4\u009b n\u00c4\u009bkdo na Hlavaku?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603974710,
+      "content": "Nov\u00c4\u009b p\u00c5\u0099idan\u00c3\u00bdm - v ned\u00c4\u009bli pubquiz, any1? \u00f0\u009f\u0098\u0081 m\u00c4\u009bli byste m\u00c3\u00adt v\u00c5\u00a1ichni od pond\u00c4\u009bl\u00c3\u00ad pozv\u00c3\u00a1nku na ud\u00c3\u00a1lost"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603940453,
+      "content": "You added Alexej Chalupn\u00c3\u00adk and 12 others to the group.",
+      "users": [
+        {
+          "name": "Alexej Chalupn\u00c3\u00adk"
+        },
+        {
+          "name": "Pavel Sv\u00c4\u009btl\u00c3\u00adk"
+        },
+        {
+          "name": "Kl\u00c3\u00a1ra Smitkov\u00c3\u00a1"
+        },
+        {
+          "name": "Aneta Dou\u00c5\u00a1kov\u00c3\u00a1"
+        },
+        {
+          "name": "Anna \u00c5\u00a0upov\u00c3\u00a1"
+        },
+        {
+          "name": "Nikola Hronov\u00c3\u00a1"
+        },
+        {
+          "name": "Josef Oom"
+        },
+        {
+          "name": "Aneta \u00c5\u00a0tokrov\u00c3\u00a1"
+        },
+        {
+          "name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1"
+        },
+        {
+          "name": "David \u00c5\u00a0vr\u00c4\u008dek"
+        },
+        {
+          "name": "Veronika \u00c4\u008cechov\u00c3\u00a1"
+        },
+        {
+          "name": "Marie \u00c5\u00a0upov\u00c3\u00a1"
+        },
+        {
+          "name": "Lucie Vinarska"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603821302,
+      "content": "jo, tak to prijdu :)",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603809417,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603807731,
+      "content": "pozitivni energii predevsim :)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603796204,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603794872,
+      "content": "Marie je nabit\u00c3\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603790772,
+      "content": "kk! to zn\u00c3\u00ad slibn\u00c4\u009b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603756907,
+      "content": "jakoze myslim treba v pul 9 bych mohla bejt"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603750391,
+      "content": "\u00f0\u009f\u0098\u0080 asi ne"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603744173,
+      "content": "a musim prijit fakt presne? :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603741058,
+      "content": "Jo kdy\u00c5\u00betak sem p\u00c5\u0099idejte klidn\u00c4\u009b je\u00c5\u00a1t\u00c4\u009b dal\u00c5\u00a1\u00c3\u00ad:))"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603721317,
+      "content": "Asi od 8 myslim"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603705525,
+      "content": "nebo takhle - od kolika to je presne? :)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603685598,
+      "content": "Co @Magdal\u00c3\u00a9na?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520603679619,
+      "content": "Adame, j\u00c3\u00a1 jdu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Adam Vrzal",
+      "timestamp_ms": 1520603322458,
+      "content": "Uvid\u00c3\u00adm podle lidi, jestli p\u00c5\u00afjdou ti, kter\u00c3\u00a9 m\u00c3\u00a1m r\u00c3\u00a1d"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603132463,
+      "content": "takze radsi nic neslibuju"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1520603126416,
+      "content": ":/ mame nejakou rodinnou oslavu, nevim, jak se to protahne :/",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "T\u00c3\u00bdna Rinc\u00c3\u00b3nov\u00c3\u00a1",
+      "timestamp_ms": 1520603083583,
+      "content": "vypad\u00c3\u00a1 to, \u00c5\u00bee mam nakonec jiny pl\u00c3\u00a1ny, sorkaa",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008e",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jirka Vobr",
+      "timestamp_ms": 1520602795768,
+      "content": "J\u00c3\u00a1 R\u00c3\u00a1th"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1520602726886,
+      "content": "Mam dotaz na v\u00c3\u00a1s, kdo jste podle xichtoknihy \u00c3\u00badajn\u00c4\u009b moji p\u00c5\u0099\u00c3\u00a1tel\u00c3\u00a9 a zaj\u00c3\u00admav\u00c3\u00a1 v\u00c3\u00a1s ten pubquiz, slo\u00c5\u00be\u00c3\u00adme na ned\u00c4\u009bli n\u00c4\u009bjakej t\u00c3\u00bdm?))"
+    }
+  ],
+  "title": "Alexej, Kl\u00c3\u00a1ra, Rachel and 15 others",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexejklararacheland15others_1265085460257837",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

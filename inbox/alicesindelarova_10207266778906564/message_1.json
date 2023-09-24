@@ -1,0 +1,394 @@
+{
+  "participants": [
+    {
+      "name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158769633,
+      "sticker": {
+        "uri": "messages/stickers_used/10540973_288280961382633_74482268_n_288280958049300.png",
+        "media_path_INTERNAL": "",
+        "type_INTERNAL": ""
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158742055,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158741645,
+      "content": "co \u00c5\u0099\u00c3\u00adct"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158740799,
+      "content": "vesnice"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158739210,
+      "content": "\u00f0\u009f\u0099\u0088\u00f0\u009f\u0099\u0088\u00f0\u009f\u0099\u0088"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158716266,
+      "content": "Ale mozna se vybije zase me mobil a ted nam nesel asi hodinu proud\u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158686747,
+      "content": "Ok"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158680239,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158679817,
+      "content": "dej tomu tak ho\u00c4\u008fku no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158673919,
+      "content": "Tak pockame"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158662572,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158662200,
+      "content": "n\u00c4\u009bjakej proud tam te\u00c4\u008de"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158659645,
+      "content": "kdyby se to nenabijelo, tak to ani nenasko\u00c4\u008d\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158654753,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158654383,
+      "content": "z pc se to nab\u00c3\u00adj\u00c3\u00ad pomalu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158645083,
+      "content": "Nenabiji"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158638919,
+      "content": "Asi se to nenabiko"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158633483,
+      "content": "proto\u00c5\u00bee tim jak j\u00c3\u00ad zapne\u00c5\u00a1 tak se zas hned vybije"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158626931,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158625920,
+      "content": "podle m\u00c4\u009b si jen vy\u00c5\u00a1\u00c5\u00a5avila baterku a ta to te\u00c4\u008f ned\u00c3\u00a1v\u00c3\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158618649,
+      "content": "a\u00c5\u00a5 se nabije :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158617280,
+      "content": "To je maximum"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158613160,
+      "content": "tak onech"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158612154,
+      "content": ":D no vid\u00c3\u00ad\u00c5\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158607042,
+      "photos": [
+        {
+          "uri": "messages/inbox/alicesindelarova_10207266778906564/photos/18838447_10207266825627732_1009037316_o_10207266825627732.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1496158606
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158598897,
+      "photos": [
+        {
+          "uri": "messages/inbox/alicesindelarova_10207266778906564/photos/18817461_10207266824907714_1403130404_o_10207266824907714.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1496158597
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158551415,
+      "content": "obr\u00c3\u00a1zek baterky, n\u00c4\u009bco?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158541055,
+      "content": ":D a jakoby, reaguje to N\u00c4\u009aJAK?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158530142,
+      "content": "Vubec to nechce naskocit, uz to ani nechce pin"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158381845,
+      "content": "\u00c3\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158381362,
+      "content": ":D zkus a \u00c5\u0099ekni co to ud\u00c4\u009bl"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158372334,
+      "content": "Zkusim to dat do pocitace teda :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158359564,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158359267,
+      "content": "a potom to projet diagnostikou no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158355553,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158355181,
+      "content": "a tak"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158350205,
+      "content": "p\u00c5\u0099ipojen\u00c3\u00adk pc"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158348066,
+      "content": "jako to, \u00c5\u00bee se to nezapne je hezk\u00c3\u00bd, ale bylo by dobr\u00c3\u00bd v\u00c4\u009bd\u00c4\u009bt jak to reaguje na p\u00c5\u0099\u00c3\u00advod elekt\u00c5\u0099iny"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158347837,
+      "content": "Ucim!!! \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158335326,
+      "content": "stejn\u00c4\u009b se neu\u00c4\u008d\u00c3\u00ad\u00c5\u00a1 :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158327031,
+      "content": "\u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158324862,
+      "content": "\u00f0\u009f\u0098\u008f\u00f0\u009f\u0098\u008f\u00f0\u009f\u0098\u008f"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158310943,
+      "content": ":D :D :D :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158307536,
+      "content": "tady elekt\u00c5\u0099ina jde"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158305293,
+      "content": "tak ho p\u00c5\u0099ivez"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158302428,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158302052,
+      "content": "hmmm"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158299392,
+      "content": "Nejde to zapnout"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158294286,
+      "content": "Nic to nedela prave :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158270600,
+      "content": "a co to teda konkr\u00c3\u00a9tn\u00c4\u009b d\u00c4\u009bl\u00c3\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158262241,
+      "content": ":D oooh, to je d\u00c5\u00afle\u00c5\u00beit\u00c3\u00bd zm\u00c3\u00adnit ale"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158253895,
+      "content": "A ted nejde az :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158247784,
+      "content": "Ona sla ta elektrina!!!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158240624,
+      "content": "to zkus a\u00c5\u00be j\u00c3\u00ad nahod\u00c3\u00ad :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158179307,
+      "content": "kdy\u00c5\u00be nejde elekt\u00c5\u0099ina, tak asi nic nenabije\u00c5\u00a1 no :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1496158159739,
+      "content": ":D d\u00c4\u009bl\u00c3\u00a1\u00c5\u00a1 si srandu?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158143269,
+      "content": "Napsala bych ti sama ale nejde u nas elektrina, tak nemuzu :D dala jsem ten mobil do jine zasuvky a pouzila jinou nabihecku a porad nic... tak nevim :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158091015,
+      "content": "Pise Zuzka"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1496158025992,
+      "sticker": {
+        "uri": "messages/stickers_used/12624061_447146835484508_856847385_n_445625802303278.png",
+        "media_path_INTERNAL": "",
+        "type_INTERNAL": ""
+      }
+    }
+  ],
+  "title": "Alice \u00c5\u00a0indel\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+  "is_still_participant": true,
+  "thread_path": "inbox/alicesindelarova_10207266778906564",
+  "magic_words": [
+    
+  ]
+}

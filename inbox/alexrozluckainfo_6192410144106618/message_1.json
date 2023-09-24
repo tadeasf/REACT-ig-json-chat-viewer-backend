@@ -1,0 +1,3520 @@
+{
+  "participants": [
+    {
+      "name": "J\u00c3\u00a9\u00c5\u0088a Sou\u00c4\u008dek"
+    },
+    {
+      "name": "Martin \u00c5\u00a0picl"
+    },
+    {
+      "name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+    },
+    {
+      "name": "Vojt\u00c4\u009bch Barnat"
+    },
+    {
+      "name": "Jakub Vesely"
+    },
+    {
+      "name": "Petr Kohout"
+    },
+    {
+      "name": "Patrik \u00c5\u00a0nobl"
+    },
+    {
+      "name": "Dominik Vrchlavsk\u00c3\u00bd"
+    },
+    {
+      "name": "Krater Sauze Fonales"
+    },
+    {
+      "name": "Tom\u00c3\u00a1\u00c5\u00a1 Vacek"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    },
+    {
+      "name": "Martin Sebera"
+    },
+    {
+      "name": "Martin Hofman"
+    },
+    {
+      "name": "Tom\u00c3\u00a1\u00c5\u00a1 Krompolc"
+    },
+    {
+      "name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+    },
+    {
+      "name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad"
+    },
+    {
+      "name": "Alexandr Zezulya"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664699863646,
+      "content": "Alex mi to do telefonu popisoval trochu jinak :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad",
+      "timestamp_ms": 1664699627116,
+      "content": "J\u00c3\u00a1 bych naopak \u00c5\u0099ekl, \u00c5\u00bee to prob\u00c4\u009bhlo velmi poklidn\u00c4\u009b a celkov\u00c4\u009b bylo zachov\u00c3\u00a1no dekorum hodno ud\u00c3\u00a1losti \u00f0\u009f\u0091\u008d\u00f0\u009f\u008f\u00bb",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1664698420353,
+      "content": "Its a mee"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664698354194,
+      "content": "Volal mi Alex, \u00c5\u00bee tam n\u00c4\u009bkdo nechal \u00c4\u008dern\u00c3\u00a9 BANDI sako, tak prohledejte v\u00c4\u009b\u00c5\u00a1\u00c3\u00a1ky, sk\u00c5\u0099\u00c3\u00adn\u00c4\u009b a podlahu."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664698320244,
+      "content": "Zdar zr\u00c5\u00afdy, prej to byl docela divok\u00c3\u00bd ve\u00c4\u008der :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1664643954478,
+      "content": "Blbec, mi to v\u00c5\u00a1echno se\u00c5\u00beere"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1664643948465,
+      "content": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f\u00e2\u009d\u00a4\u00ef\u00b8\u008f"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664643570840,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/309699699_5347364898715988_3419842954573849854_n_5347364868715991.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664643569
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1664640493260,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1664640491410,
+      "content": "Zbylo tam n\u00c4\u009bjak\u00c3\u00bd j\u00c3\u00addlo nebo si m\u00c3\u00a1m koupit? :d"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad",
+      "timestamp_ms": 1664571551421,
+      "gifs": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/gifs/271490297_3164062810506535_6084100242502655051_n_621590259497555.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664567400345,
+      "content": "Sn\u00c4\u009b\u00c5\u00beit prej nem\u00c5\u00af\u00c5\u00beeme",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Petr Kohout"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664567280453,
+      "content": "Jsem zv\u00c4\u009bdav co jste p\u00c5\u0099ipravili za ty tradice. Nebo jestli se tam budeme nudit. Vem te si do kapsy alespo\u00c5\u0088 pytl\u00c3\u00adk r\u00c3\u00bd\u00c5\u00bee.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664567208270,
+      "content": "T\u00c5\u0099i ku\u00c5\u00beelky a dva pan\u00c3\u00a1ky. Je tu bab\u00c4\u008da \u00f0\u009f\u0092\u0081\u00f0\u009f\u008f\u00bb\u00e2\u0080\u008d\u00e2\u0099\u0082 a na svatb\u00c3\u00a1ch pr\u00c5\u00a1\u00c3\u00ad jen \u00c5\u00a1t\u00c4\u009bst\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664567136065,
+      "content": "P\u00c3\u00a1te\u00c4\u008dn\u00c3\u00adch"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664567123042,
+      "content": "Pitorka tam poslal sv\u00c3\u00bdch ve\u00c4\u008dern\u00c3\u00adch 7ks asi \u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664566727526,
+      "content": "Bude pr\u00c5\u00a1et \u00c5\u00a1t\u00c4\u009bst\u00c3\u00ad ;)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1664566692229,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/309566705_798154654727631_6179975314142847516_n_798154651394298.png",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664566691
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1664566691133,
+      "content": "nem\u00c3\u00a1 zejtra od 1 do 7 chc\u00c3\u00a1t? co cht\u00c4\u009bj d\u00c4\u009blat venku? \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664566558074,
+      "content": "D\u00c3\u00adk za radu :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664566494240,
+      "content": "Do t\u00c4\u009bchto mraz\u00c5\u00af to sp\u00c3\u00ad\u00c5\u00a1 vid\u00c3\u00adm na kab\u00c3\u00a1t"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1664566411068,
+      "content": "Stejn\u00c4\u009b se ozereme",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u00a8\u00e2\u0080\u008d\u00f0\u009f\u008d\u00bc",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664566381139,
+      "content": "R\u00c5\u00af\u00c5\u00beov\u00c3\u00bd pono\u00c5\u00beky s n\u00c4\u009bjak\u00c3\u00bdm supr h\u00c3\u00bdro motivem a k\u00c5\u00a1andy jsou podleme z\u00c3\u00a1klad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1664566375939,
+      "content": "V\u00c4\u009bt\u00c5\u00a1ina lid\u00c3\u00ad v\u00c4\u008detn\u00c4\u009b Alexe prohla\u00c5\u00a1uje sako a \u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n smoking"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664566334049,
+      "content": "Jak\u00c3\u00bd je dress code, kdy\u00c5\u00be je to na p\u00c5\u00afl venku? Berete sako nebo jen kalhoty a ko\u00c5\u00a1ili? \u00f0\u009f\u00a4\u0094\u00f0\u009f\u00ab\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1664363232200,
+      "content": "Mohl bych t\u00c4\u009b poprosit, jestli bys nenapsal n\u00c4\u009bjakou zpr\u00c3\u00a1vu do va\u00c5\u00a1\u00c3\u00ad rozlu\u00c4\u008dkov\u00c3\u00a9 skupiny (nebo jen printscreenul tuhle), \u00c5\u00bee je v Ml\u00c3\u00bdn\u00c4\u009b striktn\u00c3\u00ad z\u00c3\u00a1kaz vn\u00c3\u00a1\u00c5\u00a1en\u00c3\u00ad a konzumace drog \u00f0\u009f\u0098\u0080 ne \u00c5\u00bee by to nebylo zak\u00c3\u00a1zan\u00c3\u00a9 po cel\u00c3\u00a9 republice, ale tady jsem k tomu j\u00c3\u00a1 zav\u00c3\u00a1z\u00c3\u00a1n pod smluvn\u00c3\u00ad pokutou \u00f0\u009f\u0098\u0080 tak\u00c5\u00bee \u00c5\u00be\u00c3\u00a1dn\u00c3\u00a1 zele\u00c5\u0088, nato\u00c5\u00be n\u00c4\u009bjak\u00c3\u00a9 um\u00c4\u009bl\u00c3\u00a9 zasn\u00c4\u009b\u00c5\u00beov\u00c3\u00a1n\u00c3\u00ad, d\u00c3\u00adky \u00e2\u0098\u0083\u00ef\u00b8\u008f\u00f0\u009f\u0092\u0090\u00f0\u009f\u009a\u0094",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakub Vesely"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Petr Kohout"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0082",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664035306351,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308115153_772689627288797_3812439070386913714_n_772689617288798.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664035300
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308266347_1328478741291892_3665949307337028632_n_1328478734625226.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664035300
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308188431_5715921011785981_1107847293506528931_n_5715921008452648.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664035304
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308569526_779749686686352_2490558281079366042_n_779749683353019.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664035302
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308648544_1308449819893233_116185474153944703_n_1308449809893234.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664035302
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664032181224,
+      "content": "Pokra\u00c4\u008dujete je\u00c5\u00a1t\u00c4\u009b? \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1664025129390,
+      "content": "\u00f0\u009f\u0092\u0083"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024871568,
+      "content": "Vole d\u00c3\u00a1m si 5 tiger housek"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024589135,
+      "content": "Dej to ze spole\u00c4\u008dn\u00c3\u00bdho \u00c3\u00ba\u00c4\u008dtu \u00f0\u009f\u0098\u0089",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664024480268,
+      "content": "Kdyby to bylo m\u00c3\u00a1lo, tak samoz\u00c5\u0099ejm\u00c4\u009b protla\u00c4\u008d\u00c3\u00adm."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664024446843,
+      "content": "Pos\u00c3\u00adlal jsem p\u00c4\u009btikilo na Alexe Martinovi. Tak se n\u00c4\u009bjak domluvte, nebo po\u00c5\u00a1lete Barnymu, kdo jste ned\u00c3\u00a1val Martinovi."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024433534,
+      "content": "Je dobr\u00c3\u00a1 tvl",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024423232,
+      "videos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/videos/308049015_5423337011095044_5208953297605506480_n_440811954581603.mp4",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664024416
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024418492,
+      "content": "Sem na afterparty na and\u00c4\u009blu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024199433,
+      "content": "\u00f0\u009f\u0092\u0083"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664024192870,
+      "content": "Jo a kundy kupoval sem Alexovi tane\u00c4\u008dek hihi double, d\u00c3\u00adk za p\u00c5\u0099\u00c3\u00adsp\u00c4\u009bvky"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023892723,
+      "content": "D\u00c3\u00adlo je kompletn\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023818719,
+      "content": "sem zhulenej set the nickname for Patrik \u00c5\u00a0nobl to nic u\u00c5\u00be m\u00c4\u009b nenapad\u00c3\u00a1."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023805094,
+      "content": "sem zhulenej set your nickname to sorry nevim kdo si kamo."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023789025,
+      "content": "sem zhulenej set the nickname for \u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad to ove\u00c4\u008dka shaun."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023759645,
+      "content": "sem zhulenej set the nickname for Tom\u00c3\u00a1\u00c5\u00a1 Vacek to jo vaco ty si tu, zajel sem 53 u kundo i prsa byly."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023706145,
+      "content": "sem zhulenej set the nickname for Tom\u00c3\u00a1\u00c5\u00a1 Krompolc to Tokro zajel sem na motok\u00c3\u00a1r\u00c3\u00a1ch 53.2xx \u00f0\u009f\u008e\u0089\u00f0\u009f\u0098\u00b1\u00f0\u009f\u008e\u008a\u00f0\u009f\u0098\u00b5\u00e2\u0080\u008d\u00f0\u009f\u0092\u00ab\u00f0\u009f\u008d\u00ba."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023630340,
+      "content": "sem zhulenej set the nickname for Mat\u00c4\u009bj Vlas\u00c3\u00a1k to ten co se s jednou ztratil na podez\u00c5\u0099ele dlouho."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023573376,
+      "content": "sem zhulenej set the nickname for Martin \u00c5\u00a0picl to ten co v\u00c5\u00a1e sledoval z balk\u00c3\u00b3nku."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023162007,
+      "content": "Sem.horkej"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023152502,
+      "content": "\u00f0\u009f\u0092\u0083"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023145339,
+      "content": "Uuu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023141044,
+      "content": "Vojt\u00c4\u009bch set his own nickname to sem zhulenej."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023128997,
+      "content": "sem zhulenej set the quick reaction to \u00f0\u009f\u0092\u0083."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664023012481,
+      "content": "sem zhulenej set the nickname for Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek to ten co nenechal k\u00c3\u00a1mo\u00c5\u00a1e v brynd\u00c4\u009b."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022964331,
+      "content": "sem zhulenej set the nickname for Petr Kohout to Kamo kam ses vytratil."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022936745,
+      "content": "sem zhulenej set the nickname for Alexandr Zezulya to OLEKSANDR ZEZULJA."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022918768,
+      "content": "sem zhulenej set the nickname for Dominik Vrchlavsk\u00c3\u00bd to ten co byl celou dobu v jin\u00c3\u00bdm klubu."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022906007,
+      "content": "sem zhulenej set the nickname for Jakub Vesely to Jakub."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022895270,
+      "content": "sem zhulenej set the nickname for J\u00c3\u00a9\u00c5\u0088a Sou\u00c4\u008dek to ten co nep\u00c5\u0099i\u00c5\u00a1el."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1664022888252,
+      "content": "ten co se nechal zbi\u00c4\u008dovat set the nickname for Krater Sauze Fonales to ten co si vysypal brambory do kl\u00c3\u00adna."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022879022,
+      "content": "sem zhulenej set the nickname for Krater Sauze Fonales to ten moralista co se mnou jedinej chodil na \"stage\"."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1664022871107,
+      "content": "ten co se nechal zbi\u00c4\u008dovat set the nickname for Martin Hofman to ten co p\u00c5\u0099i\u00c5\u00a1el o prs\u00c3\u00ad\u00c4\u008dka a spal bez trenek."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022837941,
+      "content": "sem zhulenej set the nickname for Martin Hofman to ten co p\u00c5\u0099i\u00c5\u00a1el o prs\u00c3\u00ad\u00c4\u008dka."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022801074,
+      "content": "sem zhulenej set the nickname for Martin Sebera to ten co se nechal zbi\u00c4\u008dovat."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022792376,
+      "content": "sem zhulenej set the nickname for Martin Sebera to ten co se nechal zby\u00c4\u008dovat."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022771763,
+      "content": "sem zhulenej changed the group photo."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022713128,
+      "content": "Profil minim\u00c3\u00a1ln\u00c4\u009b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022695661,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308116463_1941165159416374_6100746532484952502_n_1941165156083041.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664022694
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664022569676,
+      "content": "Kamove bylo to asi mega lep\u00c5\u00a1\u00c3\u00ad ne\u00c5\u00be sem kdy doufal, d\u00c3\u00adk zmrdiii",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664014792599,
+      "content": "Cheers kundy"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664014788349,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308279579_3345320562370462_760020143194977206_n_3345320559037129.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664014786
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664014440112,
+      "content": "St\u00c5\u0099\u00c3\u00adpky",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664014431714,
+      "content": "Stopy nach\u00c3\u00a1z\u00c3\u00adme v\u00c5\u00a1ude"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664014428176,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308281294_3714336168792681_4047480027518320519_n_3714336165459348.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664014426
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1664012184567,
+      "content": "Jsi usnul v Harleyi?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664011667718,
+      "content": "Dobrou..."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664009870793,
+      "content": "St\u00c4\u009b va\u00c5\u0099ili v noci jo",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664009863644,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308504715_6194497770565440_4082168777854179124_n_6194497720565445.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664009862
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664008354580,
+      "content": "Kde se\u00c5\u00a1 ty dobytku?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1664007446377,
+      "content": "Nn"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664007439210,
+      "content": "M\u00c3\u00a1te pastu?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664007435885,
+      "content": "J\u00c3\u00a1 si mysl\u00c3\u00adm, \u00c5\u00bee jsou mrtv\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664007425300,
+      "content": "Otv\u00c3\u00adrat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664007421502,
+      "content": "Hej vedlej\u00c5\u00a1\u00c3\u00ad pokoji"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664007264370,
+      "content": "A jedu rovnou na \u00c3\u00ba\u00c5\u0099ad \u00f0\u009f\u0098\u0082",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Petr Kohout"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664007256445,
+      "content": "V\u00c5\u00afbec to nejde p\u00c5\u0099evonit, jsem jak chod\u00c3\u00adc\u00c3\u00ad reklama na stripbar"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664007226575,
+      "content": "Ale hezky von\u00c3\u00ad\u00c5\u00a1 aspo\u00c5\u0088",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664007185631,
+      "content": "J\u00c3\u00a1 po dne\u00c5\u00a1ku s va\u00c5\u0099en\u00c3\u00adm kon\u00c4\u008d\u00c3\u00adm a j\u00c3\u00adst u\u00c5\u00be rad\u00c5\u00a1i taky nic nebudu \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664007154566,
+      "content": "Nejlep\u00c5\u00a1\u00c3\u00ad leti\u00c5\u00a1t\u00c4\u009b na pat\u00c5\u0099e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664007134019,
+      "content": "Si sn\u00c3\u00ad\u00c5\u00a1, co sis nava\u00c5\u0099il"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664007126803,
+      "content": "Ty ses n\u00c3\u00a1m vesral do postele \u00f0\u009f\u0098\u0092\u00f0\u009f\u0098\u0082"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664007090375,
+      "content": "J\u00c3\u00a1 nech\u00c3\u00a1pu \u00f0\u009f\u0098\u0080 m\u00c4\u009bl si odlifrovat n\u00c4\u009bkam na chodbu",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a0",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1664007079234,
+      "content": "Kamo poj\u00c4\u008fme zjistit situaci vedle na pokoji, nyn\u00c3\u00ad se v\u00c5\u00a1ak poj\u00c4\u008fme vyhnout obloukem pokoje 502",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00b1\u00f0\u009f\u008f\u00bb",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664007002578,
+      "content": "Mi n\u00c4\u009bco pov\u00c3\u00addej :D",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a0",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664006982196,
+      "content": "Nem\u00c3\u00a1\u00c5\u00a1 chr\u00c3\u00a1pat, j\u00c3\u00a1 jsem tam vydr\u00c5\u00beel asi hodinu, v\u00c5\u00afbec jsem dneska nespal"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1664006948832,
+      "content": "\u00c4\u008c\u00c5\u00afr\u00c3\u00a1ku, ti nedaruju",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664006937235,
+      "content": "Nice!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664006895063,
+      "content": "Po \u00c5\u00a1est\u00c3\u00a9 v gold fingers a pak je\u00c5\u00a1t\u00c4\u009b mini dojezd na byt\u00c4\u009b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664006659087,
+      "content": "V kolik jste kon\u00c4\u008dili?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005818126,
+      "content": "Sn\u00c3\u00addan\u00c4\u009b trosek \u00f0\u009f\u00a5\u00b2"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005813249,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308021126_471761511546527_5152620280287886254_n_471761504879861.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664005811
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005639926,
+      "content": "Vedlej\u00c5\u00a1\u00c3\u00ad pokoj je\u00c5\u00a1t\u00c4\u009b sp\u00c3\u00ad jo? \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664005134739,
+      "content": "Uber."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005111210,
+      "content": "Co\u00c5\u00bee jak? \u00f0\u009f\u0098\u0082\u00f0\u009f\u0098\u0082\u00f0\u009f\u0098\u0082"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005105038,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308274069_614153076854352_766181027146039751_n_614153073521019.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664005103
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Petr Kohout"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005100344,
+      "content": "Tady se to taky povedlo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664005091793,
+      "content": "K\u00c3\u00a1mo...jsem ve Zdic\u00c3\u00adch \u00f0\u009f\u0098\u0085"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005066338,
+      "content": "Poj\u00c4\u008f na sn\u00c3\u00addani za n\u00c3\u00a1mi \u00f0\u009f\u0098\u0082"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1664005059537,
+      "content": "P\u00c3\u00ad\u00c4\u008do nice"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664004380143,
+      "content": "He scored!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1664004349545,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308397239_781437689607615_4341156960992709118_n_781437682940949.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1664004347
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663994962725,
+      "content": "Hej volov\u00c3\u00a9 vedle vpokoji,ne \u00c5\u00bee r\u00c3\u00a1no zdrhnete"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994707346,
+      "content": "Cheers"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994702158,
+      "content": "V\u00c5\u00a1echnu bylk"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994694076,
+      "content": "M\u00c3\u00a1me kundy v\u00c5\u00a1ude"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994677120,
+      "content": "Dornou"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994672473,
+      "content": "Sme na Kundun"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994668101,
+      "content": "Zakon\u00c4\u008dujeme to"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663994661066,
+      "content": "Hele \u00c4\u008dus Lindsay kumdY"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663992030662,
+      "content": "Nebo m\u00c3\u00a1me my za tebou?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663992023420,
+      "content": "Zvl\u00c3\u00a1dne\u00c5\u00a1 za n\u00c3\u00a1mi dorazit na after \u00f0\u009f\u0098\u008f"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663992021188,
+      "content": "Ne"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663992006741,
+      "content": "After na byt\u00c4\u009b nebo je\u00c5\u00a1t\u00c4\u009b n\u00c4\u009bco je?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663991999288,
+      "content": "Ale za chv\u00c3\u00adli zav\u00c3\u00adraj\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663991994261,
+      "content": "Je\u00c5\u00a1t\u00c4\u009b jsme v gold fingers"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663990994115,
+      "content": "Co vy? \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663990731630,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308593994_649075333476325_3646194338634987963_n_649075326809659.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663990729
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663989271249,
+      "content": "\u00f0\u009f\u00a4\u00b7\u00f0\u009f\u008f\u00bb\u00e2\u0080\u008d\u00e2\u0099\u0082"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663988724730,
+      "content": "Doraz\u00c3\u00ad\u00c5\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663988681867,
+      "content": "F"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663988680935,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308314158_638432294466921_1550660582087585085_n_638432287800255.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663988679
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663987918010,
+      "content": "Furt tane\u00c4\u008dky? \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663986293120,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png",
+        "media_path_INTERNAL": "",
+        "type_INTERNAL": ""
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663986286879,
+      "content": "Tznsi po\u00c5\u0099\u00c3\u00a1d v harlys?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663986113954,
+      "content": "A\u00c5\u00be se budete p\u00c5\u0099esouvat napi\u00c5\u00a1te \u00f0\u009f\u0098\u0083"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663985336321,
+      "content": "Horn\u00c3\u00ad patro vzadu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663985331536,
+      "content": "Gold fingers"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663985313877,
+      "content": "Hot peppers?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663981878695,
+      "content": "ten co byl celou dobu v jin\u00c3\u00bdm klubu sent a live location.",
+      "share": {
+        "share_text": "Last update 24 Sep"
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663981832967,
+      "content": "Kamo kam ses vytratil sent a live location.",
+      "share": {
+        "share_text": "Last update 24 Sep"
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663981539468,
+      "content": "ten co byl celou dobu v jin\u00c3\u00bdm klubu sent a live location.",
+      "share": {
+        "share_text": "Last update 24 Sep"
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663980913359,
+      "content": "@Dominik Vrchlavsk\u00c3\u00bd jdu do hot peppers, zbyt k tamje"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663980734125,
+      "content": "ten co se s jednou ztratil na podez\u00c5\u0099ele dlouho sent a live location.",
+      "share": {
+        "share_text": "Last update 24 Sep"
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663980712407,
+      "content": "Kde jste?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663973466169,
+      "content": "Harlys Bar Prague\n602 419 111\nhttps://maps.app.goo.gl/XAa537yLREBYxW2F7"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663965467326,
+      "videos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/videos/308821986_5485848921469189_5640621351577068794_n_803037817663639.mp4",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965442
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663965466925,
+      "videos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/videos/307831792_5753539504730465_357255493922956761_n_835482110920090.mp4",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965457
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663965450677,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308038446_814490893327021_2748324232644512586_n_814490886660355.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965442
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308649975_476067961106254_3940049521245253707_n_476067957772921.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965444
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308340563_419592656927547_2142699943395182883_n_419592646927548.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965444
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308138902_887075479321324_683598693986803038_n_887075472654658.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965442
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308288656_492074469445851_1479238894833452393_n_492074462779185.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965438
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308266956_806843510747032_1098495016103549292_n_806843504080366.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965433
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308514157_847504963327711_4964790370866084878_n_847504956661045.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965448
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308278041_1256715805113279_1813789094580295303_n_1256715798446613.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965438
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/307959133_384116187100210_8413942942085192907_n_384116183766877.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965446
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308311540_1139583216956334_8790828044472134918_n_2018082541722612.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965446
+        },
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/307709755_1058573021522713_4700060389762079844_n_641350740923250.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663965435
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955738050,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png",
+        "media_path_INTERNAL": "",
+        "type_INTERNAL": ""
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955729961,
+      "content": "Ok, tak p\u00c5\u0099ed dutchem",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00b1\u00f0\u009f\u008f\u00bb",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955695835,
+      "content": "Tak daleko nejedeme"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955682508,
+      "content": "Po\u00c4\u008dk\u00c3\u00a1m na m\u00c5\u00afstku?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955680016,
+      "gifs": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/gifs/271440496_245342531047353_8807326557892547262_n_485827553453431.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955676265,
+      "content": "To z\u00c5\u0099ejm\u00c4\u009b nemus\u00c3\u00adm sp\u00c4\u009bchat \u00f0\u009f\u0098\u0080",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00b1\u00f0\u009f\u008f\u00bb",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663955630968,
+      "content": "\u00f0\u009f\u00a5\u00b8"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955610370,
+      "content": "Vystupte a po\u00c4\u008dkejte, jsme v prvn\u00c3\u00adm vag\u00c3\u00b3nu",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a1",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955597962,
+      "content": "Shiiiit",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a5\u00b8",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663955516407,
+      "content": "Luka"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663955499844,
+      "content": "Jj"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663955469307,
+      "content": "U\u00c5\u00be jste v metru?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663955224266,
+      "content": "Jj"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955162414,
+      "content": "Dutch pub teda?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955156524,
+      "content": "U\u00c5\u00be se \u00c5\u0099\u00c3\u00adt\u00c3\u00adm"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663955153662,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/307951666_1147718842796118_266206499726769235_n_1147718836129452.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663955152
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663948937198,
+      "content": "Ani vyhr\u00c3\u00a1t ho nenechaj, zmrdi \u00f0\u009f\u0098\u0080",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0085",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663948798678,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308215992_423086213179576_7332417688431061203_n_423086206512910.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663948796
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663945601087,
+      "content": "Cca p\u00c5\u00afl hodiny"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663945553445,
+      "content": "J\u00c3\u00a1 val\u00c3\u00adm busem"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663945327931,
+      "videos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/videos/308739780_5317312058391806_158390220630340752_n_830511761295726.mp4",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663945320
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663945310379,
+      "content": "Uz jsme na recepci motok\u00c3\u00a1r"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663945090248,
+      "content": "Jsme za rohem"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663944738367,
+      "content": "St\u00c4\u009b tam papagaji"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663944723383,
+      "content": "\u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663944713989,
+      "content": "Oto\u00c4\u008dili sme sa dvakr\u00c3\u00a1t na sv\u00c4\u009btlech a\u00c5\u00a5 netusi",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663944673972,
+      "content": "Chud\u00c3\u00a1k tvl, n\u00c4\u009bco takov\u00c3\u00a9ho nikdy nechci za\u00c5\u00be\u00c3\u00adt \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663944392286,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308050491_494460132209884_3057151223130035099_n_494460122209885.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663944390
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Alexandr Zezulya"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663944333738,
+      "content": "Vezeme unesen\u00c3\u00a9ho. Nic nev\u00c3\u00ad. Uchovejme ve\u00c5\u00a1ker\u00c3\u00bd program v tajnosti. V\u00c5\u00a1echno se dozv\u00c3\u00ad s\u00c3\u00a1m \u00f0\u009f\u0098\u0085"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663944151474,
+      "content": "Nemluvte s n\u00c3\u00adm @Martin Sebera @Vojt\u00c4\u009bch Barnat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663943907819,
+      "content": "My na motok\u00c3\u00a1ry. @Jakub Vesely @Dominik Vrchlavsk\u00c3\u00bd @Alexandr Zezulya"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663943439258,
+      "content": "J\u00c3\u00a1 doraz\u00c3\u00adm a\u00c5\u00be do pubu na 8"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663943142404,
+      "content": "Tak Martin Hofman p\u00c5\u0099ijede do p\u00c3\u00a1r minut na Stod\u00c5\u00aflky, my jsme te\u00c4\u008f vystoupili z metra s barnym a prasem. Kde jsou ostatn\u00c3\u00ad?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663940901186,
+      "content": "Zkus\u00c3\u00adm na Zli\u00c4\u008d\u00c3\u00adn\u00c4\u009b \u00f0\u009f\u0098\u0084",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00b1\u00f0\u009f\u008f\u00bb",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663940795441,
+      "content": "D\u00c3\u00a1 se koupit te\u00c4\u008f na n\u00c3\u00a1rodn\u00c3\u00ad t\u00c5\u0099\u00c3\u00add\u00c4\u009b? \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663940767609,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/308104906_830232791315979_2435070284446603719_n_830232787982646.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663940766
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663940713935,
+      "content": "Tvl to je top n\u00c3\u00a1pad, ale m\u00c4\u009bl n\u00c3\u00a1s napadnout p\u00c5\u0099ed t\u00c3\u00bddnem \u00f0\u009f\u0098\u0080",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663940485119,
+      "content": "\u00f0\u009f\u00a4\u00af"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663940481970,
+      "content": "Joo pros\u00c3\u00adm se\u00c5\u00bee\u00c5\u0088 si vestu presss",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663940166282,
+      "content": "Leda \u00c5\u00bee bys m\u00c4\u009bl na z\u00c3\u00a1dech \"press\"",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663940155874,
+      "content": "Tak to nem\u00c5\u00af\u00c5\u00bee\u00c5\u00a1 fotit a nat\u00c3\u00a1\u00c4\u008det"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663940114377,
+      "content": "B\u00c4\u009b\u00c5\u00be do hajzlu \u00f0\u009f\u0098\u0080 \u00c5\u00be\u00c3\u00a1dn\u00c3\u00bd nem\u00c3\u00a1m. Zam\u00c3\u00adt\u00c3\u00a1 se",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663940075686,
+      "content": "A a\u00c5\u00a5 Alex nev\u00c3\u00ad, kam se jede"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663940062903,
+      "content": "Stod\u00c5\u00afleck\u00c3\u00a1 parto, pros\u00c3\u00adm po\u00c4\u008dkejte na p\u00c5\u0099\u00c3\u00adjezd \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663940007804,
+      "content": "Ur\u00c4\u008dit\u00c4\u009b ne no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663939901687,
+      "content": "Asi ne no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663939887743,
+      "content": "No"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663939886938,
+      "content": "1.5 hod sry"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663939875753,
+      "content": "J\u00c3\u00a1 bych to p\u00c5\u0099\u00c3\u00ad\u00c5\u00a1t\u00c4\u009b napsal 10 minut p\u00c5\u0099ed za\u00c4\u008d\u00c3\u00a1tkem akce\u00f0\u009f\u0098\u0084",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin \u00c5\u00a0picl"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Alexandr Zezulya"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663939803782,
+      "content": "Dress code je b\u00c3\u00adl\u00c3\u00bd triko"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alexandr Zezulya",
+      "timestamp_ms": 1663939751782,
+      "content": "Ahoj, jedete n\u00c4\u009bkdo z Berouna?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663939400599,
+      "content": "Jedu z roboty"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663939388457,
+      "content": "J\u00c3\u00a1 n\u00c4\u009bjak nem\u00c3\u00a1m moc v\u00c4\u009bc\u00c3\u00ad \u00f0\u009f\u0098\u00ac"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663939361256,
+      "content": "Pokoj 501 na jm\u00c3\u00a9no Hofman (a Sebera)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663939158324,
+      "content": "D\u00c3\u00a1m si tam v\u00c4\u009bci"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663939153790,
+      "content": "Za 10 minut m\u00c4\u009b venku vyzvedni"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663939070483,
+      "content": "J\u00c3\u00a1 t\u00c3\u00a9\u00c5\u00be"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663939016501,
+      "content": "My s Jakubem v\u00c3\u00a1s potk\u00c3\u00a1me a\u00c5\u00be na motok\u00c3\u00a1r\u00c3\u00a1ch"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663938933280,
+      "content": "Sta\u00c4\u008d\u00c3\u00ad tren\u00c3\u00bdrky"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663938894624,
+      "content": "#tradice"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663938883866,
+      "content": "B\u00c3\u00a1rny vezme \u00c5\u00a1\u00c3\u00a1tek, abychom Alexovi zav\u00c3\u00a1zali o\u00c4\u008di na cestu k motok\u00c3\u00a1ram"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663938862044,
+      "content": "Tak\u00c5\u00bee pokoj m\u00c3\u00a1me. B\u00c3\u00a1rny p\u00c5\u0099ijede, ulo\u00c5\u00be\u00c3\u00ad v\u00c4\u009bci a pak spole\u00c4\u008dn\u00c4\u009b pojedeme sm\u00c4\u009br sraz Alex",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663938182601,
+      "sticker": {
+        "uri": "messages/stickers_used/851587_369239346556147_162929011_n_369239343222814.png",
+        "media_path_INTERNAL": "",
+        "type_INTERNAL": ""
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663937979996,
+      "content": "Pro ubytovan\u00c3\u00bd: jedu pro kl\u00c3\u00ad\u00c4\u008de a pokusim se vyzvednout i n\u00c3\u00a1\u00c5\u00a1 pokoj i druhej pokoj, kdy\u00c5\u00be to p\u00c5\u00afjde.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663845358704,
+      "content": "Ano"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663845345161,
+      "content": "Ok"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663845341960,
+      "content": "To je ten dutchpub, m\u00c3\u00adsto Ambiente?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663845341333,
+      "content": "P\u00c5\u0099edpokl\u00c3\u00a1d\u00c3\u00a1m duch pup"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663845341275,
+      "content": "Dutch pub"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663845323580,
+      "content": "A ve\u00c4\u008de\u00c5\u0099e?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663842859726,
+      "content": "Kazdej by mohl p\u00c5\u0099isp\u00c4\u009bt tak 400kc na alexovu \u00c3\u00batratu",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin \u00c5\u00a0picl"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Alexandr Zezulya"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663842805926,
+      "content": "Jooo, Dutch Pub!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663842699741,
+      "content": "Z\u00c3\u00a1sadn\u00c3\u00ad \u00c4\u008dasy jsou v podstat\u00c4\u009b jen 3\n1620 sraz u Alexe\n1700 rezervace motok\u00c3\u00a1ry \n2015 dutchpub",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Alexandr Zezulya"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663842540701,
+      "content": "Jak\u00c3\u00bd je zhruba \u00c4\u008dasov\u00c3\u00bd pl\u00c3\u00a1n?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663842092278,
+      "content": "Vrcholem ve\u00c4\u008dera ale zd\u00c3\u00a1 se nebudou \u00c5\u00beeny naho\u00c5\u0099e a v\u00c5\u00a1ude mo\u00c5\u00ben\u00c4\u009b bez, n\u00c3\u00bdbr\u00c5\u00be serv\u00c3\u00adrka G\u00c3\u00a1bina, rezervace na ni m\u00c3\u00a1me toti\u00c5\u00be d\u00c3\u00adky@Martin v dutch pubuuu 20:15, znalci tu\u00c5\u00a1\u00c3\u00ad",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663829647242,
+      "gifs": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/gifs/272048551_484808902986807_370527466554375215_n_463261412503041.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663828560694,
+      "content": "\u00f0\u009f\u0091\u008d\u00f0\u009f\u0091\u008d\u00f0\u009f\u0091\u008d poctiv\u00c3\u00a1 \u00c4\u008desk\u00c3\u00a1 pr\u00c3\u00a1ce \u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663821907530,
+      "content": "Je\u00c5\u00a1t\u00c4\u009b \u00c5\u00bee se dok\u00c3\u00a1\u00c5\u00beete takhle ob\u00c4\u009btovat pro t\u00c3\u00bdm :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663821072966,
+      "content": "\u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817752867,
+      "content": "Nech\u00c5\u00a5 zapo\u00c4\u008dne rozlou\u00c4\u008den\u00c3\u00ad s mravem slu\u00c5\u00a1n\u00c3\u00bdm"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817695130,
+      "content": "Ale jako mus\u00c3\u00adm \u00c5\u0099\u00c3\u00adct \u00c5\u00bee jsme to velmi zodpov\u00c4\u009bdn\u00c4\u009b person\u00c3\u00a1ln\u00c4\u009b prov\u00c4\u009b\u00c5\u0099ili, a nikde neud\u00c4\u009bl\u00c3\u00a1me \u00c5\u00beenichovi ostudu..",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008c",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817323565,
+      "content": "Mana\u00c5\u00beerka v peppers m\u00c3\u00a1 m\u00c5\u00afj mejl, za\u00c5\u00a1le na email pr\u00c3\u00bd nab\u00c3\u00addku uvid\u00c3\u00adme",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663817322474,
+      "content": "V\u00c4\u009bt\u00c5\u00a1\u00c3\u00ad customer care"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663817313948,
+      "content": "Hot peppers v\u00c4\u009bt\u00c5\u00a1\u00c3\u00ad kyc"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817239349,
+      "content": "Hot peppers: dobr\u00c3\u00a9 typky, dosa\u00c5\u00beitelne dr\u00c3\u00a1hy chlast, suprove lapsanc za barnyho. M\u00c3\u00a1me nab\u00c3\u00addku za n\u00c4\u009bjakou cenu VIP v p\u00c3\u00a1tek rezerv st\u00c5\u00afl, tance fla\u00c5\u00a1ky typky, l\u00c3\u00adbilo se n\u00c3\u00a1m to...... Goldfingers: dra\u00c5\u00be\u00c5\u00a1\u00c3\u00ad chlasty, asi v\u00c3\u00adc typek, za prasika lep\u00c5\u00a1\u00c3\u00ad dance, (v\u00c3\u00adc exotick\u00c3\u00a9), nab\u00c3\u00adzely pro \u00c5\u00beenicha speci\u00c3\u00a1ln\u00c3\u00ad show, vemou si ho na p\u00c3\u00b3dium a budou s n\u00c3\u00adm d\u00c4\u009blat, \u00c5\u00bee si i my budeme zakr\u00c3\u00bdvat zrak.."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663817164558,
+      "content": "J\u00c3\u00a1 ne, za chv\u00c3\u00adli jdu do pr\u00c3\u00a1ce \u00f0\u009f\u00a5\u00b2",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Petr Kohout"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663817140540,
+      "content": "Bych si cht\u00c4\u009bl \u00c5\u00be\u00c3\u00adt jako vy \u00f0\u009f\u00a5\u00b2"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663817041245,
+      "content": "Dobr\u00c3\u00a9 to bylo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817030013,
+      "content": "Dne\u00c5\u00a1n\u00c3\u00adho scouting ve\u00c4\u008dera"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817021125,
+      "content": "M\u00c3\u00a1me pro v\u00c3\u00a1s \u00c5\u00a1umaa\u00c5\u0099"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663817011846,
+      "content": "Hele p\u00c3\u00a1nov\u00c3\u00a9"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663816524987,
+      "content": "\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663816524806,
+      "content": "2 teste\u00c5\u0099i"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663814524630,
+      "content": "\u00f0\u009f\u00ab\u00a0"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663813362032,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/307422924_1287337328764276_1873048410844118188_n_1287337325430943.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663813360
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663813306287,
+      "content": "Kde si"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663803598254,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/307661147_786959735981469_7755269107520574489_n_786959729314803.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663803596
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663326731212,
+      "gifs": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/gifs/271216658_525684032513216_5245106454676456169_n_1097675157809986.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663326688215,
+      "content": "Ok. U\u00c5\u00be se nebudu anga\u00c5\u00beovat. \u00f0\u009f\u0099\u008a"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663323577094,
+      "content": "Kdyby to tu n\u00c4\u009bkdo nespamoval h\u00c3\u00a1zen\u00c3\u00adm rejze nebo co wtf tak sou tu vid\u00c4\u009bt instrukce",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663323549749,
+      "content": "\u00c5\u0098ekni mi kde dostanu pivo do ruky a j\u00c3\u00a1 tam p\u00c5\u0099ijdu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663323536684,
+      "content": "No ok, chill"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663323525770,
+      "content": "Wtf ste mimo, je to v patek 23. a pokra\u00c4\u008dov\u00c3\u00a1n\u00c3\u00ad v sobotu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663323512538,
+      "content": "Nebo v p\u00c3\u00a1tek? \u00f0\u009f\u0098\u0084 Je to mo\u00c5\u00ben\u00c3\u00bd, stejn\u00c4\u009b je to dalek\u00c3\u00a1 budoucnost"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663323488887,
+      "content": "ale tak dobr\u00c3\u00bd, j\u00c3\u00a1 to budu sledovat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663323480128,
+      "content": "\u00f0\u009f\u0098\u0080 \u00f0\u009f\u0098\u0080 \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663323476801,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/306784304_3184645261785120_9213441814879167688_n_3184645255118454.png",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663323475
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663323475660,
+      "content": "pak je tu je\u00c5\u00a1t\u00c4\u009b tohle"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663323458966,
+      "content": "Ale nev\u00c3\u00adm kdy a kde"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663323442359,
+      "content": "P\u00c5\u0099\u00c3\u00ad\u00c5\u00a1t\u00c3\u00ad sobotu \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663323394085,
+      "content": "j\u00c3\u00a1 jsem furt stejn\u00c4\u009b zmatenej \u00f0\u009f\u0098\u0080 tak\u00c5\u00bee je to dneska? od 4? a kde?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663323311526,
+      "content": "Nechci doma afterparty \u00f0\u009f\u0098\u0081",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663323254049,
+      "content": "Vem si stan"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663322873405,
+      "content": "Btw te\u00c4\u008f kouk\u00c3\u00a1m kde to je, bude @Petr Kohout poskytovat hromadn\u00c3\u00a9 ubytov\u00c3\u00a1n\u00c3\u00ad?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Petr Kohout"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663321855796,
+      "content": "To nebude \u00c5\u00be\u00c3\u00a1dn\u00c3\u00bd p\u00c5\u0099ekv\u00c3\u00a1pko \u00f0\u009f\u0098\u0083"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663321813669,
+      "content": "Ale tak to u\u00c5\u00be si mus\u00c3\u00ad Alex \u00c5\u0099\u00c3\u00adct co chce a co ne, do toho bych v\u00c5\u00afbec nestrkal penis te\u00c4\u008f",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663321777381,
+      "content": "No ano, ale ta je hned t\u00c3\u00bdden potom"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663321761341,
+      "content": "Tak to se d\u00c4\u009bl\u00c3\u00a1 na svatb\u00c4\u009b, ne na rozlu\u00c4\u008dce, ne? \u00f0\u009f\u0098\u0084"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663321722072,
+      "content": "Hele a takov\u00c3\u00bd ty srandy co byly d\u00c5\u0099\u00c3\u00adv na svatb\u00c3\u00a1ch jako h\u00c3\u00a1zen\u00c3\u00ad r\u00c3\u00bd\u00c5\u00bee, rozbit\u00c3\u00ad tal\u00c3\u00ad\u00c5\u0099e a zamet\u00c3\u00a1n\u00c3\u00ad st\u00c5\u0099ep\u00c5\u00af, nad\u00c3\u00a1v\u00c3\u00a1n\u00c3\u00ad chomoutu a koule na nohu \u00c5\u00beenichovi u kter\u00c3\u00a9 mus\u00c3\u00ad p\u00c5\u0099e\u00c5\u0099\u00c3\u00adznout pilkou (tupou) z\u00c3\u00a1mek nebo se n\u00c4\u009b\u00c4\u008d\u00c3\u00adm vyplatit se bude konat nebo to bude pojato jako modern\u00c3\u00ad svatba? P\u00c5\u0099\u00c3\u00adpadn\u00c4\u009b m\u00c3\u00a1 to n\u00c4\u009bkdo na starosti?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alexandr Zezulya",
+      "timestamp_ms": 1663271316694,
+      "is_unsent": true
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663249885073,
+      "content": "Insprace na program btw"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663249879632,
+      "content": "https://www.reddit.com/r/WTF/comments/xesfm0/choose_your_friends_wisely/?utm_source=share&utm_medium=web2x&context=3",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663249651118,
+      "content": "Budete muset, FB je mrtv\u00c3\u00a1 platforma :)",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663248378950,
+      "content": "@Tade\u00c3\u00a1\u00c5\u00a1 - ud\u00c3\u00a1lost sice je, m\u00c5\u00af\u00c5\u00beeme ji vyu\u00c5\u00be\u00c3\u00advat, ale Dominik, Mat\u00c4\u009bj a \u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n z\u00c5\u0099ejm\u00c4\u009b nemaj\u00c3\u00ad platn\u00c3\u00bd fb profil, nejdou tam p\u00c5\u0099idat. :D M\u00c5\u00af\u00c5\u00beeme d\u00c3\u00a1vat do ud\u00c3\u00a1losti nejkl\u00c3\u00ad\u00c4\u008dov\u00c4\u009bj\u00c5\u00a1\u00c3\u00ad informace, ale komunikovat z\u00c5\u0099ejm\u00c4\u009b budem i tady. \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663247726655,
+      "content": "ok, j\u00c3\u00a1 to rychle naklikam",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a5\u00b0",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663247704364,
+      "content": "A pos\u00c3\u00adl\u00c3\u00a1m v\u00c3\u00a1m friendrequesty, a\u00c5\u00a5 m\u00c4\u009b m\u00c5\u00af\u00c5\u00beete p\u00c5\u0099idat",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663247631005,
+      "content": "Jinak se r\u00c3\u00a1d pripojim k organizaci co se t\u00c3\u00bd\u00c4\u008de n\u00c3\u00a1klad\u00c5\u00af nebo za\u00c5\u0099izov\u00c3\u00a1n\u00c3\u00ad. Jen, kdybyste teda n\u00c4\u009bkdo p\u00c5\u0099ipravil ud\u00c3\u00a1lost a vypsal, co je pot\u00c5\u0099eba ud\u00c4\u009blat, do prvn\u00c3\u00adho p\u00c5\u0099\u00c3\u00adsp\u00c4\u009bvku. Pak se na n\u00c3\u00ad, narozd\u00c3\u00adl od chatu, daji taky d\u00c3\u00a1vat ankety atd, co\u00c5\u00be m\u00c5\u00af\u00c5\u00bee taky pomoct:)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663247539192,
+      "content": "A nechcete ud\u00c4\u009blat ud\u00c3\u00a1lost? tam se informace dohled\u00c3\u00a1vaj\u00c3\u00ad mnohem l\u00c3\u00adp. Tady te\u00c4\u008f \u00c4\u008dtu rom\u00c3\u00a1ny o tom, jak je Marie antikrist, co\u00c5\u00be souhlas\u00c3\u00adm, ale jsem confused anyway \u00f0\u009f\u0098\u0084",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin \u00c5\u00a0picl"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663247419167,
+      "content": "Tu starou skupinu jsem komplet rozpustil a opustil, aby to nikoho nem\u00c3\u00a1tlo, u\u00c5\u00be tam \u00c5\u00be\u00c3\u00a1dn\u00c3\u00bd informace nebyly, v\u00c5\u00a1echny jsou tady."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663247337630,
+      "content": "sorry za zmatek. Pro\u00c4\u008dti posledn\u00c3\u00ad info"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663247327221,
+      "content": "tahle :D",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1663247320157,
+      "content": "Kter\u00c3\u00a1 ta skupina plat\u00c3\u00ad? \u00f0\u009f\u0098\u0085"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663247238002,
+      "content": "Martin Sebera added you to the group.",
+      "users": [
+        {
+          "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663245836846,
+      "content": "D\u00c5\u00afle\u00c5\u00beit\u00c3\u00a1 vsuvka, 23. v p\u00c3\u00a1tek mus\u00c3\u00adme stihnout odvolit! V H\u00c3\u00bdskov\u00c4\u009b m\u00c3\u00a1me nap\u00c5\u0099\u00c3\u00adklad nejkvalitn\u00c4\u009bj\u00c5\u00a1\u00c3\u00adho kandid\u00c3\u00a1ta @Martin Hofman tak\u00c5\u00bee to je povinnost.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0093\u00a9",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Petr Kohout",
+      "timestamp_ms": 1663209175589,
+      "content": "Mus\u00c3\u00adm \u00c4\u008dast\u00c4\u009bji kontrovat spam. Dal\u00c5\u00a1\u00c3\u00ad skupina a 150 zpr\u00c3\u00a1v u\u00c5\u00be \u00f0\u009f\u0098\u0084",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u0094",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad",
+      "timestamp_ms": 1663186852542,
+      "content": "Ahoj, j\u00c3\u00a1 se bohu\u00c5\u00beel v tomto term\u00c3\u00adnu tak\u00c3\u00a9 budu muset omluvit a doufat, \u00c5\u00bee v\u00c3\u00a1s to v\u00c4\u009bt\u00c5\u00a1ina p\u00c5\u0099e\u00c5\u00beije a uvid\u00c3\u00adm v\u00c3\u00a1s na svatb\u00c4\u009b \u00f0\u009f\u0098\u0080",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u0094",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "J\u00c3\u00a9\u00c5\u0088a Sou\u00c4\u008dek",
+      "timestamp_ms": 1663181050679,
+      "content": "\u00c4\u008cau chlapc\u00c3\u00ad, d\u00c3\u00adky za pozv\u00c3\u00a1nku, ale bohu\u00c5\u00beel zrovna 23. odl\u00c3\u00a9t\u00c3\u00a1m na dov\u00c4\u008du. Ale l\u00c3\u00adb\u00c3\u00ad se mi ten b\u00c3\u00a1rnyho n\u00c3\u00a1pad na zaplacen\u00c3\u00a9 \u00c5\u00beeny \u00f0\u009f\u0098\u0081",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663178723021,
+      "content": "Ouje \u00f0\u009f\u0091\u008d\u00f0\u009f\u0091\u008d jestli mu to n\u00c4\u009bkdo zak\u00c3\u00a1\u00c5\u00bee a hodi n\u00c3\u00a1m do toho vidle budu ne\u00c5\u00a1\u00c5\u00a5astn\u00c3\u00bd \u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0099\u008f",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Dominik Vrchlavsk\u00c3\u00bd",
+      "timestamp_ms": 1663178675438,
+      "content": "Vid\u00c3\u00adm to podobn\u00c4\u009b \u00f0\u009f\u0098\u0084\u00f0\u009f\u0091\u008c Odsouhlas\u00c3\u00adm kompletn\u00c4\u009b v\u00c5\u00a1e, kdy\u00c5\u00be bude Tom\u00c3\u00a1\u00c5\u00a1ovi dovoleno fotit a nat\u00c3\u00a1\u00c4\u008det",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663177877380,
+      "content": "Ale jo jen by se taky hodilo v\u00c4\u009bd\u00c4\u009bt kolik n\u00c3\u00a1s doopravdy bude jsou tu lid\u00c3\u00a9 kte\u00c5\u0099\u00c3\u00ad je\u00c5\u00a1t\u00c4\u009b nenapsali skoro nic \u00f0\u009f\u00a4\u00a3 \nJ\u00c3\u00a1 jsem taky pro n\u00c4\u009bjak\u00c3\u00bd doprovodn\u00c3\u00bd programek ale bude taky dobr\u00c3\u00bd ud\u00c4\u009blat n\u00c4\u009bjak\u00c3\u00bd rezervace \nA t\u00c5\u0099eba ty tri\u00c4\u008dka objednat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663177637190,
+      "content": "Sorry, ale byla to domlouvac\u00c3\u00ad skupina."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663177579825,
+      "content": "Zaspamovavate d\u00c5\u00afle\u00c5\u00beit\u00c3\u00a9 informace od Martina a dotaz na \u00c3\u00ba\u00c4\u008dast \u00f0\u009f\u0099\u0088",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0099\u008c\u00f0\u009f\u008f\u00bc",
+          "actor": "Martin \u00c5\u00a0picl"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663177485762,
+      "content": "\u00c3\u009akoly bych taky ud\u00c4\u009blal, to se zpest\u00c5\u0099\u00c3\u00ad program. Jen, v kolik chcete v p\u00c3\u00a1tek za\u00c4\u008d\u00c3\u00adt? Fotbal, motok\u00c3\u00a1ry, p\u00c5\u0099\u00c3\u00adpitek, ve\u00c4\u008de\u00c5\u0099e sn\u00c4\u009bz co m\u00c5\u00af\u00c5\u00bee\u00c5\u00a1, stihneme to?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177424799,
+      "content": "N\u00c4\u009bco takov\u00c3\u00a9ho, jen upraven\u00c3\u00a9 \u00c3\u00bakoly"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177409177,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/photos/306378335_588303156310775_2444678154631647512_n_588303149644109.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1663177407
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177382111,
+      "content": "Na posledn\u00c3\u00ad rozlu\u00c4\u008dce jsme s \u00c5\u00beenichovi dali indicie kam a jak  dorazit, \u00c5\u00a1li jsme na fotbalgolf v Plzni a pak jsme prolezli v\u00c3\u00bd\u00c4\u008depy v Plzni a zakon\u00c4\u008dili to asi ve t\u00c5\u0099ech klubech v \u00c3\u00ba\nPlzni a bylo to super.. m\u00c4\u009bl triko s \u00c3\u00bakoly a ty m\u00c4\u009bl b\u00c4\u009bhem ve\u00c4\u008dera splnit a my mu je fixem na textil odskrtavali"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663177334964,
+      "content": "OKok dikes"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663177285687,
+      "content": "Mas pravdu za\u00c4\u008d\u00c3\u00a1tek akce je zat\u00c3\u00adm otev\u00c5\u0099eny m\u00c4\u009b se l\u00c3\u00adb\u00c3\u00ad ten fotbal tak\u00c5\u00bee bych \u00c5\u00a1el touto cestou"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177273868,
+      "content": "Pokud to bude v Praze, ubytko nepot\u00c5\u0099ebuji \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177255568,
+      "content": "Za m\u00c4\u009b st\u00c3\u00a1le plat\u00c3\u00ad, \u00c5\u00bee se z\u00c3\u00ba\u00c4\u008dastnim jak budu m\u00c3\u00adt prostor.. p\u00c5\u0099edpokl\u00c3\u00a1d\u00c3\u00a1m p\u00c3\u00a1tek ano, sobota se dopoledne odpoj\u00c3\u00adm a ve\u00c4\u008der p\u00c5\u0099ipoj\u00c3\u00adm pravd\u00c4\u009bpodobn\u00c4\u009b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663177239565,
+      "content": "Na to ka\u00c5\u00a1lu to nesn\u00c3\u00a1\u00c5\u00a1\u00c3\u00adm \u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin \u00c5\u00a0picl",
+      "timestamp_ms": 1663177205156,
+      "content": "Neun\u00c3\u00a1\u00c5\u00a1\u00c3\u00ad se n\u00c3\u00a1hodou nev\u00c4\u009bsta po ob\u00c5\u0099adu?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663177172712,
+      "content": "souhlas, p\u00c5\u0099ijdu. V nov\u00c3\u00bdch zpr\u00c3\u00a1v\u00c3\u00a1ch se ale mysl\u00c3\u00adm nezmi\u00c5\u0088uje zm\u00c3\u00adn\u00c4\u009bn\u00c3\u00bd \u00c3\u00banos?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663176862242,
+      "content": "j\u00c3\u00a1 odsouhlas\u00c3\u00adm kompletn\u00c4\u009b v\u00c5\u00a1e, v p\u00c5\u0099\u00c3\u00adpad\u00c4\u009b, \u00c5\u00bee mi bude dovoleno fotit a nat\u00c3\u00a1\u00c4\u008det :D :D :D :D",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin \u00c5\u00a0picl"
+        },
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663176760214,
+      "content": "Zad\u00c3\u00a1m o vyj\u00c3\u00a1d\u00c5\u0099en\u00c3\u00ad v\u00c5\u00a1echny co mo\u00c5\u00ben\u00c3\u00a1 nejd\u00c5\u0099\u00c3\u00adve :)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663176228828,
+      "content": "P\u00c5\u0099e\u00c4\u008dti posledn\u00c3\u00ad zpr\u00c3\u00a1vy od Martina, zbytek u\u00c5\u00be v podstat\u00c4\u009b neplat\u00c3\u00ad :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663176195434,
+      "content": "J\u00c3\u00a1 si nejd\u00c5\u0099\u00c3\u00adv v klidu projdu ty va\u00c5\u00a1e navr\u00c5\u00been\u00c3\u00a9 ro\u00c5\u00a1\u00c5\u00a5\u00c3\u00a1rny tady."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663176147334,
+      "content": "J\u00c3\u00a1 souhlas\u00c3\u00adm a budu \u00c3\u00ba\u00c4\u008dasten",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663176124641,
+      "content": "ten co se nechal zbi\u00c4\u008dovat added J\u00c3\u00a9\u00c5\u0088a Sou\u00c4\u008dek to the group.",
+      "users": [
+        {
+          "name": "J\u00c3\u00a9\u00c5\u0088a Sou\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663176081286,
+      "content": "ten co se nechal zbi\u00c4\u008dovat named the group Alex rozlu\u00c4\u008dka info."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663176078613,
+      "content": "@Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek nejaky doporuceni na klubik/bar nemas ? :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663176070162,
+      "content": "ten co se nechal zbi\u00c4\u008dovat added Dominik Vrchlavsk\u00c3\u00bd and Tom\u00c3\u00a1\u00c5\u00a1 Vacek to the group.",
+      "users": [
+        {
+          "name": "Dominik Vrchlavsk\u00c3\u00bd"
+        },
+        {
+          "name": "Tom\u00c3\u00a1\u00c5\u00a1 Vacek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663175865833,
+      "content": "ten co se nechal zbi\u00c4\u008dovat added Martin \u00c5\u00a0picl and Jakub Vesely to the group.",
+      "users": [
+        {
+          "name": "Martin \u00c5\u00a0picl"
+        },
+        {
+          "name": "Jakub Vesely"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663175783629,
+      "content": "ten co se nechal zbi\u00c4\u008dovat added Patrik \u00c5\u00a0nobl to the group.",
+      "users": [
+        {
+          "name": "Patrik \u00c5\u00a0nobl"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663175769115,
+      "content": "ten co se nechal zbi\u00c4\u008dovat added Alexandr Zezulya to the group.",
+      "users": [
+        {
+          "name": "Alexandr Zezulya"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663175656301,
+      "content": "Ok, d\u00c3\u00adky"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663175627362,
+      "content": "23-24.9.2022"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek",
+      "timestamp_ms": 1663175565153,
+      "content": "ahoj, ho\u00c5\u00a1i, d\u00c3\u00adky za p\u00c5\u0099izv\u00c3\u00a1n\u00c3\u00ad.... nechci se v\u00c3\u00a1m do toho absolutn\u00c4\u009b nijak montovat ale o jak\u00c3\u00a9 dny se tu pop\u00c5\u0099\u00c3\u00adpad\u00c4\u009b jedn\u00c3\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663175452314,
+      "content": "s tim ze tam na nas bude \u00c4\u008dekat p\u00c5\u0099ipraven\u00c3\u00a9 ob\u00c4\u008derstven\u00c3\u00ad, probehne nejakej pripitek pred kalbou (asi po veceri? jeste doladime), preparty a pak presun do mesta. Po navratu v neznamou hodinu muze nastat na ubytku dopitka v jednom z pokoju"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663175264549,
+      "content": "v ubytku sou dva 4-luzaky, kazdej bychom si s Martinem vzali na starost jeden, a dalsi pokoje uz sou mensi a prikupoval bych az bude zajem o ubytko vetsi nez 8",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663174460511,
+      "content": "ten co p\u00c5\u0099i\u00c5\u00a1el o prs\u00c3\u00ad\u00c4\u008dka a spal bez trenek added Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek to the group.",
+      "users": [
+        {
+          "name": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663174317031,
+      "content": "variace ok\u00c3\u00a1zal\u00c3\u00bdch tri\u00c4\u008dek \u00c5\u00beenich sv\u00c4\u009bdek atd bude na t\u00c3\u00a9ma p\u00c5\u0099\u00c3\u00adslu\u00c5\u00a1n\u00c3\u00bdch ministerstev ka\u00c5\u00bed\u00c3\u00a9ho oktav\u00c3\u00a1na",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1663174199690,
+      "content": "mega (y) a p\u00c5\u0099\u00c3\u00adpitek na rooftopu nad vaclavakem!",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663174153737,
+      "content": "druhy den bych dal fotbalgolf o to  m je taky casto rec a potom sel nekam posedet do nejaky nalevny (vsichni uz v sobotu stjene nemuzeme takze bych na ni nepripravoval nejaky extrra program)  taky to muze skomcit tim ze alexe odneseme marii zpatky jeste odpoledne a bude rozchod ... kdyz ne akce bude nenasilne pokracovat dal"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663174055651,
+      "content": "patek vecer motokary na zlicine (alex o nich mluvi v podstate porad)... pote presun na veceri do ambeinte kde si zaplatime snez co muzes (maji tam vsechny druhy kuchyni a kazdy si tam proste najdete svoje) odtamtud bych se presunul na nejaky pekny bar/klub ukazat nejaky tanecni pohyby treba a celou akci bych zavrsil v sodome gomore ... ubytovani jsem vybral tohle : https://www.booking.com/hotel/cz/vn17-rooftop.cs.html?aid=304142&label=gen173nr-1DCAEoggI46AdIM1gEaDqIAQGYAQW4ARfIAQzYAQPoAQGIAgGoAgO4AqqKiJkGwAIB0gIkZDIzODcxMmYtZTZkNi00YTBhLWE1YjUtZTgyNGYwOTY3ZDlh2AIE4AIB&sid=105e2f281ecc22e2018176fa54942da2&atlas_src=sr_iw_btn;checkin=2022-09-23;checkout=2022-09-24;dest_id=-553173;dest_type=city;dist=0;group_adults=10;group_children=0;highlighted_blocks=812220006_343512685_4_0_0%2C812220001_343512685_4_0_0%2C812220002_343512685_2_0_0;no_rooms=3;room1=A%2CA%2CA;room2=A%2CA%2CA;room3=A%2CA%2CA%2CA;sb_price_type=total;type=total;ucfs=1&"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663173768162,
+      "content": "caute nap\u00c3\u00ad\u00c5\u00a1u sem jak to na 99% udelame a doufam ze si na to udelate cas... v ramci zjednoduseni bych to udelal jen na jednu noc a druhy den volnejsi..."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663171135269,
+      "content": "N\u00c3\u00a1zor mam, \u00c5\u00bee airbnb by ned\u00c3\u00a1valo smysl, proto\u00c5\u00bee je to blb\u00c3\u00bd s kalbama a kalilo by se jeden ve\u00c4\u008der. Chata by sice poskytla v\u00c3\u00adc soukrom\u00c3\u00ad a volnosti ne\u00c5\u00be jin\u00c3\u00a1 ubytovac\u00c3\u00ad za\u00c5\u0099\u00c3\u00adzen\u00c3\u00ad, ale vzhledem k tomu, \u00c5\u00bee to m\u00c3\u00a1 b\u00c3\u00bdt v Praze, chata nebude \u00c5\u00be\u00c3\u00a1dn\u00c3\u00a1 k dispozici \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663171011814,
+      "content": "Tradice je takov\u00c3\u00a1, \u00c5\u00bee mi v hospod\u00c4\u009b Alex \u00c5\u0099\u00c3\u00adkal, \u00c5\u00bee douf\u00c3\u00a1, \u00c5\u00bee n\u00c4\u009bco vymysl\u00c3\u00adme \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663157117425,
+      "content": "ten co p\u00c5\u0099i\u00c5\u00a1el o prs\u00c3\u00ad\u00c4\u008dka a spal bez trenek added Tom\u00c3\u00a1\u00c5\u00a1 Krompolc to the group.",
+      "users": [
+        {
+          "name": "Tom\u00c3\u00a1\u00c5\u00a1 Krompolc"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663156831786,
+      "content": "Mn\u00c4\u009b p\u00c5\u0099ijde \u00c5\u00a1koda tr\u00c3\u00a1vit oba ve\u00c4\u008dery po barech. Aspo\u00c5\u0088 ten druhej bych se n\u00c4\u009bkde usadil, s vlastn\u00c3\u00adm pit\u00c3\u00adm, v klidu zakalil. Ide\u00c3\u00a1ln\u00c3\u00ad by byla n\u00c4\u009bjak\u00c3\u00a1 chatka, kde na n\u00c3\u00a1s nikdo v 10 nep\u00c5\u0099ijde. Ale v Praze jsem nic nena\u00c5\u00a1el. Muselo by se p\u00c5\u0099edj\u00c3\u00ad\u00c5\u00bed\u00c4\u009bt. Jak\u00c3\u00bd na to m\u00c3\u00a1te n\u00c3\u00a1zor?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663156404823,
+      "content": "No hlavn\u00c4\u009b u\u00c5\u00be nem\u00c5\u00af\u00c5\u00beeme nikoho vy\u00c5\u0099adit, kdy\u00c5\u00be je v konverzaci :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663156371806,
+      "content": "jj, tla\u00c4\u008d\u00c3\u00ad n\u00c3\u00a1s \u00c4\u008das a informace nejsou :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663156362242,
+      "content": "Kdo je v\u00c5\u00afbec sv\u00c4\u009bdek?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00b7\u00e2\u0080\u008d\u00e2\u0099\u0082\u00ef\u00b8\u008f",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663156282954,
+      "content": "M\u00c4\u009bl by si \u00c5\u0099\u00c3\u00adct, koho tam chce. Na co\u00c5\u00be u\u00c5\u00be je asi pozd\u00c4\u009b :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663156234671,
+      "content": "J\u00c3\u00a1 nev\u00c3\u00adm, podle m\u00c4\u009b je tradice takov\u00c3\u00a1, \u00c5\u00bee \u00c5\u00beenich si stanov\u00c3\u00ad seznam \u00c3\u00ba\u00c4\u008dastn\u00c3\u00adk\u00c5\u00af. A ti to pak pod veden\u00c3\u00adm sv\u00c4\u009bdka napl\u00c3\u00a1nujou, on se p\u00c5\u0099iprav ne\u00c3\u00ba\u00c4\u008dastn\u00c3\u00ad."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663155781083,
+      "content": "Alex sice nev\u00c3\u00ad o pl\u00c3\u00a1novan\u00c3\u00bd akci nic, ale prej vlastn\u00c4\u009b po\u00c4\u008d\u00c3\u00adt\u00c3\u00a1 s t\u00c3\u00adm, \u00c5\u00bee v r\u00c3\u00a1mci tradice \"n\u00c4\u009bjak\u00c3\u00a1 rozlu\u00c4\u008dka bude\". A pt\u00c3\u00a1 se na n\u00c4\u009bj"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663155693224,
+      "content": "Marie p\u00c3\u00ad\u00c5\u00a1e, \u00c5\u00bee bychom mohli do rozlu\u00c4\u008dky za\u00c5\u0099adit Sa\u00c5\u00a1u"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663079875894,
+      "content": "V sobotu m\u00c5\u00af\u00c5\u00bee b\u00c3\u00bdt sauna, motok\u00c3\u00a1ry, n\u00c4\u009bjak\u00c3\u00bd v\u00c3\u00bdlet\u00c3\u00adk? A ve\u00c4\u008der posezen\u00c3\u00ad."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663079764136,
+      "content": "Asi prvn\u00c3\u00ad ve\u00c4\u008der zmakneme jenom hospu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663077853495,
+      "content": "Je pot\u00c5\u0099eba ubytov\u00c3\u00a1n\u00c3\u00ad na 2 noci a kdyby byl program ve m\u00c4\u009bst\u00c4\u009b, tak ten byt po\u00c5\u0099\u00c3\u00a1dn\u00c4\u009b nevyu\u00c5\u00beijem no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663077844443,
+      "content": "Souhlas"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1663077840657,
+      "content": "Souhlas"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663077803081,
+      "content": "Asi nem\u00c3\u00a1 smysl m\u00c4\u009bnit ubytov\u00c3\u00a1n\u00c3\u00ad. Okol\u00c3\u00ad je byt dra\u00c5\u00be\u00c5\u00a1\u00c3\u00ad ne\u00c5\u00be jin\u00c3\u00bd typ ubytka (je \u00c5\u00a1koda ho m\u00c3\u00adt a jeden ve\u00c4\u008der tam neb\u00c3\u00bdt)?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663077675309,
+      "content": "A v\u00c4\u009bnovat jeden ve\u00c4\u008der putov\u00c3\u00a1n\u00c3\u00ad po hospod\u00c3\u00a1ch, druh\u00c3\u00bd posed\u00c4\u009bt n\u00c4\u009bkde na byt\u00c4\u009b? By mi p\u00c5\u0099i\u00c5\u00a1lo fajn."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663073767121,
+      "content": "Kolegov\u00c3\u00a9, trochu se to tady rozd\u00c4\u009blilo na dv\u00c4\u009b skupiny. Ne kv\u00c5\u00afli um\u00c3\u00adst\u00c4\u009bn\u00c3\u00ad a aktivit\u00c3\u00a1m, ale kv\u00c5\u00afli airbnb. Zhruba polovina ho chce, zhruba polovina nechce.\nV airbnb to bejv\u00c3\u00a1 s kalbama t\u00c4\u009b\u00c5\u00bek\u00c3\u00bd, ale i kdyby se to risknulo a kalilo se, tak p\u00c5\u0099ich\u00c3\u00a1z\u00c3\u00adme o z\u00c3\u00a1bavu a kulturn\u00c3\u00ad rozm\u00c4\u009br, kterej poskytuje m\u00c4\u009bsto (Praha), proto\u00c5\u00bee bychom byli prost\u00c4\u009b celou dobu na byt\u00c4\u009b. Alternativou, kter\u00c3\u00a1 \u00c5\u0099e\u00c5\u00a1\u00c3\u00ad tyhle m\u00c3\u00adnusy, je tradi\u00c4\u008dn\u00c3\u00ad vyu\u00c5\u00beit\u00c3\u00ad restaura\u00c4\u008dn\u00c3\u00adch, barov\u00c3\u00bdch a ubytovac\u00c3\u00adch za\u00c5\u0099\u00c3\u00adzen\u00c3\u00ad."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663052403481,
+      "content": "Marie o tom kv\u00c5\u00afli zkoordinov\u00c3\u00a1n\u00c3\u00ad samoz\u00c5\u0099ejm\u00c4\u009b v\u00c3\u00ad. Aby t\u00c5\u0099eba Alexe v ten jedinej mo\u00c5\u00benej v\u00c3\u00adkend n\u00c4\u009bkam neodt\u00c3\u00a1hla \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663052324352,
+      "content": "Nev\u00c3\u00ad, pros\u00c3\u00adm neptat. Tabulku lid\u00c3\u00ad m\u00c3\u00a1me od Marie.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663043036923,
+      "content": "Nebo se zeptat norm\u00c3\u00a1ln\u00c4\u009b Alexe, stejn\u00c4\u009b v\u00c3\u00ad, \u00c5\u00bee budeme n\u00c4\u009bco pl\u00c3\u00a1novat."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663043013102,
+      "content": "J\u00c3\u00a1 myslel na akci zv\u00c3\u00a1t. \u00c5\u00bde se mus\u00c3\u00ad konzultovat s Mari\u00c3\u00ad. Aby se to nep\u00c5\u0099ep\u00c3\u00adsklo nebo se nepozval n\u00c4\u009bkdo, kdo nem\u00c3\u00a1 b\u00c3\u00bdt ani na svatb\u00c4\u009b."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663017034866,
+      "content": "v\u00c5\u00a1ak se sb\u00c3\u00adraj\u00c3\u00ad n\u00c3\u00a1zory :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663016921970,
+      "content": "No a tak asi je fajn dal\u00c5\u00a1\u00c3\u00ad n\u00c3\u00a1zor a ne jen ty va\u00c5\u00a1e such\u00c3\u00bd berounsk\u00c3\u00bd, ne?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1663016882076,
+      "content": "j\u00c3\u00a1 myslel tuhle chat skupinu, ne akci"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1663016718959,
+      "content": "Tak nen\u00c3\u00ad tam t\u00c5\u0099eba Kub\u00c3\u00ad\u00c4\u008dek a napadaj\u00c3\u00ad m\u00c4\u009b dal\u00c5\u00a1\u00c3\u00ad lidi kter\u00c3\u00a9 by tam Alex cht\u00c4\u009bl"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663013211758,
+      "content": "Btw podle \u00c4\u008deho p\u00c5\u0099id\u00c3\u00a1v\u00c3\u00a1te lidi do konverzace? jsem myslel, \u00c5\u00bee seznam poskytla Marie"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663013127030,
+      "content": "na denn\u00c3\u00ad program a podniky Praha fajn, odpol na ubytko bych se neb\u00c3\u00a1l klidn\u00c4\u009b sednout do vlaku a kus p\u00c5\u0099ejet"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663012992054,
+      "content": "a s ubytov\u00c3\u00a1n\u00c3\u00adm je na zv\u00c3\u00a1\u00c5\u00been\u00c3\u00ad, no, jestli se chceme toulat v noci po barech a pak jenom sebou n\u00c4\u009bkam \u00c5\u00a1vihnout na p\u00c5\u0099ist\u00c3\u00bdlku, nebo m\u00c3\u00adt bejv\u00c3\u00a1k, kde se d\u00c3\u00a1 kalit (a pak to chce usadit se tam rozumn\u00c4\u009b brzo)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663012936418,
+      "content": "schvaluju saunu a motok\u00c3\u00a1ry"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663012917871,
+      "content": "klidn\u00c4\u009b se p\u00c5\u0099evl\u00c3\u00adknu a jednou kopnu do m\u00c3\u00ad\u00c4\u008de, ale asi bych \u00c3\u00bapln\u00c4\u009b necht\u00c4\u009bl tr\u00c3\u00a1vit t\u00c3\u00adm dv\u00c4\u009b hodiny :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1663012891695,
+      "content": "najs, fotbalov\u00c3\u00bd t\u00c3\u00bdm slo\u00c5\u00been\u00c3\u00bd ze m\u00c4\u009b a V\u00c3\u00a1ci zn\u00c3\u00ad jako dobrej biz\u00c3\u00a1r"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Krater Sauze Fonales",
+      "timestamp_ms": 1662980652882,
+      "content": "Zdar, skupinu registruju, ale som v rabot\u00c4\u009b. P\u00c5\u0099e\u00c4\u008dtu ve\u00c4\u008der."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1662972998637,
+      "content": "m\u00c4\u009bsto by nab\u00c3\u00addlo v\u00c3\u00adc, ne?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1662972870783,
+      "content": "To je to t\u00c3\u00a9ma ohledn\u00c4\u009b p\u00c3\u00a1te\u00c4\u008dn\u00c3\u00ad ve\u00c4\u008dern\u00c3\u00ad kalby - m\u00c4\u009bsto vs byt. \u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662972234575,
+      "content": "Tady je ultra ten bar no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662972171293,
+      "content": "Tak to je mega"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1662972150800,
+      "content": "https://www.airbnb.cz/rooms/7218941?adults=8&check_in=2022-09-24&check_out=2022-09-25&federated_search_id=381c16c8-c5c2-4671-8d1e-a03ab2037d77&source_impression_id=p3_1662972143_Ypm1%2FQWrJWX8fN6e",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1662972142387,
+      "content": "P\u00c3\u00a1te\u00c4\u008dn\u00c3\u00ad ve\u00c4\u008der chcete v hotelov\u00c3\u00bd restauraci/baru? Proto\u00c5\u00bee z\u00c3\u00a1zem\u00c3\u00ad je tam spousta, ale bude \u00c4\u008das to vyu\u00c5\u00be\u00c3\u00adt?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1662972126874,
+      "content": "https://www.airbnb.cz/rooms/52312793?adults=8&check_in=2022-09-24&check_out=2022-09-25&federated_search_id=381c16c8-c5c2-4671-8d1e-a03ab2037d77&source_impression_id=p3_1662972108_L3K8tMs2hszVHO%2Bm",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0094\u00a5",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1662972126147,
+      "content": "Span\u00c3\u00ad je hezk\u00c3\u00bd ale pot\u00c5\u0099ebujeme p\u00c3\u00a1rty prostor"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662972064736,
+      "content": "\u00f0\u009f\u0098\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662972062617,
+      "content": "Jako span\u00c3\u00ad mega, ale odpad\u00c3\u00a1 t\u00c3\u00adm asi obsluha na ban\u00c3\u00a1nu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662971993831,
+      "content": "Co vy na n\u00c4\u009bjak\u00c3\u00bd takov\u00c3\u00bd span\u00c3\u00ad ?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662971986007,
+      "content": "https://www.booking.com/Share-ym4tLgc"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662971133839,
+      "content": "sem zhulenej added \u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad to the group.",
+      "users": [
+        {
+          "name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Krej\u00c4\u008d\u00c3\u00ad"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662970902231,
+      "content": "https://www.booking.com/Share-fUqjMi"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662969150769,
+      "content": "Obsluhovat klidn\u00c4\u009b m\u00c5\u00af\u00c5\u00bee jen jedna a nebo vlastn\u00c4\u009b taky \u00c5\u00be\u00c3\u00a1dn\u00c3\u00a1 v\u00c5\u00a1echny se m\u00c5\u00af\u00c5\u00beou sna\u00c5\u00beit, n\u00c4\u009bkde jinde \u00f0\u009f\u00a4\u00a3",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u008d\u008c",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662968773711,
+      "content": "Apod"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662968761878,
+      "content": "Bude vlastn\u00c3\u00ad repr\u00c3\u00a1k na hran\u00c3\u00ad 99 luftbalons"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662968591864,
+      "content": "Najs n\u00c3\u00a1zev skupiny, a te\u00c4\u008f kone\u00c4\u008dn\u00c4\u009b uva\u00c5\u00beujte o tom obrovsk\u00c3\u00a9m potenci\u00c3\u00a1lu ubytka v Praze \u00f0\u009f\u0094\u00a5 potenci\u00c3\u00a1l je takov\u00c3\u00bd, \u00c5\u00bee bude bar s neomezen\u00c3\u00bdm mno\u00c5\u00bestv\u00c3\u00adm chlastu a za n\u00c3\u00adm budou obsluhovat t\u00c5\u0099i zaplacen\u00c3\u00a9 \u00c5\u00beeny naho\u00c5\u0099e a v\u00c5\u00a1ude mo\u00c5\u00ben\u00c4\u009b bez",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Tom\u00c3\u00a1\u00c5\u00a1 Kub\u00c3\u00ad\u00c4\u008dek"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Hofman"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1662968535427,
+      "content": "To zabije dost \u00c4\u008dasu a n\u00c3\u00a1ladu na zbytek ve\u00c4\u008dera :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1662968458677,
+      "content": "Ud\u00c4\u009blat ze sestavy rozlu\u00c4\u008dky bizarn\u00c3\u00ad fotbalovej t\u00c3\u00bdm bude dobry :D Jen se pak mus\u00c3\u00adme n\u00c4\u009bkde osprchovat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Sebera",
+      "timestamp_ms": 1662968406661,
+      "content": "ten co se nechal zbi\u00c4\u008dovat named the group Intern\u00c3\u00ad rozlu\u00c4\u008dka info."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662968030568,
+      "content": "Mohli bychom ho ale nechat prevleknout aspo\u00c5\u0088",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Martin Sebera"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662967817038,
+      "content": "Ale to zabije dost \u00c4\u008dasu no"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662967787141,
+      "content": "Najs, teda nejd\u00c5\u0099\u00c3\u00adv m\u00c4\u009b napadlo \u00c5\u00bee ten fotb\u00c3\u00a1lek skute\u00c4\u008dn\u00c4\u009b bude aby ho to nemrzelo \u00f0\u009f\u0098\u0085, a budou pr\u00c3\u00a1v\u00c4\u009b hr\u00c3\u00a1t i tak bizarn\u00c3\u00ad playe\u00c5\u0099i jako d\u00c5\u00beony, Vaca a pod",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Krater Sauze Fonales"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662967672511,
+      "content": "\u00c3\u009anos z fotbalku zn\u00c3\u00ad hodn\u00c4\u009b dob\u00c5\u0099e v\u00c5\u00a1ichni potvrdim \u00c3\u00ba\u00c4\u008dast a pak nikdo nep\u00c5\u0099ijde a po par minut\u00c3\u00a1ch \u00c4\u008dek\u00c3\u00a1n\u00c3\u00ad ho sundat",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Martin Sebera"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662967627073,
+      "content": "Klasickej Petyrek"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662967624069,
+      "content": "Solidn\u00c3\u00ad n\u00c3\u00a1pad shrnul Petr \u00f0\u009f\u0098\u0085 un\u00c3\u00a9st ho z fotb\u00c3\u00a1lku( kterej nebude muset organizovat) a pak: Ka\u00c5\u00bedop\u00c3\u00a1dn\u00c4\u009b za m\u00c4\u009b asi n\u00c4\u009bjak\u00c3\u00a1 Praha. Motok\u00c3\u00a1ry, sauna, \u00c4\u008cerven\u00c3\u00bd jelen, cluby a hot peppers s tane\u00c4\u008dkem pro Alexe"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662967481753,
+      "content": "N\u00c4\u009bco jako kluby a pak do hork\u00c3\u00bdch papri\u00c4\u008dek"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662967463486,
+      "content": "Ne jako sna\u00c5\u00beil se to zamaskovat ale Marie nen\u00c3\u00ad tup\u00c3\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Martin Hofman",
+      "timestamp_ms": 1662967385764,
+      "content": "\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3\u00f0\u009f\u00a4\u00a3 \nJ\u00c3\u00a1 to nestihl co psal Petr ? Doufam ze n\u00c4\u009bjakou kvalitu o ne\u00c5\u0099esti \u00f0\u009f\u00a4\u00a3",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a4\u00a3",
+          "actor": "Vojt\u00c4\u009bch Barnat"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k",
+      "timestamp_ms": 1662966955872,
+      "gifs": [
+        {
+          "uri": "messages/inbox/alexrozluckainfo_6192410144106618/gifs/271432523_342585627406117_4125406795961309944_n_5662569233810829.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966891050,
+      "content": "sem zhulenej added Mat\u00c4\u009bj Vlas\u00c3\u00a1k to the group.",
+      "users": [
+        
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966856066,
+      "content": "\u00f0\u009f\u0099\u0088\u00f0\u009f\u0099\u0088\u00f0\u009f\u0099\u0088\u00f0\u009f\u0099\u0088"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966853804,
+      "content": "Viz Petr omg"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966831121,
+      "content": "Aby to st\u00c3\u00a1lo za to tak se tam maj\u00c3\u00ad pl\u00c3\u00a1novat takov\u00c3\u00a9 v\u00c4\u009bci kter\u00c3\u00a9 Marie opravdu sly\u00c5\u00a1et nem\u00c3\u00a1 \u00f0\u009f\u0098\u0085",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Mat\u00c4\u009bj Vlas\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966788029,
+      "content": "(p\u00c3\u00ad\u00c5\u00a1u to v\u00c3\u00a1m p\u00c3\u00a1\u00c4\u008d ste aktivn\u00c3\u00ad na t\u00c3\u00a9 skupin\u00c4\u009b)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966772664,
+      "content": "Nev\u00c3\u00adm \u00c4\u008d\u00c3\u00ad to byl n\u00c3\u00a1pad, ale OMG ste norm\u00c3\u00a1ln\u00c3\u00ad d\u00c3\u00a1vat Marii do skupinov\u00c3\u00a9ho chatu o rozlu\u00c4\u008dce?? Au"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Vojt\u00c4\u009bch Barnat",
+      "timestamp_ms": 1662966727039,
+      "content": "sem zhulenej named the group jste norm\u00c3\u00a1ln\u00c3\u00ad!?"
+    }
+  ],
+  "title": "Alex rozlu\u00c4\u008dka info",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexrozluckainfo_6192410144106618",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/308080079_631900341868734_8397879148631831507_n_631900338535401.jpg",
+    "media_path_INTERNAL": "",
+    "type_INTERNAL": "",
+    "creation_timestamp": 1664022770
+  },
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

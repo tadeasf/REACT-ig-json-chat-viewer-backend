@@ -1,0 +1,486 @@
+{
+  "participants": [
+    {
+      "name": "Jan Pleva"
+    },
+    {
+      "name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k"
+    },
+    {
+      "name": "David Du\u00c5\u00a1ek"
+    },
+    {
+      "name": "Filip Jirou\u00c5\u00a1"
+    },
+    {
+      "name": "Denisa Dvo\u00c5\u0099\u00c3\u00a1kov\u00c3\u00a1"
+    },
+    {
+      "name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jan Pleva",
+      "timestamp_ms": 1646868390089,
+      "content": "Vytvo\u00c5\u0099 pozv\u00c3\u00a1nku na antikolaudacku! \u00f0\u009f\u0098\u009c",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615655523260,
+      "content": "Diky moc za pomoc! V\u00c5\u00a1ichni m\u00c3\u00a1te pozv\u00c3\u00a1nku na kolaudacku",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u00a5\u00b3",
+          "actor": "David Du\u00c5\u00a1ek"
+        },
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Filip Jirou\u00c5\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615480248962,
+      "gifs": [
+        {
+          "uri": "messages/inbox/andreafnukaopomocpacsezasestehuje_4310696502291433/gifs/30190633_2072589746087709_1999950675273842688_n_871043897080963.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615478206928,
+      "content": "Lidi, po\u00c4\u008d\u00c3\u00adt\u00c3\u00a1m s v\u00c3\u00a1mi:*"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k",
+      "timestamp_ms": 1615387122142,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k",
+      "timestamp_ms": 1615387120330,
+      "content": "vsak jen proto je tam tech 89% jinak by to bylo 46%",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615387099401,
+      "content": "ok.... ale mysli na to, \u00c5\u00bee jsem d\u00c3\u00advka v nouzi, ano? \u00f0\u009f\u0098\u0099\u00f0\u009f\u0098\u0099\u00f0\u009f\u0098\u0099"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k",
+      "timestamp_ms": 1615387076392,
+      "content": "ale myslim ze to vyjde...  verim tomu :D alespon si budu pripadat silnej :D",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k",
+      "timestamp_ms": 1615387048348,
+      "content": "zatim nevim jestli budu moct na 100% :D ale tak na 89% bych mel mit cas, takze.. ok.. :-* ale dal bych nejak cas vedet... :)",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615387037999,
+      "content": "pozv\u00c3\u00a1n\u00c3\u00ad na kolauda\u00c4\u008dku po lockdown t\u00c4\u009b pak zase nemine  \u00f0\u009f\u0098\u0098\u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615387019470,
+      "content": "m\u00c5\u00af\u00c5\u00bee b\u00c3\u00bdt?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615386994505,
+      "gifs": [
+        {
+          "uri": "messages/inbox/andreafnukaopomocpacsezasestehuje_4310696502291433/gifs/50250906_2261022944143470_7562688911420424192_n_138621024818301.gif",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": ""
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615386978283,
+      "content": "@\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Beru\u00c5\u00a1ko moje chlupat\u00c3\u00a1, z\u00c3\u00adtra v \u00c5\u00a1est bych tedy pou\u00c5\u00beila tv\u00c3\u00a9 svaly na pra\u00c4\u008dku - je to u\u00c5\u00be\u00c5\u00a1\u00c3\u00ad pra\u00c4\u008dka, tak\u00c5\u00bee by to nem\u00c4\u009bl bejt takovej probl\u00c3\u00a9m ve dvou ut\u00c3\u00a1hnout. Cca v \u00c5\u00a1est bych m\u00c4\u009bla b\u00c3\u00bdt doma, nasednu do auta, dojedu pro tebe autem a zajedeme vyzvednout pra\u00c4\u008dku do Hole\u00c5\u00a1ovic a pak s n\u00c3\u00ad trad\u00c3\u00a1 do Stra\u00c5\u00a1nic do druh\u00c3\u00bdho patr\\ bez v\u00c3\u00bdtahu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615386902148,
+      "content": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1 added \u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k to the group.",
+      "users": [
+        {
+          "name": "\u00c5\u00a0t\u00c4\u009bp\u00c3\u00a1n Svit\u00c3\u00a1k"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615386098802,
+      "content": "Super! \u00f0\u009f\u0098\u0081\u00f0\u009f\u0098\u0081\u00f0\u009f\u0098\u0081\u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615386059309,
+      "content": "tak p\u00c5\u0099ije\u00c4\u008f, j\u00c3\u00a1 ti je uk\u00c3\u00a1\u00c5\u00beu, jak vypadaj\u00c3\u00ad, a ty pak jen bude\u00c5\u00a1 opakovat po mn\u00c4\u009b \u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615386023432,
+      "content": "J\u00c3\u00a1 u tebe m\u00c5\u00af\u00c5\u00beu b\u00c3\u00bdt p\u00c5\u0099ed 7 z\u00c3\u00adtra. A svaly jsem vid\u00c4\u009bl na wikipedii",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615385998692,
+      "content": "((pokud je tu tedy n\u00c4\u009bkdo volnej dneska a m\u00c3\u00a1 svaly))"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615385980776,
+      "content": "(mo\u00c5\u00ben\u00c3\u00a1 bych to mohla zkusit u\u00c5\u00be na dne\u00c5\u00a1ek ve\u00c4\u008der domluvit, aby z\u00c3\u00adtra u\u00c5\u00be fakt bylo jen je\u00c5\u00bed\u00c4\u009bn\u00c3\u00ad mezi star\u00c3\u00bdm a nov\u00c3\u00bdm bytem a \u00c5\u00be\u00c3\u00a1dn\u00c3\u00bd zaj\u00c3\u00ad\u00c5\u00bed\u00c4\u009bn\u00c3\u00ad autem pro \u00c5\u00be\u00c3\u00a1dn\u00c3\u00bd pra\u00c4\u008dky je\u00c5\u00a1t\u00c4\u009b)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615385944183,
+      "content": "tak podle posledn\u00c3\u00adch informac\u00c3\u00ad bych m\u00c4\u009bla m\u00c3\u00adt auto z\u00c3\u00adtra u\u00c5\u00be d\u00c5\u0099\u00c3\u00adve - cca od \u00c5\u00a1est\u00c3\u00bd bych tedy byla ready. Pot\u00c5\u0099ebuji jednu du\u00c5\u00a1i, co by p\u00c5\u0099i\u00c5\u00a1la u\u00c5\u00be na tu \u00c5\u00a1estou a pomohla mi s p\u00c5\u0099evozem pra\u00c4\u008dky z jin\u00c3\u00a9 adresy",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Filip Jirou\u00c5\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615385872793,
+      "content": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1 removed Ivo Denemark from the group.",
+      "users": [
+        {
+          "name": "Ivo Denemark"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615321565879,
+      "content": "tak n\u00c3\u00a1bytek octavkou a kdy\u00c5\u00betak bych t\u00c4\u009b je\u00c5\u00a1t\u00c4\u009b t\u00c5\u0099eba v p\u00c3\u00a1tek/sobotu po\u00c5\u00be\u00c3\u00a1dala o p\u00c5\u0099esun pytl\u00c5\u00af s oble\u00c4\u008den\u00c3\u00adm, spo\u00c4\u008f\u00c3\u00a1rama a tak \u00f0\u009f\u0098\u0097 sam\u00c3\u00a1 \u00c4\u008dist\u00c3\u00a1 pr\u00c3\u00a1ce! \u00f0\u009f\u0098\u0097"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615321492002,
+      "content": "ch\u00c3\u00a1peme (y)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1615321411664,
+      "content": "nen\u00c3\u00ad to kombajn"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1615321409126,
+      "content": "no, jako, je to norm\u00c3\u00a1ln\u00c3\u00ad, pro 4 lidi, ale ne pro st\u00c4\u009bhov\u00c3\u00a1n\u00c3\u00ad n\u00c3\u00a1bytku"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Filip Jirou\u00c5\u00a1",
+      "timestamp_ms": 1615321390483,
+      "content": "J\u00c3\u00a1 myslel, \u00c5\u00bees u\u00c5\u00be m\u00c4\u009bl n\u00c4\u009bco norm\u00c3\u00a1ln\u00c3\u00adho, tak nic"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1615321356159,
+      "content": "tade\u00c3\u00a1\u00c5\u00a1ovo auto je pro tade\u00c3\u00a1\u00c5\u00a1e \u00f0\u009f\u0098\u0080"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615321257955,
+      "content": "nejsem si jist\u00c3\u00a1, jestli Tade\u00c3\u00a1\u00c5\u00a1kovo auto nen\u00c3\u00ad jen na sukn\u00c4\u009b... jestli by se tam v\u00c5\u00afbec n\u00c4\u009bco jako n\u00c3\u00a1bytek apod ve\u00c5\u00a1lo :/"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320973663,
+      "content": "ok, zase si t\u00c4\u009b p\u00c3\u00ad\u00c5\u00a1u!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320902135,
+      "content": "Andrea named the group Andrea f\u00c5\u0088uk\u00c3\u00a1 o pomoc p\u00c3\u00a1\u00c4\u008d se zase st\u00c4\u009bhuje."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jan Pleva",
+      "timestamp_ms": 1615320878682,
+      "content": "Nebo m\u00c5\u00af\u00c5\u00beu b\u00c3\u00bdt v tom nov\u00c3\u00bdm a tahat nahoru... :P",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615320861857,
+      "content": "\u00f0\u009f\u0098\u0081"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320847080,
+      "content": "ofc! s t\u00c3\u00adm se po\u00c4\u008d\u00c3\u00adt\u00c3\u00a1! pozd\u00c4\u009bji bych t\u00c4\u009b dom\u00c5\u00af ani nevracela \u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320818365,
+      "content": "ch\u00c3\u00a1pu, \u00c5\u00a1krt\u00c3\u00a1m si t\u00c4\u009b :D nebo bude\u00c5\u00a1 na st\u00c5\u0099\u00c3\u00adda\u00c4\u008dce jako n\u00c3\u00a1hradn\u00c3\u00adk :P"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320781040,
+      "content": "pak v\u00c3\u00a1s samoz\u00c5\u0099ejm\u00c4\u009b rozvezu dom\u00c5\u00af v\u00c4\u008decky, kdo se bude \u00c3\u00ba\u00c4\u008dastnit \u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615320780407,
+      "content": "Zase mus\u00c3\u00adm b\u00c3\u00bdt 11 doma, proto\u00c5\u00bee \u00c5\u00beena a pr\u00c3\u00a1ce druhej den, tak\u00c5\u00bee \u00c4\u008d\u00c3\u00adm d\u00c5\u0099\u00c3\u00adv, t\u00c3\u00adm l\u00c3\u00adp."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jan Pleva",
+      "timestamp_ms": 1615320765570,
+      "content": "Tak m\u00c3\u00a1m to minime :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320751001,
+      "content": "zat\u00c3\u00adm to vypad\u00c3\u00a1 na osmou a pozd\u00c4\u009bji"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320727846,
+      "content": "hajzl! \u00f0\u009f\u0098\u00a0"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320710909,
+      "content": "to nech\u00c3\u00a1pu :D jak na jednom m\u00c3\u00adst\u00c4\u009b? co to znamen\u00c3\u00a1? :D jestli je to teda n\u00c4\u009bjak\u00c3\u00a1 tajn\u00c3\u00a1 \u00c5\u00a1ifra , tak PM :D ale j\u00c3\u00a1 to nech\u00c3\u00a1pu :("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Ivo Denemark",
+      "timestamp_ms": 1615320704636,
+      "content": "#covidmiposralzada",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "David Du\u00c5\u00a1ek",
+      "timestamp_ms": 1615320703982,
+      "content": "J\u00c3\u00a1 jsem do 18:00 v pr\u00c3\u00a1ci, volno ur\u00c4\u008dit\u00c4\u009b nedostanu, ale pot\u00c3\u00a9 bych mohl",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Filip Jirou\u00c5\u00a1",
+      "timestamp_ms": 1615320676247,
+      "content": "F",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Ivo Denemark"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320665964,
+      "content": "ve\u00c4\u008der, Pin\u00c4\u008fo, ve\u00c4\u008der :P"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1615320657385,
+      "content": "v osm r\u00c3\u00a1no nebo ve\u00c4\u008der?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jan Pleva",
+      "timestamp_ms": 1615320649370,
+      "content": "J\u00c3\u00a1 ide\u00c3\u00a1ln\u00c4\u009b na jednom m\u00c3\u00adst\u00c4\u009b, proto\u00c5\u00bee @Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1 v\u00c3\u00ad\u00c5\u00a1 pro\u00c4\u008d.. abych nezabiral moc m\u00c3\u00adsta v aut\u00c4\u009b..."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320649155,
+      "content": "jejda :( to je mi l\u00c3\u00adto - n\u00c3\u00a9 to, \u00c5\u00bee nepom\u00c5\u00af\u00c5\u00bee\u00c5\u00a1, ale tvoje z\u00c3\u00a1da :("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Filip Jirou\u00c5\u00a1",
+      "timestamp_ms": 1615320634401,
+      "content": "Nem\u00c3\u00a1 Tade\u00c3\u00a1\u00c5\u00a1 n\u00c4\u009bjak\u00c3\u00bd norm\u00c3\u00a1ln\u00c3\u00ad auto te\u00c4\u008f n\u00c3\u00a1hodou?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320615485,
+      "content": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1 added David Du\u00c5\u00a1ek and Denisa Dvo\u00c5\u0099\u00c3\u00a1kov\u00c3\u00a1 to the group.",
+      "users": [
+        {
+          "name": "Denisa Dvo\u00c5\u0099\u00c3\u00a1kov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Filip Jirou\u00c5\u00a1",
+      "timestamp_ms": 1615320600841,
+      "content": "Tak\u00c5\u00bee re\u00c3\u00a1ln\u00c4\u009b tak v p\u00c5\u00afl dev\u00c3\u00a1t\u00c3\u00bd nejd\u00c5\u0099\u00c3\u00adv..."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Ivo Denemark",
+      "timestamp_ms": 1615320576893,
+      "content": "J\u00c3\u00a1 jdu z\u00c3\u00adtra se z\u00c3\u00a1dy k doktorce a ani necvi\u00c4\u008d\u00c3\u00adm, tak\u00c5\u00bee bohu\u00c5\u00beel t\u00c4\u009b\u00c5\u00bek\u00c3\u00bd v\u00c4\u009bci te\u00c4\u008f neum\u00c3\u00adm :(",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Filip Jirou\u00c5\u00a1"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320544945,
+      "content": "jako je to nahovno asi no :/ cel\u00c3\u00bd st\u00c4\u009bhov\u00c3\u00a1n\u00c3\u00ad v lockdownu :("
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615320520017,
+      "content": "tak prej od osmi budu m\u00c3\u00adt auto :)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1615320018424,
+      "content": "ve \u00c4\u008dtvrtek v kolik?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615319797583,
+      "content": "bude se moct n\u00c4\u009bkde ve \u00c4\u008dtrvtek ke mn\u00c4\u009b a F\u00c3\u00adfovi p\u00c5\u0099idat, pls? \u00f0\u009f\u00a4\u00a8"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Andrea Sklen\u00c3\u00a1\u00c5\u0099ov\u00c3\u00a1",
+      "timestamp_ms": 1615319757595,
+      "content": "Drahou\u00c5\u00a1kov\u00c3\u00a9, napadli jste m\u00c4\u009b jako prvn\u00c3\u00ad pro popt\u00c3\u00a1n\u00c3\u00ad se po pomoci se st\u00c4\u009bhov\u00c3\u00a1n\u00c3\u00adm \u00f0\u009f\u0098\u0087 Auto budu m\u00c3\u00adt k dispozici tenhle t\u00c3\u00bdden v\u00c5\u00bedycky ve\u00c4\u008der a F\u00c3\u00adfa \u00c5\u0099\u00c3\u00adkal, \u00c5\u00bee by mohl tenhle \u00c4\u008dtvrtek. Jednalo by se hlavn\u00c4\u009b o p\u00c5\u0099evoz palet (postel), mal\u00c3\u00bd sra\u00c4\u008dky typu oble\u00c4\u008den\u00c3\u00ad, boty apod bych pak p\u00c5\u0099\u00c3\u00adpadn\u00c4\u009b klidn\u00c4\u009b zvl\u00c3\u00a1dla odtahat sama, ale s v\u00c4\u009bt\u00c5\u00a1\u00c3\u00admy kusy by se mi hodila maskulinita \u00f0\u009f\u0092\u00aa"
+    }
+  ],
+  "title": "Andrea f\u00c5\u0088uk\u00c3\u00a1 o pomoc p\u00c3\u00a1\u00c4\u008d se zase st\u00c4\u009bhuje",
+  "is_still_participant": true,
+  "thread_path": "inbox/andreafnukaopomocpacsezasestehuje_4310696502291433",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

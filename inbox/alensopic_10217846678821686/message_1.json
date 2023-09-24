@@ -1,0 +1,24 @@
+{
+  "participants": [
+    {
+      "name": "Alen Sopic"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1540638337690,
+      "content": "You are now connected on Messenger"
+    }
+  ],
+  "title": "Alen Sopic",
+  "is_still_participant": true,
+  "thread_path": "inbox/alensopic_10217846678821686",
+  "magic_words": [
+    
+  ]
+}

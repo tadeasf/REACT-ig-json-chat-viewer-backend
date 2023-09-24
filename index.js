@@ -395,6 +395,7 @@ app.get("/messages/:collectionName", async (req, res) => {
           timestamp_ms: 1,
           sender_name: 1,
           content: 1,
+          photos: 1,
         },
       }, // Only retrieve field1 and field2
     ])
@@ -552,27 +553,46 @@ app.delete("/delete/photo/:collectionName", async (req, res) => {
 
   const photoDir = path.join(__dirname, "photos");
   const files = await fs.readdir(photoDir);
-
+  const db = client.db(MESSAGE_DATABASE);
+  const collection = db.collection(sanitizedCollectionName);
   const photoFile = files.find((file) =>
     file.startsWith(sanitizedCollectionName)
   );
 
-  if (!photoFile) {
-    // logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
-    res.status(404).json({ message: "Photo not found" });
+  if (photoFile) {
+    const photoPath = path.join(photoDir, photoFile);
+    await fs.unlink(photoPath);
+    await collection.updateOne(
+      {},
+      { $set: { photo: false } },
+      { upsert: true }
+    );
+    res
+      .status(200)
+      .json({ message: "Photo deleted successfully and database updated" });
     return;
+  } else {
+    const doc = await collection.findOne({});
+    if (doc && doc.photo === true) {
+      await collection.updateOne(
+        {},
+        { $set: { photo: false } },
+        { upsert: true }
+      );
+      res
+        .status(200)
+        .json({ message: "Photo not found, but database updated" });
+      return;
+    }
+    res
+      .status(404)
+      .json({ message: "Photo not found and nothing to update in database" });
   }
-
-  const photoPath = path.join(photoDir, photoFile);
-  await fs.unlink(photoPath);
-
-  // logEndpointInfo(req, res, `DELETE /delete/photo/${req.params.collectionName}`);
-  res.status(200).json({ message: "Photo deleted successfully" });
 });
 
 // Serving static photos
 app.use("/photos", express.static(path.join(__dirname, "photos")));
-
+app.use("/inbox", express.static(path.join(__dirname, "inbox")));
 // Endpoint to rename a collection
 app.put("/rename/:currentCollectionName", async (req, res) => {
   const currentCollectionName = decodeURIComponent(

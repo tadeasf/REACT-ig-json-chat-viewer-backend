@@ -1,0 +1,125 @@
+{
+  "participants": [
+    {
+      "name": "Alexej Chalupn\u00c3\u00adk"
+    },
+    {
+      "name": "Rachel Rachel"
+    },
+    {
+      "name": "Roman Jord\u00c3\u00a1n"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Rachel Rachel",
+      "timestamp_ms": 1605277759001,
+      "content": "Okok, 18"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273895875,
+      "content": "ale oukej :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273892972,
+      "content": "jsem myslel, \u00c5\u00bee m\u00c3\u00a1\u00c5\u00a1 do 8"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273890141,
+      "content": "j\u00c3\u00a1 se na to pod\u00c3\u00adval \u00c5\u00a1patn\u00c4\u009b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273855818,
+      "content": "nojo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1605273823677,
+      "content": "Pl\u00c3\u00a1nek jste m\u00c4\u009bli"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273803792,
+      "content": "dammit, okay :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1605273794713,
+      "content": "Jo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1605273792506,
+      "content": "Chr\u00c3\u00a1nim a pom\u00c3\u00a1h\u00c3\u00a1m"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273788546,
+      "content": "deset ve\u00c4\u008d\u00c3\u00adr?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1605273788018,
+      "photos": [
+        {
+          "uri": "messages/inbox/alexejrachelandroman_3632628803442637/photos/125223506_1076689099440132_7381169823581531166_n_1076689096106799.png",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1605273785
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Roman Jord\u00c3\u00a1n",
+      "timestamp_ms": 1605273776694,
+      "content": "J\u00c3\u00a1 p\u00c5\u0099indu a\u00c5\u00be tak v deset"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273771900,
+      "content": "nev\u00c3\u00adm, jestli m\u00c3\u00a1m za\u00c5\u0099izovat n\u00c4\u009bjak\u00c3\u00bd ty deskovky nebo vysta\u00c4\u008d\u00c3\u00adme s t\u00c3\u00adm, co tu m\u00c3\u00a1m? nakonec jsme se nedomluvili na n\u00c4\u009bjak\u00c3\u00a9 v\u00c4\u009bt\u00c5\u00a1\u00c3\u00ad"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273755992,
+      "content": "sraz tedy v 6!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1605273749573,
+      "content": "draz\u00c3\u00ad kamar\u00c3\u00a1di!"
+    }
+  ],
+  "title": "Alexej, Rachel and Roman",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexejrachelandroman_3632628803442637",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "participants": [
+    {
+      "name": "Alexej Chalupn\u00c3\u00adk"
+    },
+    {
+      "name": "J\u00c3\u00a1chym Kn\u00c4\u009bz\u00c5\u00af Ramone"
+    },
+    {
+      "name": "Jakob Kindl"
+    },
+    {
+      "name": "Ondra Pe\u00c5\u00a1ek"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    },
+    {
+      "name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1"
+    },
+    {
+      "name": "Nick Ojo Omorodion"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "V\u00c3\u00adt Andrle",
+      "timestamp_ms": 1566685063495,
+      "content": "V\u00c3\u00adt Andrle left the group.",
+      "users": [
+        {
+          "name": "V\u00c3\u00adt Andrle"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Abdel Fattah Sharabati",
+      "timestamp_ms": 1566666788132,
+      "content": "Abdel Fattah Sharabati left the group.",
+      "users": [
+        {
+          "name": "Abdel Fattah Sharabati"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00c3\u0081\u00c5\u0088a Melmukov\u00c3\u00a1",
+      "timestamp_ms": 1566663872911,
+      "content": "\u00c3\u0081\u00c5\u0088a Melmukov\u00c3\u00a1 left the group.",
+      "users": [
+        {
+          "name": "\u00c3\u0081\u00c5\u0088a Melmukov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1566663404222,
+      "content": "Marie Hole\u00c5\u0088ov\u00c3\u00a1 left the group.",
+      "users": [
+        {
+          "name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Marie Hole\u00c5\u0088ov\u00c3\u00a1",
+      "timestamp_ms": 1566663396004,
+      "content": "Jsem mimo Prahu, tak nekdy priste :)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661572084,
+      "content": "Dal\u00c5\u00a1\u00c3\u00ad budiznicema"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "J\u00c3\u00a1chym Kn\u00c4\u009bz\u00c5\u00af Ramone",
+      "timestamp_ms": 1566661558712,
+      "content": "Prijedte do Belehradu na travarici ze zava\u00c5\u0099ova\u00c4\u008dky"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661510708,
+      "content": "Ty jsi budizknicemu!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661504922,
+      "content": "Achjo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jakob Kindl",
+      "timestamp_ms": 1566661497614,
+      "content": "Leda kdybyste p\u00c5\u0099ijeli do Rege"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661486552,
+      "content": "A s\u00c3\u00a1ra a\u00c5\u00a5 jde klidn\u00c4\u009b taky jestli nem\u00c3\u00a1 co d\u00c4\u009blat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661479827,
+      "content": "Tak coooo"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jakob Kindl",
+      "timestamp_ms": 1566661468586,
+      "content": "\u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jakub Fi\u00c5\u00a1er",
+      "timestamp_ms": 1566661208283,
+      "content": "Jakub Fi\u00c5\u00a1er left the group.",
+      "users": [
+        {
+          "name": "Jakub Fi\u00c5\u00a1er"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Jakub Fi\u00c5\u00a1er",
+      "timestamp_ms": 1566661193459,
+      "content": "\u00c5\u00a1ipky bych dal jak diabol, ale nejsem v praze(",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566661024921,
+      "content": "You added Alexej Chalupn\u00c3\u00adk and V\u00c3\u00adt Andrle to the group.",
+      "users": [
+        {
+          "name": "Alexej Chalupn\u00c3\u00adk"
+        },
+        {
+          "name": "V\u00c3\u00adt Andrle"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660953099,
+      "content": "You set the nickname for Marie Hole\u00c5\u0088ov\u00c3\u00a1 to Hole\u00c5\u0088\u00c3\u00a1tor."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660946612,
+      "content": "You set the nickname for Ondra Pe\u00c5\u00a1ek to Pe\u00c5\u00a1kon\u00c3\u00a1tor."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660941519,
+      "content": "You set the nickname for Nick Ojo Omorodion to Nickon\u00c3\u00a1tor."
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660917087,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660915625,
+      "content": "A J\u00c3\u00a1kobovi zlom\u00c3\u00adme ob\u00c4\u009b ruce prinejhorsim"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660897923,
+      "content": "A \u00c5\u00a1ipky a kule\u00c4\u008dn\u00c3\u00adk!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660893284,
+      "content": "Hale a fotb\u00c3\u00a1lek!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660884371,
+      "content": "V\u00c4\u008dera jsme si dali solidn\u00c3\u00ad rozeh\u00c5\u0099\u00c3\u00adva\u00c4\u008dku :D",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u008d",
+          "actor": "Nick Ojo Omorodion"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Nick Ojo Omorodion",
+      "timestamp_ms": 1566660883741,
+      "content": "Uvid\u00c3\u00adm, mo\u00c5\u00ben\u00c3\u00a1, z\u00c3\u00a1le\u00c5\u00be\u00c3\u00ad, jestli ve\u00c4\u008der chytim slinu :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660868595,
+      "content": "Poj\u00c4\u008f bumbaaaat"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660864708,
+      "content": "Nynyyyy"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660861469,
+      "content": "nickuuuu"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Nick Ojo Omorodion",
+      "timestamp_ms": 1566660853712,
+      "content": "Ehm, ne, \u00c5\u00bee bych v\u00c3\u00a1s necht\u00c4\u009bl vid\u00c4\u009bt, ale za m\u00c4\u009b asi dneska ne, u\u00c5\u00beijte si to ale :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1",
+      "timestamp_ms": 1566660831713,
+      "content": "Pros\u00c3\u00adm"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660810903,
+      "content": ":D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660808362,
+      "content": "K\u00c3\u00a1ja chce p\u00c3\u00adt"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660800998,
+      "content": "You added Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1 to the group.",
+      "users": [
+        {
+          "name": "Karol\u00c3\u00adna \u00c4\u008cernochov\u00c3\u00a1"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660786038,
+      "content": "Pivo a fotb\u00c3\u00a1lek dnes?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1566660781733,
+      "content": "You created the group."
+    }
+  ],
+  "title": "Alexej, J\u00c3\u00a1chym, Jakob and 3 others",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexejjachymjakoband3others_2209851099141192",
+  "magic_words": [
+    
+  ],
+  "joinable_mode": {
+    "mode": 1,
+    "link": ""
+  }
+}

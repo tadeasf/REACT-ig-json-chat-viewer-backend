@@ -1,0 +1,36 @@
+{
+  "participants": [
+    {
+      "name": "Alexandra Simaiova"
+    },
+    {
+      "name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1498159068519,
+      "content": ":( :D"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Alexandra Simaiova",
+      "timestamp_ms": 1498159028199,
+      "content": "Ahoj, ne promi\u00c5\u0088:)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tade\u00c3\u00a1\u00c5\u00a1 Fo\u00c5\u0099t",
+      "timestamp_ms": 1498158920390,
+      "content": "zdarec! nezn\u00c3\u00a1\u00c5\u00a1 n\u00c4\u009bkoho, kdo by sh\u00c3\u00a1n\u00c4\u009bl kvalitn\u00c3\u00ad kinofilmovej fo\u00c5\u00a5\u00c3\u00a1k?"
+    }
+  ],
+  "title": "Alexandra Simaiova",
+  "is_still_participant": true,
+  "thread_path": "inbox/alexandrasimaiova_10209940030398338",
+  "magic_words": [
+    
+  ]
+}
