@@ -8,3 +8,4 @@ node_modules
 image-generator.py
 stress-test.py
 package-lock.json
+/inbox/*
