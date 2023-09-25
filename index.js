@@ -17,6 +17,7 @@ const { LRUCache } = require("lru-cache");
 const { v4: uuidv4 } = require("uuid");
 const compression = require("compression");
 const diacritics = require("diacritics");
+const sharp = require("sharp");
 
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
@@ -336,6 +337,27 @@ app.get("/collections", async (req, res) => {
   collectionData.sort((a, b) => b.messageCount - a.messageCount);
 
   logEndpointInfo(req, res, "GET /collections");
+  res.status(200).json(collectionData);
+});
+
+// Endpoint to get collections sorted alphabetically
+app.get("/collections/alphabetical", async (req, res) => {
+  const db = client.db(MESSAGE_DATABASE);
+  const collections = await db.listCollections().toArray();
+
+  const collectionData = [];
+  for (const collection of collections) {
+    const count = await db.collection(collection.name).countDocuments();
+    collectionData.push({
+      name: collection.name,
+      messageCount: count,
+    });
+  }
+
+  // Sort collections alphabetically
+  collectionData.sort((a, b) => a.name.localeCompare(b.name));
+
+  logEndpointInfo(req, res, "GET /collections/alphabetical");
   res.status(200).json(collectionData);
 });
 
