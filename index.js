@@ -398,30 +398,48 @@ app.get("/load-io", async (req, res) => {
 
 app.get("/messages/:collectionName", async (req, res) => {
   const collectionName = decodeURIComponent(req.params.collectionName);
-  const cacheKey = `messages-${collectionName}`;
+  const fromDate = req.query.fromDate
+    ? new Date(`${req.query.fromDate}T00:00:00Z`).getTime()
+    : null;
+  const toDate = req.query.toDate
+    ? new Date(`${req.query.toDate}T23:59:59Z`).getTime()
+    : null;
+  const cacheKey = `messages-${collectionName}-${fromDate}-${toDate}`;
   const cachedData = cache.get(cacheKey);
 
   if (cachedData) {
     return res.status(200).json(cachedData);
   }
-
+  console.log(`fromDate timestamp: ${fromDate}, toDate timestamp: ${toDate}`);
   const db = client.db(MESSAGE_DATABASE);
   const collection = db.collection(collectionName);
-  const messages = await collection
-    .aggregate([
-      { $sort: { timestamp_ms: 1 } },
-      {
-        $project: {
-          _id: 0,
-          timestamp: 1,
-          timestamp_ms: 1,
-          sender_name: 1,
-          content: 1,
-          photos: 1,
-        },
-      }, // Only retrieve field1 and field2
-    ])
-    .toArray();
+
+  const pipeline = [
+    // Add the match stage to filter by date
+    ...(fromDate !== null || toDate !== null
+      ? [
+          {
+            $match: {
+              ...(fromDate !== null && { timestamp_ms: { $gte: fromDate } }),
+              ...(toDate !== null && { timestamp_ms: { $lte: toDate } }),
+            },
+          },
+        ]
+      : []),
+    { $sort: { timestamp_ms: 1 } },
+    {
+      $project: {
+        _id: 0,
+        timestamp: 1,
+        timestamp_ms: 1,
+        sender_name: 1,
+        content: 1,
+        photos: 1,
+      },
+    },
+  ];
+
+  const messages = await collection.aggregate(pipeline).toArray();
 
   cache.set(cacheKey, messages);
 
