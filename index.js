@@ -5,6 +5,10 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const morgan = require("morgan");
+let generate, count;
+import("random-words").then((randomWords) => {
+  ({ generate, count } = randomWords);
+});
 const app = express();
 const port = process.env.PORT || 5555;
 const multer = require("multer");
@@ -17,7 +21,6 @@ const { LRUCache } = require("lru-cache");
 const { v4: uuidv4 } = require("uuid");
 const compression = require("compression");
 const diacritics = require("diacritics");
-const sharp = require("sharp");
 
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
@@ -359,39 +362,6 @@ app.get("/collections/alphabetical", async (req, res) => {
 
   logEndpointInfo(req, res, "GET /collections/alphabetical");
   res.status(200).json(collectionData);
-});
-
-app.get("/load-cpu", (req, res) => {
-  let total = 0;
-
-  // Simulate CPU-intensive task
-  for (let i = 0; i < 7000000; i++) {
-    total += Math.sqrt(i) * Math.random();
-  }
-
-  res.send(`The result of the CPU intensive task is ${total}\n`);
-});
-
-app.get("/load-io", async (req, res) => {
-  try {
-    const imageDirectory = path.join(__dirname, "generated_images");
-    const imageFiles = await fs.readdir(imageDirectory);
-
-    let totalImages = 0;
-
-    for (const imageFile of imageFiles) {
-      const imagePath = path.join(imageDirectory, imageFile);
-
-      // Simulate I/O operation by reading each image
-      await fs.readFile(imagePath);
-
-      totalImages++;
-    }
-
-    res.send(`Read ${totalImages} images as part of the I/O intensive task.\n`);
-  } catch (err) {
-    res.status(500).send("An error occurred");
-  }
 });
 
 // Endpoint to get messages by collection name
@@ -745,6 +715,96 @@ app.post("/search", express.json(), async (req, res) => {
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send("Something broke!");
+});
+
+// ----------------- STRESS TESTING ----------------- //
+app.get("/load-cpu", (req, res) => {
+  let total = 0;
+
+  // Simulate CPU-intensive task
+  for (let i = 0; i < 7000000; i++) {
+    total += Math.sqrt(i) * Math.random();
+  }
+
+  res.send(`The result of the CPU intensive task is ${total}\n`);
+});
+
+app.get("/stress-test", async (req, res) => {
+  try {
+    const startTime = Date.now();
+
+    // Generate a random czech word and sanitize it
+    const randomWord = generate();
+
+    const sanitizedRandomWord = sanitizeName(randomWord);
+
+    // Trigger the cross-collection search
+    const db = client.db(MESSAGE_DATABASE);
+
+    // Fetch all collection names
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map(c => c.name);
+
+    // Construct the initial pipeline with $match and $addFields for the first collection
+    const initialPipeline = [
+      {
+        $match: {
+          content: {
+            $regex: new RegExp(sanitizedRandomWord, "i"),
+          },
+        },
+      },
+      {
+        $addFields: {
+          collectionName: collectionNames[0],
+        },
+      },
+    ];
+
+    // Dynamically add $unionWith stages for the remaining collections
+    const unionWithStages = collectionNames.slice(1).map(collectionName => ({
+      $unionWith: {
+        coll: collectionName,
+        pipeline: [
+          {
+            $match: {
+              content: {
+                $regex: new RegExp(sanitizedRandomWord, "i"),
+              },
+            },
+          },
+          {
+            $addFields: {
+              collectionName: collectionName,
+            },
+          },
+        ],
+      },
+    }));
+
+    const finalPipeline = initialPipeline.concat(unionWithStages);
+
+    const potentialMatches = await db
+      .collection(collectionNames[0])
+      .aggregate(finalPipeline)
+      .toArray();
+
+    const endTime = Date.now();
+    const duration = endTime - startTime;
+
+    // Respond with the time taken to complete the stress test
+    res.json({
+      message: 'Stress test completed successfully',
+      searchString: randomWord,
+      duration: `${duration} ms`,
+      searchMatches: potentialMatches.length,
+    randomMatch: potentialMatches[Math.floor(Math.random() * potentialMatches.length)],
+    data: potentialMatches
+    });
+  } catch (error) {
+    console.error("Error during stress-test:", error);
+    res.status(500).json({ error: "An error occurred during the stress test." });
+  }
 });
 
 app.listen(port, () => {

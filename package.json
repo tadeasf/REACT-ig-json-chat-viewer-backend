@@ -32,6 +32,8 @@
     "path": "^0.12.7",
     "prom-client": "^14.2.0",
     "python-shell": "^5.0.0",
+    "random-string": "^0.2.0",
+    "random-words": "^2.0.0",
     "sharp": "^0.32.6",
     "uuid": "^9.0.1"
   }
