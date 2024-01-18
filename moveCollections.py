@@ -1,5 +1,8 @@
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 def move_collections(uri, input_db_name, output_db_name, collection_names):
     # Connect to MongoDB
@@ -31,7 +34,7 @@ def move_collections(uri, input_db_name, output_db_name, collection_names):
 
 
 if __name__ == "__main__":
-    uri = "mongodb://supertadeas:%24803k%40Xa%25yFfufA%23505wq%2F%40%5D%5D@mongodb.kocouratko.eu:27017/messages?authSource=admin"
+    uri = os.getenv("MONGO_URI_CONTABO")
     input_db_name = "kocouratciMessenger"
     output_db_name = "kocouratciMessengerBackup"
     collection_names = [

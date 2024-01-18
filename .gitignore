@@ -9,3 +9,4 @@ image-generator.py
 stress-test.py
 package-lock.json
 /inbox/*
+__pycache__

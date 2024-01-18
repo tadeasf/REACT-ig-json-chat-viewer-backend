@@ -1,0 +1,3355 @@
+[
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:00:55 13/11/2023",
+        "endTime": "01:04:06 13/11/2023",
+        "executionTime": 190.64958310127258
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:00:59 13/11/2023",
+        "endTime": "01:04:08 13/11/2023",
+        "executionTime": 189.20328760147095
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:00:57 13/11/2023",
+        "endTime": "01:04:17 13/11/2023",
+        "executionTime": 199.29023575782776
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:01:00 13/11/2023",
+        "endTime": "01:04:59 13/11/2023",
+        "executionTime": 239.1121211051941
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:00:54 13/11/2023",
+        "endTime": "01:06:35 13/11/2023",
+        "executionTime": 340.5681788921356
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:00:56 13/11/2023",
+        "endTime": "01:06:38 13/11/2023",
+        "executionTime": 341.6923484802246
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:00:58 13/11/2023",
+        "endTime": "01:06:40 13/11/2023",
+        "executionTime": 341.8474462032318
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:00:53 13/11/2023",
+        "endTime": "01:06:44 13/11/2023",
+        "executionTime": 350.5330865383148
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:04:09 13/11/2023",
+        "endTime": "01:07:03 13/11/2023",
+        "executionTime": 174.3205487728119
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:04:17 13/11/2023",
+        "endTime": "01:07:16 13/11/2023",
+        "executionTime": 179.1309847831726
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:04:06 13/11/2023",
+        "endTime": "01:07:52 13/11/2023",
+        "executionTime": 225.5176112651825
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:06:38 13/11/2023",
+        "endTime": "01:09:44 13/11/2023",
+        "executionTime": 185.62406182289124
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:05:00 13/11/2023",
+        "endTime": "01:10:33 13/11/2023",
+        "executionTime": 332.96360516548157
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:06:41 13/11/2023",
+        "endTime": "01:10:37 13/11/2023",
+        "executionTime": 236.81052112579346
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:07:52 13/11/2023",
+        "endTime": "01:10:45 13/11/2023",
+        "executionTime": 173.27345633506775
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:06:44 13/11/2023",
+        "endTime": "01:10:46 13/11/2023",
+        "executionTime": 241.93488383293152
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:07:03 13/11/2023",
+        "endTime": "01:10:57 13/11/2023",
+        "executionTime": 233.32802319526672
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:06:35 13/11/2023",
+        "endTime": "01:12:13 13/11/2023",
+        "executionTime": 338.2568345069885
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:09:45 13/11/2023",
+        "endTime": "01:12:35 13/11/2023",
+        "executionTime": 170.3767809867859
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:07:17 13/11/2023",
+        "endTime": "01:13:03 13/11/2023",
+        "executionTime": 346.79244685173035
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:10:38 13/11/2023",
+        "endTime": "01:14:01 13/11/2023",
+        "executionTime": 203.87437796592712
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:10:33 13/11/2023",
+        "endTime": "01:14:32 13/11/2023",
+        "executionTime": 239.0096447467804
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:10:57 13/11/2023",
+        "endTime": "01:14:53 13/11/2023",
+        "executionTime": 236.25411939620972
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:12:14 13/11/2023",
+        "endTime": "01:16:16 13/11/2023",
+        "executionTime": 241.55305457115173
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:10:46 13/11/2023",
+        "endTime": "01:16:23 13/11/2023",
+        "executionTime": 337.2403242588043
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:10:47 13/11/2023",
+        "endTime": "01:16:30 13/11/2023",
+        "executionTime": 343.0341775417328
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:14:02 13/11/2023",
+        "endTime": "01:16:54 13/11/2023",
+        "executionTime": 172.39156103134155
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:12:35 13/11/2023",
+        "endTime": "01:18:25 13/11/2023",
+        "executionTime": 349.4379541873932
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:13:04 13/11/2023",
+        "endTime": "01:18:49 13/11/2023",
+        "executionTime": 345.3021421432495
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:16:16 13/11/2023",
+        "endTime": "01:19:15 13/11/2023",
+        "executionTime": 178.7576446533203
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:14:32 13/11/2023",
+        "endTime": "01:20:02 13/11/2023",
+        "executionTime": 329.70438981056213
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:14:53 13/11/2023",
+        "endTime": "01:20:17 13/11/2023",
+        "executionTime": 323.64670157432556
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:16:30 13/11/2023",
+        "endTime": "01:20:18 13/11/2023",
+        "executionTime": 228.19593453407288
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:18:25 13/11/2023",
+        "endTime": "01:21:15 13/11/2023",
+        "executionTime": 170.29512071609497
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:16:23 13/11/2023",
+        "endTime": "01:21:49 13/11/2023",
+        "executionTime": 326.3146951198578
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:16:54 13/11/2023",
+        "endTime": "01:22:16 13/11/2023",
+        "executionTime": 321.37789130210876
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:18:50 13/11/2023",
+        "endTime": "01:22:27 13/11/2023",
+        "executionTime": 217.87045741081238
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:19:15 13/11/2023",
+        "endTime": "01:22:52 13/11/2023",
+        "executionTime": 216.4750497341156
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:20:03 13/11/2023",
+        "endTime": "01:22:53 13/11/2023",
+        "executionTime": 169.27339816093445
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:20:18 13/11/2023",
+        "endTime": "01:23:49 13/11/2023",
+        "executionTime": 211.32601881027222
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:21:16 13/11/2023",
+        "endTime": "01:24:06 13/11/2023",
+        "executionTime": 170.3829369544983
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:21:50 13/11/2023",
+        "endTime": "01:25:41 13/11/2023",
+        "executionTime": 231.0874125957489
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:20:19 13/11/2023",
+        "endTime": "01:25:50 13/11/2023",
+        "executionTime": 331.5818898677826
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:22:16 13/11/2023",
+        "endTime": "01:26:05 13/11/2023",
+        "executionTime": 229.20976042747498
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:23:49 13/11/2023",
+        "endTime": "01:27:44 13/11/2023",
+        "executionTime": 235.40997958183289
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:24:07 13/11/2023",
+        "endTime": "01:27:58 13/11/2023",
+        "executionTime": 231.6277096271515
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:22:28 13/11/2023",
+        "endTime": "01:28:04 13/11/2023",
+        "executionTime": 335.90385246276855
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:22:53 13/11/2023",
+        "endTime": "01:28:36 13/11/2023",
+        "executionTime": 343.1780788898468
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:22:52 13/11/2023",
+        "endTime": "01:28:37 13/11/2023",
+        "executionTime": 344.9190113544464
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:26:06 13/11/2023",
+        "endTime": "01:28:59 13/11/2023",
+        "executionTime": 173.40366554260254
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:25:41 13/11/2023",
+        "endTime": "01:29:18 13/11/2023",
+        "executionTime": 216.58319997787476
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:25:50 13/11/2023",
+        "endTime": "01:29:24 13/11/2023",
+        "executionTime": 213.2502839565277
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:28:04 13/11/2023",
+        "endTime": "01:30:49 13/11/2023",
+        "executionTime": 164.63514828681946
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:27:45 13/11/2023",
+        "endTime": "01:31:22 13/11/2023",
+        "executionTime": 217.0961573123932
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:28:59 13/11/2023",
+        "endTime": "01:31:56 13/11/2023",
+        "executionTime": 176.62363171577454
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:28:37 13/11/2023",
+        "endTime": "01:32:12 13/11/2023",
+        "executionTime": 214.88599252700806
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:29:18 13/11/2023",
+        "endTime": "01:33:10 13/11/2023",
+        "executionTime": 232.39960145950317
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:27:59 13/11/2023",
+        "endTime": "01:33:30 13/11/2023",
+        "executionTime": 331.2010819911957
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:28:37 13/11/2023",
+        "endTime": "01:34:19 13/11/2023",
+        "executionTime": 341.5346374511719
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:29:24 13/11/2023",
+        "endTime": "01:35:03 13/11/2023",
+        "executionTime": 338.9697439670563
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:31:56 13/11/2023",
+        "endTime": "01:35:08 13/11/2023",
+        "executionTime": 191.9589080810547
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:32:12 13/11/2023",
+        "endTime": "01:36:07 13/11/2023",
+        "executionTime": 234.67916774749756
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:30:49 13/11/2023",
+        "endTime": "01:36:20 13/11/2023",
+        "executionTime": 331.56384897232056
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:31:22 13/11/2023",
+        "endTime": "01:36:52 13/11/2023",
+        "executionTime": 329.53509879112244
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:34:19 13/11/2023",
+        "endTime": "01:37:54 13/11/2023",
+        "executionTime": 214.98398399353027
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:35:09 13/11/2023",
+        "endTime": "01:38:02 13/11/2023",
+        "executionTime": 173.62820625305176
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:33:11 13/11/2023",
+        "endTime": "01:38:36 13/11/2023",
+        "executionTime": 325.4442572593689
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:33:30 13/11/2023",
+        "endTime": "01:38:43 13/11/2023",
+        "executionTime": 313.1739082336426
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:36:21 13/11/2023",
+        "endTime": "01:40:12 13/11/2023",
+        "executionTime": 231.3146915435791
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:35:03 13/11/2023",
+        "endTime": "01:40:34 13/11/2023",
+        "executionTime": 330.69253873825073
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:36:52 13/11/2023",
+        "endTime": "01:40:38 13/11/2023",
+        "executionTime": 226.16382026672363
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:37:54 13/11/2023",
+        "endTime": "01:41:10 13/11/2023",
+        "executionTime": 195.99880814552307
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:36:07 13/11/2023",
+        "endTime": "01:41:41 13/11/2023",
+        "executionTime": 333.1430940628052
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:38:44 13/11/2023",
+        "endTime": "01:41:46 13/11/2023",
+        "executionTime": 182.2290539741516
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:38:36 13/11/2023",
+        "endTime": "01:42:24 13/11/2023",
+        "executionTime": 228.00844264030457
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:40:38 13/11/2023",
+        "endTime": "01:43:31 13/11/2023",
+        "executionTime": 172.157639503479
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:38:03 13/11/2023",
+        "endTime": "01:43:38 13/11/2023",
+        "executionTime": 335.53849387168884
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:40:34 13/11/2023",
+        "endTime": "01:44:16 13/11/2023",
+        "executionTime": 221.44638967514038
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:41:10 13/11/2023",
+        "endTime": "01:44:53 13/11/2023",
+        "executionTime": 222.30006909370422
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:42:25 13/11/2023",
+        "endTime": "01:45:19 13/11/2023",
+        "executionTime": 174.68457531929016
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:41:41 13/11/2023",
+        "endTime": "01:45:21 13/11/2023",
+        "executionTime": 220.12573862075806
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:41:47 13/11/2023",
+        "endTime": "01:45:22 13/11/2023",
+        "executionTime": 215.46554231643677
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:40:13 13/11/2023",
+        "endTime": "01:45:28 13/11/2023",
+        "executionTime": 315.78165769577026
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:43:31 13/11/2023",
+        "endTime": "01:46:28 13/11/2023",
+        "executionTime": 177.34025406837463
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:44:16 13/11/2023",
+        "endTime": "01:48:02 13/11/2023",
+        "executionTime": 226.29961967468262
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:44:53 13/11/2023",
+        "endTime": "01:48:55 13/11/2023",
+        "executionTime": 241.76239156723022
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:45:20 13/11/2023",
+        "endTime": "01:49:21 13/11/2023",
+        "executionTime": 240.89818453788757
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:45:22 13/11/2023",
+        "endTime": "01:49:23 13/11/2023",
+        "executionTime": 240.3077483177185
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:43:39 13/11/2023",
+        "endTime": "01:49:25 13/11/2023",
+        "executionTime": 346.7128813266754
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:45:21 13/11/2023",
+        "endTime": "01:49:26 13/11/2023",
+        "executionTime": 244.24039149284363
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:45:29 13/11/2023",
+        "endTime": "01:49:30 13/11/2023",
+        "executionTime": 240.89577841758728
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:46:28 13/11/2023",
+        "endTime": "01:50:38 13/11/2023",
+        "executionTime": 249.07876682281494
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:48:03 13/11/2023",
+        "endTime": "01:51:10 13/11/2023",
+        "executionTime": 187.75613355636597
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:49:21 13/11/2023",
+        "endTime": "01:53:02 13/11/2023",
+        "executionTime": 221.22736811637878
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:49:26 13/11/2023",
+        "endTime": "01:53:04 13/11/2023",
+        "executionTime": 218.08626294136047
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:49:30 13/11/2023",
+        "endTime": "01:53:08 13/11/2023",
+        "executionTime": 217.8296537399292
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:50:38 13/11/2023",
+        "endTime": "01:53:22 13/11/2023",
+        "executionTime": 164.14222502708435
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:48:55 13/11/2023",
+        "endTime": "01:54:11 13/11/2023",
+        "executionTime": 316.362197637558
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:49:26 13/11/2023",
+        "endTime": "01:54:37 13/11/2023",
+        "executionTime": 311.8737645149231
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:49:23 13/11/2023",
+        "endTime": "01:54:37 13/11/2023",
+        "executionTime": 314.29753971099854
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:51:11 13/11/2023",
+        "endTime": "01:54:42 13/11/2023",
+        "executionTime": 210.74196124076843
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:53:04 13/11/2023",
+        "endTime": "01:56:46 13/11/2023",
+        "executionTime": 222.1004719734192
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:53:08 13/11/2023",
+        "endTime": "01:56:48 13/11/2023",
+        "executionTime": 220.2235131263733
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:54:38 13/11/2023",
+        "endTime": "01:57:45 13/11/2023",
+        "executionTime": 187.04470491409302
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "01:54:42 13/11/2023",
+        "endTime": "01:57:52 13/11/2023",
+        "executionTime": 190.0452263355255
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:53:02 13/11/2023",
+        "endTime": "01:58:27 13/11/2023",
+        "executionTime": 324.2181758880615
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:53:22 13/11/2023",
+        "endTime": "01:58:47 13/11/2023",
+        "executionTime": 324.70725560188293
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:54:12 13/11/2023",
+        "endTime": "01:59:36 13/11/2023",
+        "executionTime": 324.27861762046814
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:54:38 13/11/2023",
+        "endTime": "01:59:48 13/11/2023",
+        "executionTime": 310.03148007392883
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:56:49 13/11/2023",
+        "endTime": "02:00:25 13/11/2023",
+        "executionTime": 216.39581179618835
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:57:45 13/11/2023",
+        "endTime": "02:01:20 13/11/2023",
+        "executionTime": 214.4013373851776
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:56:46 13/11/2023",
+        "endTime": "02:01:57 13/11/2023",
+        "executionTime": 310.9096269607544
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "01:58:47 13/11/2023",
+        "endTime": "02:02:19 13/11/2023",
+        "executionTime": 211.5003685951233
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:57:52 13/11/2023",
+        "endTime": "02:03:02 13/11/2023",
+        "executionTime": 310.05288338661194
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:00:25 13/11/2023",
+        "endTime": "02:03:17 13/11/2023",
+        "executionTime": 171.54680562019348
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:58:27 13/11/2023",
+        "endTime": "02:03:39 13/11/2023",
+        "executionTime": 312.1752378940582
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:01:20 13/11/2023",
+        "endTime": "02:04:25 13/11/2023",
+        "executionTime": 185.3798701763153
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:59:36 13/11/2023",
+        "endTime": "02:04:58 13/11/2023",
+        "executionTime": 321.88142466545105
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "01:59:48 13/11/2023",
+        "endTime": "02:05:11 13/11/2023",
+        "executionTime": 322.39115047454834
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:03:39 13/11/2023",
+        "endTime": "02:06:39 13/11/2023",
+        "executionTime": 179.12559604644775
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:03:03 13/11/2023",
+        "endTime": "02:06:53 13/11/2023",
+        "executionTime": 230.5550925731659
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:03:17 13/11/2023",
+        "endTime": "02:07:11 13/11/2023",
+        "executionTime": 233.53295588493347
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:01:58 13/11/2023",
+        "endTime": "02:07:22 13/11/2023",
+        "executionTime": 324.61566162109375
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:02:19 13/11/2023",
+        "endTime": "02:07:38 13/11/2023",
+        "executionTime": 319.33708453178406
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:04:26 13/11/2023",
+        "endTime": "02:08:00 13/11/2023",
+        "executionTime": 214.32325983047485
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:05:11 13/11/2023",
+        "endTime": "02:08:38 13/11/2023",
+        "executionTime": 207.17786049842834
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:06:53 13/11/2023",
+        "endTime": "02:10:13 13/11/2023",
+        "executionTime": 199.93798065185547
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:04:59 13/11/2023",
+        "endTime": "02:10:36 13/11/2023",
+        "executionTime": 337.7978081703186
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:07:11 13/11/2023",
+        "endTime": "02:11:11 13/11/2023",
+        "executionTime": 239.8820095062256
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:06:39 13/11/2023",
+        "endTime": "02:12:13 13/11/2023",
+        "executionTime": 334.23316073417664
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:07:23 13/11/2023",
+        "endTime": "02:13:00 13/11/2023",
+        "executionTime": 337.0685119628906
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:07:39 13/11/2023",
+        "endTime": "02:13:17 13/11/2023",
+        "executionTime": 337.974568605423
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:10:37 13/11/2023",
+        "endTime": "02:13:32 13/11/2023",
+        "executionTime": 175.47463083267212
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:08:00 13/11/2023",
+        "endTime": "02:13:54 13/11/2023",
+        "executionTime": 353.5883104801178
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:08:39 13/11/2023",
+        "endTime": "02:14:20 13/11/2023",
+        "executionTime": 341.41833424568176
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:12:13 13/11/2023",
+        "endTime": "02:15:03 13/11/2023",
+        "executionTime": 169.4930784702301
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:10:14 13/11/2023",
+        "endTime": "02:15:51 13/11/2023",
+        "executionTime": 337.2335112094879
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:13:00 13/11/2023",
+        "endTime": "02:15:54 13/11/2023",
+        "executionTime": 174.12197375297546
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:11:11 13/11/2023",
+        "endTime": "02:17:12 13/11/2023",
+        "executionTime": 361.1659531593323
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:13:54 13/11/2023",
+        "endTime": "02:17:13 13/11/2023",
+        "executionTime": 198.47322607040405
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:13:33 13/11/2023",
+        "endTime": "02:17:45 13/11/2023",
+        "executionTime": 252.43806791305542
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:14:20 13/11/2023",
+        "endTime": "02:18:24 13/11/2023",
+        "executionTime": 243.7757592201233
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:15:52 13/11/2023",
+        "endTime": "02:18:59 13/11/2023",
+        "executionTime": 187.4893398284912
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:13:17 13/11/2023",
+        "endTime": "02:19:03 13/11/2023",
+        "executionTime": 345.8999183177948
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:17:13 13/11/2023",
+        "endTime": "02:20:04 13/11/2023",
+        "executionTime": 171.1127166748047
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:15:04 13/11/2023",
+        "endTime": "02:20:40 13/11/2023",
+        "executionTime": 336.7746753692627
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:18:24 13/11/2023",
+        "endTime": "02:21:16 13/11/2023",
+        "executionTime": 171.5250153541565
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:17:45 13/11/2023",
+        "endTime": "02:21:24 13/11/2023",
+        "executionTime": 218.82574582099915
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:15:55 13/11/2023",
+        "endTime": "02:21:28 13/11/2023",
+        "executionTime": 333.6547830104828
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:17:13 13/11/2023",
+        "endTime": "02:22:26 13/11/2023",
+        "executionTime": 313.34714126586914
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:18:59 13/11/2023",
+        "endTime": "02:22:32 13/11/2023",
+        "executionTime": 213.02730226516724
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:19:03 13/11/2023",
+        "endTime": "02:24:18 13/11/2023",
+        "executionTime": 315.1556487083435
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:21:29 13/11/2023",
+        "endTime": "02:24:19 13/11/2023",
+        "executionTime": 170.69707560539246
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:21:24 13/11/2023",
+        "endTime": "02:25:04 13/11/2023",
+        "executionTime": 219.97373461723328
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:22:27 13/11/2023",
+        "endTime": "02:25:19 13/11/2023",
+        "executionTime": 172.22727584838867
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:20:04 13/11/2023",
+        "endTime": "02:25:29 13/11/2023",
+        "executionTime": 324.5268006324768
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:20:41 13/11/2023",
+        "endTime": "02:25:52 13/11/2023",
+        "executionTime": 311.19720673561096
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:21:16 13/11/2023",
+        "endTime": "02:26:47 13/11/2023",
+        "executionTime": 331.0774230957031
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:24:20 13/11/2023",
+        "endTime": "02:27:11 13/11/2023",
+        "executionTime": 171.03586602210999
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:25:04 13/11/2023",
+        "endTime": "02:27:59 13/11/2023",
+        "executionTime": 174.2599458694458
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:22:33 13/11/2023",
+        "endTime": "02:28:00 13/11/2023",
+        "executionTime": 327.04932284355164
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:25:19 13/11/2023",
+        "endTime": "02:28:07 13/11/2023",
+        "executionTime": 168.12377285957336
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:25:29 13/11/2023",
+        "endTime": "02:29:05 13/11/2023",
+        "executionTime": 215.98094701766968
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:25:52 13/11/2023",
+        "endTime": "02:29:28 13/11/2023",
+        "executionTime": 215.30222582817078
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:24:19 13/11/2023",
+        "endTime": "02:29:34 13/11/2023",
+        "executionTime": 315.05543279647827
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:26:48 13/11/2023",
+        "endTime": "02:30:29 13/11/2023",
+        "executionTime": 220.95183038711548
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:28:00 13/11/2023",
+        "endTime": "02:30:42 13/11/2023",
+        "executionTime": 162.12261176109314
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:27:59 13/11/2023",
+        "endTime": "02:30:50 13/11/2023",
+        "executionTime": 170.99370408058167
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:28:08 13/11/2023",
+        "endTime": "02:31:52 13/11/2023",
+        "executionTime": 224.25630116462708
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:27:11 13/11/2023",
+        "endTime": "02:32:40 13/11/2023",
+        "executionTime": 328.70887303352356
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:29:34 13/11/2023",
+        "endTime": "02:33:23 13/11/2023",
+        "executionTime": 228.53961730003357
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:30:50 13/11/2023",
+        "endTime": "02:34:07 13/11/2023",
+        "executionTime": 196.36396622657776
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:29:05 13/11/2023",
+        "endTime": "02:34:37 13/11/2023",
+        "executionTime": 331.7765853404999
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:30:43 13/11/2023",
+        "endTime": "02:34:38 13/11/2023",
+        "executionTime": 235.21217942237854
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:29:28 13/11/2023",
+        "endTime": "02:35:00 13/11/2023",
+        "executionTime": 332.0193088054657
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:31:52 13/11/2023",
+        "endTime": "02:35:05 13/11/2023",
+        "executionTime": 192.48334884643555
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:33:23 13/11/2023",
+        "endTime": "02:36:10 13/11/2023",
+        "executionTime": 167.41548132896423
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:30:29 13/11/2023",
+        "endTime": "02:36:12 13/11/2023",
+        "executionTime": 343.102614402771
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:32:40 13/11/2023",
+        "endTime": "02:36:23 13/11/2023",
+        "executionTime": 222.7889280319214
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:34:07 13/11/2023",
+        "endTime": "02:37:44 13/11/2023",
+        "executionTime": 217.5119915008545
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:35:05 13/11/2023",
+        "endTime": "02:37:56 13/11/2023",
+        "executionTime": 170.81331157684326
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:34:37 13/11/2023",
+        "endTime": "02:38:12 13/11/2023",
+        "executionTime": 215.11591339111328
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:34:38 13/11/2023",
+        "endTime": "02:38:15 13/11/2023",
+        "executionTime": 216.61744928359985
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:36:11 13/11/2023",
+        "endTime": "02:38:56 13/11/2023",
+        "executionTime": 164.7469346523285
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:35:00 13/11/2023",
+        "endTime": "02:40:03 13/11/2023",
+        "executionTime": 302.16252636909485
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:37:56 13/11/2023",
+        "endTime": "02:40:46 13/11/2023",
+        "executionTime": 169.69624853134155
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:38:15 13/11/2023",
+        "endTime": "02:41:03 13/11/2023",
+        "executionTime": 168.35766291618347
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:36:13 13/11/2023",
+        "endTime": "02:41:14 13/11/2023",
+        "executionTime": 301.60079526901245
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:36:23 13/11/2023",
+        "endTime": "02:41:27 13/11/2023",
+        "executionTime": 304.1140639781952
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:38:13 13/11/2023",
+        "endTime": "02:41:46 13/11/2023",
+        "executionTime": 213.60032510757446
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:38:56 13/11/2023",
+        "endTime": "02:41:52 13/11/2023",
+        "executionTime": 176.15157270431519
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:37:45 13/11/2023",
+        "endTime": "02:43:10 13/11/2023",
+        "executionTime": 325.7607569694519
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:41:03 13/11/2023",
+        "endTime": "02:44:08 13/11/2023",
+        "executionTime": 184.77591609954834
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:40:46 13/11/2023",
+        "endTime": "02:44:35 13/11/2023",
+        "executionTime": 229.37222003936768
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:41:53 13/11/2023",
+        "endTime": "02:44:39 13/11/2023",
+        "executionTime": 166.6031243801117
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:41:46 13/11/2023",
+        "endTime": "02:44:42 13/11/2023",
+        "executionTime": 176.09956765174866
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:41:27 13/11/2023",
+        "endTime": "02:45:03 13/11/2023",
+        "executionTime": 215.59692692756653
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:40:03 13/11/2023",
+        "endTime": "02:45:17 13/11/2023",
+        "executionTime": 313.81438970565796
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:43:11 13/11/2023",
+        "endTime": "02:45:50 13/11/2023",
+        "executionTime": 159.3881516456604
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:41:15 13/11/2023",
+        "endTime": "02:46:37 13/11/2023",
+        "executionTime": 322.83830738067627
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:44:09 13/11/2023",
+        "endTime": "02:46:56 13/11/2023",
+        "executionTime": 167.438627243042
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:44:43 13/11/2023",
+        "endTime": "02:47:35 13/11/2023",
+        "executionTime": 171.91164445877075
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:45:17 13/11/2023",
+        "endTime": "02:48:07 13/11/2023",
+        "executionTime": 170.08288383483887
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:44:35 13/11/2023",
+        "endTime": "02:48:10 13/11/2023",
+        "executionTime": 214.22616481781006
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:45:03 13/11/2023",
+        "endTime": "02:48:35 13/11/2023",
+        "executionTime": 212.14979648590088
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:44:39 13/11/2023",
+        "endTime": "02:49:53 13/11/2023",
+        "executionTime": 313.8247230052948
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:46:38 13/11/2023",
+        "endTime": "02:50:22 13/11/2023",
+        "executionTime": 224.0910768508911
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:48:08 13/11/2023",
+        "endTime": "02:51:03 13/11/2023",
+        "executionTime": 174.72930026054382
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:45:50 13/11/2023",
+        "endTime": "02:51:09 13/11/2023",
+        "executionTime": 318.29073333740234
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:48:10 13/11/2023",
+        "endTime": "02:51:12 13/11/2023",
+        "executionTime": 182.46290183067322
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:46:57 13/11/2023",
+        "endTime": "02:52:22 13/11/2023",
+        "executionTime": 325.0860893726349
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:47:35 13/11/2023",
+        "endTime": "02:52:49 13/11/2023",
+        "executionTime": 314.0215232372284
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:50:22 13/11/2023",
+        "endTime": "02:53:10 13/11/2023",
+        "executionTime": 168.42122173309326
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:49:54 13/11/2023",
+        "endTime": "02:53:23 13/11/2023",
+        "executionTime": 209.3170726299286
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:51:03 13/11/2023",
+        "endTime": "02:53:48 13/11/2023",
+        "executionTime": 165.46065163612366
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:48:36 13/11/2023",
+        "endTime": "02:53:51 13/11/2023",
+        "executionTime": 315.80159735679626
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:51:09 13/11/2023",
+        "endTime": "02:53:52 13/11/2023",
+        "executionTime": 163.12591648101807
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:52:22 13/11/2023",
+        "endTime": "02:54:56 13/11/2023",
+        "executionTime": 154.13751244544983
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:53:11 13/11/2023",
+        "endTime": "02:55:53 13/11/2023",
+        "executionTime": 162.24766540527344
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:52:49 13/11/2023",
+        "endTime": "02:56:15 13/11/2023",
+        "executionTime": 205.6895570755005
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:51:13 13/11/2023",
+        "endTime": "02:56:20 13/11/2023",
+        "executionTime": 307.08152961730957
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:53:49 13/11/2023",
+        "endTime": "02:56:36 13/11/2023",
+        "executionTime": 167.0134482383728
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:53:52 13/11/2023",
+        "endTime": "02:57:20 13/11/2023",
+        "executionTime": 208.19183659553528
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:53:53 13/11/2023",
+        "endTime": "02:57:26 13/11/2023",
+        "executionTime": 213.60457134246826
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:54:56 13/11/2023",
+        "endTime": "02:57:35 13/11/2023",
+        "executionTime": 158.24117493629456
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:53:23 13/11/2023",
+        "endTime": "02:58:17 13/11/2023",
+        "executionTime": 294.2407624721527
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:55:53 13/11/2023",
+        "endTime": "02:58:52 13/11/2023",
+        "executionTime": 178.5002477169037
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:56:15 13/11/2023",
+        "endTime": "02:59:12 13/11/2023",
+        "executionTime": 177.23283672332764
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:56:36 13/11/2023",
+        "endTime": "03:00:18 13/11/2023",
+        "executionTime": 221.83837461471558
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "02:58:18 13/11/2023",
+        "endTime": "03:01:14 13/11/2023",
+        "executionTime": 176.4766981601715
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "02:57:35 13/11/2023",
+        "endTime": "03:01:18 13/11/2023",
+        "executionTime": 223.33376383781433
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:56:20 13/11/2023",
+        "endTime": "03:01:33 13/11/2023",
+        "executionTime": 313.29709243774414
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:57:20 13/11/2023",
+        "endTime": "03:02:35 13/11/2023",
+        "executionTime": 314.57842087745667
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:57:27 13/11/2023",
+        "endTime": "03:02:42 13/11/2023",
+        "executionTime": 315.49910020828247
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:00:18 13/11/2023",
+        "endTime": "03:03:48 13/11/2023",
+        "executionTime": 209.96637511253357
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:01:18 13/11/2023",
+        "endTime": "03:03:55 13/11/2023",
+        "executionTime": 156.10587000846863
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:58:52 13/11/2023",
+        "endTime": "03:03:59 13/11/2023",
+        "executionTime": 306.79427194595337
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:01:34 13/11/2023",
+        "endTime": "03:04:15 13/11/2023",
+        "executionTime": 161.07308149337769
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "02:59:13 13/11/2023",
+        "endTime": "03:04:15 13/11/2023",
+        "executionTime": 302.65559101104736
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:02:35 13/11/2023",
+        "endTime": "03:05:58 13/11/2023",
+        "executionTime": 203.19063997268677
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:01:15 13/11/2023",
+        "endTime": "03:06:10 13/11/2023",
+        "executionTime": 294.25281047821045
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:03:55 13/11/2023",
+        "endTime": "03:07:33 13/11/2023",
+        "executionTime": 217.75283575057983
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:03:59 13/11/2023",
+        "endTime": "03:07:36 13/11/2023",
+        "executionTime": 216.74301528930664
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:02:42 13/11/2023",
+        "endTime": "03:07:53 13/11/2023",
+        "executionTime": 310.22249007225037
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:04:15 13/11/2023",
+        "endTime": "03:07:55 13/11/2023",
+        "executionTime": 220.1586537361145
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:05:58 13/11/2023",
+        "endTime": "03:09:04 13/11/2023",
+        "executionTime": 185.68003845214844
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:03:48 13/11/2023",
+        "endTime": "03:09:08 13/11/2023",
+        "executionTime": 319.1848084926605
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:04:16 13/11/2023",
+        "endTime": "03:09:31 13/11/2023",
+        "executionTime": 315.34103751182556
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:06:10 13/11/2023",
+        "endTime": "03:09:56 13/11/2023",
+        "executionTime": 225.87754797935486
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:07:36 13/11/2023",
+        "endTime": "03:10:25 13/11/2023",
+        "executionTime": 169.15371251106262
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:07:33 13/11/2023",
+        "endTime": "03:11:10 13/11/2023",
+        "executionTime": 216.89064574241638
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:07:53 13/11/2023",
+        "endTime": "03:11:29 13/11/2023",
+        "executionTime": 216.44585585594177
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:07:55 13/11/2023",
+        "endTime": "03:11:32 13/11/2023",
+        "executionTime": 216.4259786605835
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:09:04 13/11/2023",
+        "endTime": "03:11:54 13/11/2023",
+        "executionTime": 169.5370111465454
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:09:31 13/11/2023",
+        "endTime": "03:12:08 13/11/2023",
+        "executionTime": 156.9722683429718
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:10:26 13/11/2023",
+        "endTime": "03:13:14 13/11/2023",
+        "executionTime": 167.92862462997437
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:09:08 13/11/2023",
+        "endTime": "03:14:08 13/11/2023",
+        "executionTime": 300.0012860298157
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:11:30 13/11/2023",
+        "endTime": "03:14:14 13/11/2023",
+        "executionTime": 164.95318150520325
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:09:56 13/11/2023",
+        "endTime": "03:14:55 13/11/2023",
+        "executionTime": 298.7423686981201
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:11:54 13/11/2023",
+        "endTime": "03:15:21 13/11/2023",
+        "executionTime": 206.4487807750702
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:12:09 13/11/2023",
+        "endTime": "03:15:36 13/11/2023",
+        "executionTime": 207.60664677619934
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:11:10 13/11/2023",
+        "endTime": "03:16:25 13/11/2023",
+        "executionTime": 315.432213306427
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:11:32 13/11/2023",
+        "endTime": "03:17:04 13/11/2023",
+        "executionTime": 331.5491364002228
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:14:15 13/11/2023",
+        "endTime": "03:18:10 13/11/2023",
+        "executionTime": 234.85886526107788
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:13:14 13/11/2023",
+        "endTime": "03:18:43 13/11/2023",
+        "executionTime": 328.98982071876526
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:14:08 13/11/2023",
+        "endTime": "03:19:38 13/11/2023",
+        "executionTime": 329.19807958602905
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:16:26 13/11/2023",
+        "endTime": "03:20:06 13/11/2023",
+        "executionTime": 219.89713525772095
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:14:55 13/11/2023",
+        "endTime": "03:20:25 13/11/2023",
+        "executionTime": 329.6163589954376
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:17:04 13/11/2023",
+        "endTime": "03:20:35 13/11/2023",
+        "executionTime": 211.1189522743225
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:15:21 13/11/2023",
+        "endTime": "03:20:53 13/11/2023",
+        "executionTime": 332.0488932132721
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:15:36 13/11/2023",
+        "endTime": "03:21:01 13/11/2023",
+        "executionTime": 324.57032465934753
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:18:10 13/11/2023",
+        "endTime": "03:21:40 13/11/2023",
+        "executionTime": 209.75392484664917
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:18:43 13/11/2023",
+        "endTime": "03:22:13 13/11/2023",
+        "executionTime": 210.36535096168518
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:20:06 13/11/2023",
+        "endTime": "03:22:47 13/11/2023",
+        "executionTime": 161.3659746646881
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:20:25 13/11/2023",
+        "endTime": "03:23:04 13/11/2023",
+        "executionTime": 158.87765860557556
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:19:38 13/11/2023",
+        "endTime": "03:23:05 13/11/2023",
+        "executionTime": 207.41126656532288
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:20:53 13/11/2023",
+        "endTime": "03:23:24 13/11/2023",
+        "executionTime": 150.48607754707336
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:21:02 13/11/2023",
+        "endTime": "03:24:20 13/11/2023",
+        "executionTime": 198.17836332321167
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:22:48 13/11/2023",
+        "endTime": "03:25:45 13/11/2023",
+        "executionTime": 177.19944524765015
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:20:35 13/11/2023",
+        "endTime": "03:25:50 13/11/2023",
+        "executionTime": 314.59787583351135
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:23:06 13/11/2023",
+        "endTime": "03:26:04 13/11/2023",
+        "executionTime": 178.37705826759338
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:21:40 13/11/2023",
+        "endTime": "03:26:55 13/11/2023",
+        "executionTime": 315.09386587142944
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:23:24 13/11/2023",
+        "endTime": "03:27:02 13/11/2023",
+        "executionTime": 217.41731476783752
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:22:14 13/11/2023",
+        "endTime": "03:27:26 13/11/2023",
+        "executionTime": 312.08346462249756
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:24:20 13/11/2023",
+        "endTime": "03:28:03 13/11/2023",
+        "executionTime": 222.55794072151184
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:23:05 13/11/2023",
+        "endTime": "03:28:18 13/11/2023",
+        "executionTime": 312.91439151763916
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:25:50 13/11/2023",
+        "endTime": "03:28:34 13/11/2023",
+        "executionTime": 163.83546710014343
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:25:45 13/11/2023",
+        "endTime": "03:29:17 13/11/2023",
+        "executionTime": 211.99511766433716
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:26:05 13/11/2023",
+        "endTime": "03:29:36 13/11/2023",
+        "executionTime": 211.39349055290222
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:26:55 13/11/2023",
+        "endTime": "03:29:44 13/11/2023",
+        "executionTime": 168.35783863067627
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:27:02 13/11/2023",
+        "endTime": "03:29:47 13/11/2023",
+        "executionTime": 165.00864100456238
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:27:26 13/11/2023",
+        "endTime": "03:30:56 13/11/2023",
+        "executionTime": 209.66130876541138
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:28:18 13/11/2023",
+        "endTime": "03:31:00 13/11/2023",
+        "executionTime": 162.00203466415405
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:28:34 13/11/2023",
+        "endTime": "03:31:23 13/11/2023",
+        "executionTime": 168.16652083396912
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:28:03 13/11/2023",
+        "endTime": "03:31:34 13/11/2023",
+        "executionTime": 211.58679580688477
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:29:47 13/11/2023",
+        "endTime": "03:32:42 13/11/2023",
+        "executionTime": 174.3684663772583
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:29:44 13/11/2023",
+        "endTime": "03:33:21 13/11/2023",
+        "executionTime": 216.9389898777008
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:31:23 13/11/2023",
+        "endTime": "03:34:36 13/11/2023",
+        "executionTime": 193.3697144985199
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:29:17 13/11/2023",
+        "endTime": "03:34:44 13/11/2023",
+        "executionTime": 327.1376564502716
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:29:36 13/11/2023",
+        "endTime": "03:35:10 13/11/2023",
+        "executionTime": 333.56169390678406
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:31:35 13/11/2023",
+        "endTime": "03:35:29 13/11/2023",
+        "executionTime": 234.90737915039062
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:30:56 13/11/2023",
+        "endTime": "03:36:26 13/11/2023",
+        "executionTime": 330.0263750553131
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:31:01 13/11/2023",
+        "endTime": "03:36:28 13/11/2023",
+        "executionTime": 326.65916109085083
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:33:21 13/11/2023",
+        "endTime": "03:36:30 13/11/2023",
+        "executionTime": 188.74482035636902
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:32:42 13/11/2023",
+        "endTime": "03:36:37 13/11/2023",
+        "executionTime": 234.86446022987366
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:34:45 13/11/2023",
+        "endTime": "03:37:27 13/11/2023",
+        "executionTime": 162.4342565536499
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:34:37 13/11/2023",
+        "endTime": "03:38:12 13/11/2023",
+        "executionTime": 215.42143940925598
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:36:37 13/11/2023",
+        "endTime": "03:40:07 13/11/2023",
+        "executionTime": 210.30364441871643
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:37:28 13/11/2023",
+        "endTime": "03:40:08 13/11/2023",
+        "executionTime": 160.3895936012268
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:35:10 13/11/2023",
+        "endTime": "03:40:26 13/11/2023",
+        "executionTime": 315.97712421417236
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:35:30 13/11/2023",
+        "endTime": "03:40:37 13/11/2023",
+        "executionTime": 307.07681679725647
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:36:28 13/11/2023",
+        "endTime": "03:41:31 13/11/2023",
+        "executionTime": 302.9854431152344
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:36:30 13/11/2023",
+        "endTime": "03:41:37 13/11/2023",
+        "executionTime": 306.96299386024475
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:36:27 13/11/2023",
+        "endTime": "03:41:41 13/11/2023",
+        "executionTime": 314.2360951900482
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:40:08 13/11/2023",
+        "endTime": "03:43:14 13/11/2023",
+        "executionTime": 186.13953638076782
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:38:12 13/11/2023",
+        "endTime": "03:43:39 13/11/2023",
+        "executionTime": 326.39036774635315
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:40:08 13/11/2023",
+        "endTime": "03:43:53 13/11/2023",
+        "executionTime": 224.74108338356018
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:40:27 13/11/2023",
+        "endTime": "03:44:18 13/11/2023",
+        "executionTime": 231.06523084640503
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:40:37 13/11/2023",
+        "endTime": "03:44:29 13/11/2023",
+        "executionTime": 231.44532442092896
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:41:32 13/11/2023",
+        "endTime": "03:45:25 13/11/2023",
+        "executionTime": 233.74396634101868
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:41:41 13/11/2023",
+        "endTime": "03:45:44 13/11/2023",
+        "executionTime": 242.5771632194519
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:43:14 13/11/2023",
+        "endTime": "03:47:03 13/11/2023",
+        "executionTime": 228.40679907798767
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:41:37 13/11/2023",
+        "endTime": "03:47:13 13/11/2023",
+        "executionTime": 335.99439764022827
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:43:39 13/11/2023",
+        "endTime": "03:47:18 13/11/2023",
+        "executionTime": 219.09863781929016
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:43:53 13/11/2023",
+        "endTime": "03:47:32 13/11/2023",
+        "executionTime": 218.68695521354675
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:44:18 13/11/2023",
+        "endTime": "03:47:53 13/11/2023",
+        "executionTime": 215.12430381774902
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:45:44 13/11/2023",
+        "endTime": "03:48:31 13/11/2023",
+        "executionTime": 167.5513036251068
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:45:26 13/11/2023",
+        "endTime": "03:48:53 13/11/2023",
+        "executionTime": 207.09276843070984
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:44:29 13/11/2023",
+        "endTime": "03:49:37 13/11/2023",
+        "executionTime": 307.7774465084076
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:47:14 13/11/2023",
+        "endTime": "03:50:32 13/11/2023",
+        "executionTime": 197.84195756912231
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:48:32 13/11/2023",
+        "endTime": "03:52:10 13/11/2023",
+        "executionTime": 218.23608350753784
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:47:03 13/11/2023",
+        "endTime": "03:52:23 13/11/2023",
+        "executionTime": 320.08599281311035
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:48:53 13/11/2023",
+        "endTime": "03:52:32 13/11/2023",
+        "executionTime": 218.71519660949707
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:47:18 13/11/2023",
+        "endTime": "03:52:40 13/11/2023",
+        "executionTime": 321.2418737411499
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:47:32 13/11/2023",
+        "endTime": "03:52:50 13/11/2023",
+        "executionTime": 318.142945766449
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:47:53 13/11/2023",
+        "endTime": "03:53:15 13/11/2023",
+        "executionTime": 321.78377509117126
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:49:37 13/11/2023",
+        "endTime": "03:53:24 13/11/2023",
+        "executionTime": 226.50462532043457
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:52:10 13/11/2023",
+        "endTime": "03:54:59 13/11/2023",
+        "executionTime": 168.61776638031006
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:52:51 13/11/2023",
+        "endTime": "03:55:24 13/11/2023",
+        "executionTime": 153.36627531051636
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:50:32 13/11/2023",
+        "endTime": "03:55:54 13/11/2023",
+        "executionTime": 322.4331669807434
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:53:24 13/11/2023",
+        "endTime": "03:56:08 13/11/2023",
+        "executionTime": 163.79129099845886
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:53:16 13/11/2023",
+        "endTime": "03:56:42 13/11/2023",
+        "executionTime": 205.93589568138123
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:52:23 13/11/2023",
+        "endTime": "03:57:24 13/11/2023",
+        "executionTime": 300.31742572784424
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:52:32 13/11/2023",
+        "endTime": "03:57:31 13/11/2023",
+        "executionTime": 299.26894879341125
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:52:40 13/11/2023",
+        "endTime": "03:57:32 13/11/2023",
+        "executionTime": 292.0137939453125
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:54:59 13/11/2023",
+        "endTime": "03:57:42 13/11/2023",
+        "executionTime": 163.17854523658752
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:55:55 13/11/2023",
+        "endTime": "03:58:28 13/11/2023",
+        "executionTime": 153.51501369476318
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:55:24 13/11/2023",
+        "endTime": "03:58:45 13/11/2023",
+        "executionTime": 200.4076578617096
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:56:08 13/11/2023",
+        "endTime": "03:59:35 13/11/2023",
+        "executionTime": 207.2783203125
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:57:32 13/11/2023",
+        "endTime": "04:00:12 13/11/2023",
+        "executionTime": 159.7614402770996
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "03:58:45 13/11/2023",
+        "endTime": "04:01:59 13/11/2023",
+        "executionTime": 194.19876194000244
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:56:42 13/11/2023",
+        "endTime": "04:02:08 13/11/2023",
+        "executionTime": 325.9089570045471
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "03:58:28 13/11/2023",
+        "endTime": "04:02:14 13/11/2023",
+        "executionTime": 225.97556042671204
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:57:24 13/11/2023",
+        "endTime": "04:02:53 13/11/2023",
+        "executionTime": 328.68507742881775
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:57:32 13/11/2023",
+        "endTime": "04:02:54 13/11/2023",
+        "executionTime": 322.641220331192
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:57:43 13/11/2023",
+        "endTime": "04:03:20 13/11/2023",
+        "executionTime": 337.1770250797272
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "03:59:35 13/11/2023",
+        "endTime": "04:05:13 13/11/2023",
+        "executionTime": 337.28094720840454
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:01:59 13/11/2023",
+        "endTime": "04:05:43 13/11/2023",
+        "executionTime": 223.325763463974
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:02:53 13/11/2023",
+        "endTime": "04:05:43 13/11/2023",
+        "executionTime": 170.27650427818298
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:00:13 13/11/2023",
+        "endTime": "04:05:46 13/11/2023",
+        "executionTime": 333.8310580253601
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:02:08 13/11/2023",
+        "endTime": "04:05:48 13/11/2023",
+        "executionTime": 220.18809247016907
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:02:55 13/11/2023",
+        "endTime": "04:06:32 13/11/2023",
+        "executionTime": 217.11684608459473
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:02:15 13/11/2023",
+        "endTime": "04:07:37 13/11/2023",
+        "executionTime": 322.5803334712982
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:05:13 13/11/2023",
+        "endTime": "04:08:00 13/11/2023",
+        "executionTime": 167.33775091171265
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:05:44 13/11/2023",
+        "endTime": "04:08:30 13/11/2023",
+        "executionTime": 166.58352732658386
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:03:20 13/11/2023",
+        "endTime": "04:08:32 13/11/2023",
+        "executionTime": 312.2759952545166
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:05:49 13/11/2023",
+        "endTime": "04:09:29 13/11/2023",
+        "executionTime": 220.8281533718109
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:07:37 13/11/2023",
+        "endTime": "04:10:38 13/11/2023",
+        "executionTime": 180.85359525680542
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:05:43 13/11/2023",
+        "endTime": "04:11:05 13/11/2023",
+        "executionTime": 321.61215019226074
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:05:47 13/11/2023",
+        "endTime": "04:11:09 13/11/2023",
+        "executionTime": 322.3716275691986
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:06:32 13/11/2023",
+        "endTime": "04:11:59 13/11/2023",
+        "executionTime": 326.77934098243713
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:08:01 13/11/2023",
+        "endTime": "04:11:59 13/11/2023",
+        "executionTime": 238.74947118759155
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:08:31 13/11/2023",
+        "endTime": "04:12:27 13/11/2023",
+        "executionTime": 236.63444542884827
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:08:33 13/11/2023",
+        "endTime": "04:12:28 13/11/2023",
+        "executionTime": 235.50877904891968
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:10:39 13/11/2023",
+        "endTime": "04:14:23 13/11/2023",
+        "executionTime": 224.87262439727783
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:11:10 13/11/2023",
+        "endTime": "04:14:51 13/11/2023",
+        "executionTime": 221.76391768455505
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:09:30 13/11/2023",
+        "endTime": "04:15:06 13/11/2023",
+        "executionTime": 336.7266049385071
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:11:59 13/11/2023",
+        "endTime": "04:15:38 13/11/2023",
+        "executionTime": 218.97440218925476
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:12:27 13/11/2023",
+        "endTime": "04:16:06 13/11/2023",
+        "executionTime": 218.42179369926453
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:12:28 13/11/2023",
+        "endTime": "04:16:08 13/11/2023",
+        "executionTime": 219.90481734275818
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:11:05 13/11/2023",
+        "endTime": "04:16:19 13/11/2023",
+        "executionTime": 314.2121887207031
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:12:00 13/11/2023",
+        "endTime": "04:17:20 13/11/2023",
+        "executionTime": 319.93791580200195
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:15:07 13/11/2023",
+        "endTime": "04:18:57 13/11/2023",
+        "executionTime": 230.22676348686218
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:16:20 13/11/2023",
+        "endTime": "04:19:29 13/11/2023",
+        "executionTime": 189.76817750930786
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:14:24 13/11/2023",
+        "endTime": "04:20:08 13/11/2023",
+        "executionTime": 344.31113743782043
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:16:06 13/11/2023",
+        "endTime": "04:20:11 13/11/2023",
+        "executionTime": 244.80914545059204
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:16:09 13/11/2023",
+        "endTime": "04:20:13 13/11/2023",
+        "executionTime": 244.22833061218262
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:17:20 13/11/2023",
+        "endTime": "04:20:24 13/11/2023",
+        "executionTime": 184.34490036964417
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:14:52 13/11/2023",
+        "endTime": "04:20:34 13/11/2023",
+        "executionTime": 342.57189655303955
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:15:38 13/11/2023",
+        "endTime": "04:21:17 13/11/2023",
+        "executionTime": 338.45551228523254
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:19:30 13/11/2023",
+        "endTime": "04:23:05 13/11/2023",
+        "executionTime": 214.99436783790588
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:20:35 13/11/2023",
+        "endTime": "04:24:19 13/11/2023",
+        "executionTime": 223.85725855827332
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:18:57 13/11/2023",
+        "endTime": "04:24:20 13/11/2023",
+        "executionTime": 323.0607919692993
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:20:08 13/11/2023",
+        "endTime": "04:25:19 13/11/2023",
+        "executionTime": 311.0634994506836
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:20:13 13/11/2023",
+        "endTime": "04:25:34 13/11/2023",
+        "executionTime": 321.0714213848114
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:20:25 13/11/2023",
+        "endTime": "04:25:35 13/11/2023",
+        "executionTime": 310.48810338974
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:20:11 13/11/2023",
+        "endTime": "04:25:37 13/11/2023",
+        "executionTime": 326.03348112106323
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:21:17 13/11/2023",
+        "endTime": "04:26:25 13/11/2023",
+        "executionTime": 308.2201015949249
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:23:05 13/11/2023",
+        "endTime": "04:26:36 13/11/2023",
+        "executionTime": 211.32324075698853
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:24:19 13/11/2023",
+        "endTime": "04:27:18 13/11/2023",
+        "executionTime": 179.3604142665863
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:25:20 13/11/2023",
+        "endTime": "04:28:13 13/11/2023",
+        "executionTime": 173.52102398872375
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:25:36 13/11/2023",
+        "endTime": "04:28:32 13/11/2023",
+        "executionTime": 176.44688296318054
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:26:26 13/11/2023",
+        "endTime": "04:29:22 13/11/2023",
+        "executionTime": 176.5572385787964
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:25:35 13/11/2023",
+        "endTime": "04:29:23 13/11/2023",
+        "executionTime": 228.13252234458923
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:24:21 13/11/2023",
+        "endTime": "04:29:49 13/11/2023",
+        "executionTime": 327.7779197692871
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:27:18 13/11/2023",
+        "endTime": "04:31:02 13/11/2023",
+        "executionTime": 223.14183497428894
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:28:14 13/11/2023",
+        "endTime": "04:31:07 13/11/2023",
+        "executionTime": 173.40835762023926
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:25:38 13/11/2023",
+        "endTime": "04:31:08 13/11/2023",
+        "executionTime": 330.42538619041443
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:26:36 13/11/2023",
+        "endTime": "04:32:16 13/11/2023",
+        "executionTime": 339.4654541015625
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:29:23 13/11/2023",
+        "endTime": "04:32:23 13/11/2023",
+        "executionTime": 180.15960121154785
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:29:49 13/11/2023",
+        "endTime": "04:32:41 13/11/2023",
+        "executionTime": 172.2305874824524
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:28:32 13/11/2023",
+        "endTime": "04:33:52 13/11/2023",
+        "executionTime": 319.83908700942993
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:29:22 13/11/2023",
+        "endTime": "04:34:47 13/11/2023",
+        "executionTime": 324.6111364364624
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:32:24 13/11/2023",
+        "endTime": "04:35:15 13/11/2023",
+        "executionTime": 171.25535941123962
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:32:16 13/11/2023",
+        "endTime": "04:35:54 13/11/2023",
+        "executionTime": 218.02467155456543
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:32:41 13/11/2023",
+        "endTime": "04:36:25 13/11/2023",
+        "executionTime": 223.99745416641235
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:31:02 13/11/2023",
+        "endTime": "04:36:36 13/11/2023",
+        "executionTime": 333.85604786872864
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:31:07 13/11/2023",
+        "endTime": "04:36:40 13/11/2023",
+        "executionTime": 332.84366750717163
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:31:08 13/11/2023",
+        "endTime": "04:36:42 13/11/2023",
+        "executionTime": 333.1848335266113
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:33:53 13/11/2023",
+        "endTime": "04:37:48 13/11/2023",
+        "executionTime": 235.04803252220154
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:35:15 13/11/2023",
+        "endTime": "04:39:16 13/11/2023",
+        "executionTime": 241.156188249588
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:36:26 13/11/2023",
+        "endTime": "04:39:24 13/11/2023",
+        "executionTime": 178.64052653312683
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:36:42 13/11/2023",
+        "endTime": "04:39:33 13/11/2023",
+        "executionTime": 170.88860058784485
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:35:54 13/11/2023",
+        "endTime": "04:39:50 13/11/2023",
+        "executionTime": 235.4305579662323
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:34:47 13/11/2023",
+        "endTime": "04:40:17 13/11/2023",
+        "executionTime": 330.03417444229126
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:36:41 13/11/2023",
+        "endTime": "04:40:25 13/11/2023",
+        "executionTime": 223.85725140571594
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:37:48 13/11/2023",
+        "endTime": "04:40:37 13/11/2023",
+        "executionTime": 169.30959725379944
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:36:36 13/11/2023",
+        "endTime": "04:41:54 13/11/2023",
+        "executionTime": 317.5604872703552
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:39:17 13/11/2023",
+        "endTime": "04:42:09 13/11/2023",
+        "executionTime": 172.5694122314453
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:39:50 13/11/2023",
+        "endTime": "04:42:40 13/11/2023",
+        "executionTime": 169.62414813041687
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:40:25 13/11/2023",
+        "endTime": "04:44:10 13/11/2023",
+        "executionTime": 224.70842385292053
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:40:38 13/11/2023",
+        "endTime": "04:44:15 13/11/2023",
+        "executionTime": 217.55204391479492
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:39:24 13/11/2023",
+        "endTime": "04:44:52 13/11/2023",
+        "executionTime": 327.7677173614502
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:39:33 13/11/2023",
+        "endTime": "04:44:54 13/11/2023",
+        "executionTime": 321.18582463264465
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:42:10 13/11/2023",
+        "endTime": "04:45:29 13/11/2023",
+        "executionTime": 199.06218886375427
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:40:18 13/11/2023",
+        "endTime": "04:45:48 13/11/2023",
+        "executionTime": 329.45897912979126
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:41:54 13/11/2023",
+        "endTime": "04:47:38 13/11/2023",
+        "executionTime": 343.8501920700073
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:42:40 13/11/2023",
+        "endTime": "04:48:36 13/11/2023",
+        "executionTime": 355.79530024528503
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:44:53 13/11/2023",
+        "endTime": "04:48:51 13/11/2023",
+        "executionTime": 238.3666443824768
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:44:55 13/11/2023",
+        "endTime": "04:48:52 13/11/2023",
+        "executionTime": 236.93278741836548
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:45:29 13/11/2023",
+        "endTime": "04:49:34 13/11/2023",
+        "executionTime": 244.28084063529968
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:44:10 13/11/2023",
+        "endTime": "04:50:03 13/11/2023",
+        "executionTime": 353.3124318122864
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:44:15 13/11/2023",
+        "endTime": "04:50:12 13/11/2023",
+        "executionTime": 357.08179807662964
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:47:38 13/11/2023",
+        "endTime": "04:50:51 13/11/2023",
+        "executionTime": 192.28252530097961
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:45:48 13/11/2023",
+        "endTime": "04:51:53 13/11/2023",
+        "executionTime": 364.812956571579
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:48:36 13/11/2023",
+        "endTime": "04:51:54 13/11/2023",
+        "executionTime": 198.26232719421387
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:48:51 13/11/2023",
+        "endTime": "04:52:15 13/11/2023",
+        "executionTime": 204.3967990875244
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:48:52 13/11/2023",
+        "endTime": "04:53:04 13/11/2023",
+        "executionTime": 251.84733176231384
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:50:13 13/11/2023",
+        "endTime": "04:53:27 13/11/2023",
+        "executionTime": 193.72950887680054
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:50:03 13/11/2023",
+        "endTime": "04:54:05 13/11/2023",
+        "executionTime": 241.9224236011505
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:51:53 13/11/2023",
+        "endTime": "04:54:45 13/11/2023",
+        "executionTime": 171.91327571868896
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:51:55 13/11/2023",
+        "endTime": "04:54:56 13/11/2023",
+        "executionTime": 181.5279667377472
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:49:34 13/11/2023",
+        "endTime": "04:55:41 13/11/2023",
+        "executionTime": 367.15653705596924
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:50:51 13/11/2023",
+        "endTime": "04:56:40 13/11/2023",
+        "executionTime": 348.8961100578308
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:53:04 13/11/2023",
+        "endTime": "04:56:59 13/11/2023",
+        "executionTime": 234.40561437606812
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:54:06 13/11/2023",
+        "endTime": "04:57:14 13/11/2023",
+        "executionTime": 188.28858733177185
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:54:45 13/11/2023",
+        "endTime": "04:57:55 13/11/2023",
+        "executionTime": 189.33381414413452
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:52:16 13/11/2023",
+        "endTime": "04:58:07 13/11/2023",
+        "executionTime": 350.969025850296
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:53:27 13/11/2023",
+        "endTime": "04:59:21 13/11/2023",
+        "executionTime": 354.0953142642975
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:55:41 13/11/2023",
+        "endTime": "04:59:46 13/11/2023",
+        "executionTime": 244.66232824325562
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:54:56 13/11/2023",
+        "endTime": "05:01:01 13/11/2023",
+        "executionTime": 364.9564838409424
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:56:59 13/11/2023",
+        "endTime": "05:01:12 13/11/2023",
+        "executionTime": 253.52519536018372
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "04:57:55 13/11/2023",
+        "endTime": "05:01:58 13/11/2023",
+        "executionTime": 243.4794900417328
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "04:59:21 13/11/2023",
+        "endTime": "05:02:31 13/11/2023",
+        "executionTime": 189.2987036705017
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:56:40 13/11/2023",
+        "endTime": "05:02:41 13/11/2023",
+        "executionTime": 360.4762465953827
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:57:14 13/11/2023",
+        "endTime": "05:03:13 13/11/2023",
+        "executionTime": 358.5846438407898
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:58:07 13/11/2023",
+        "endTime": "05:04:01 13/11/2023",
+        "executionTime": 353.76523756980896
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:01:02 13/11/2023",
+        "endTime": "05:04:03 13/11/2023",
+        "executionTime": 180.93192839622498
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:01:58 13/11/2023",
+        "endTime": "05:05:08 13/11/2023",
+        "executionTime": 189.50499725341797
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "04:59:46 13/11/2023",
+        "endTime": "05:05:48 13/11/2023",
+        "executionTime": 362.0396656990051
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:02:41 13/11/2023",
+        "endTime": "05:05:51 13/11/2023",
+        "executionTime": 189.8653802871704
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:03:13 13/11/2023",
+        "endTime": "05:06:37 13/11/2023",
+        "executionTime": 203.37303686141968
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "05:02:31 13/11/2023",
+        "endTime": "05:06:49 13/11/2023",
+        "executionTime": 258.41684770584106
+    },
+    {
+        "aggregationPipelineName": "persona",
+        "collection": "orders",
+        "startTime": "05:01:12 13/11/2023",
+        "endTime": "05:07:28 13/11/2023",
+        "executionTime": 375.6370675563812
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:04:02 13/11/2023",
+        "endTime": "05:07:37 13/11/2023",
+        "executionTime": 215.0917317867279
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "05:04:03 13/11/2023",
+        "endTime": "05:08:27 13/11/2023",
+        "executionTime": 264.15238094329834
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:05:08 13/11/2023",
+        "endTime": "05:08:45 13/11/2023",
+        "executionTime": 216.51673102378845
+    },
+    {
+        "aggregationPipelineName": "performancePrices",
+        "collection": "orders",
+        "startTime": "05:05:49 13/11/2023",
+        "endTime": "05:09:31 13/11/2023",
+        "executionTime": 222.2122278213501
+    },
+    {
+        "aggregationPipelineName": "driversAssignations",
+        "collection": "assignations",
+        "startTime": "05:05:51 13/11/2023",
+        "endTime": "05:10:16 13/11/2023",
+        "executionTime": 264.9158670902252
+    }
+]

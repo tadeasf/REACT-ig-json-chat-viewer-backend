@@ -1,0 +1,467 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Message Collection API",
+      "description": "API for managing message collections.",
+      "version": "1.0.0"
+    },
+    "host": "secondary-dev.tadeasfort.com",
+    "basePath": "/",
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Home Endpoint",
+          "description": "Returns a greeting message.",
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "/collections": {
+        "get": {
+          "summary": "Get Collections",
+          "description": "Fetches a list of collections.",
+          "responses": {
+            "200": {
+              "description": "List of collections",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Collection"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/collections/alphabetical": {
+        "get": {
+          "summary": "Get Collections in Alphabetical Order",
+          "description": "Fetches a list of collections sorted alphabetically.",
+          "responses": {
+            "200": {
+              "description": "Alphabetically sorted collections",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Collection"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/messages/{collectionName}": {
+        "get": {
+          "summary": "Get Messages by Collection",
+          "description": "Fetches messages from a specific collection.",
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "fromDate",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "name": "toDate",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "format": "date-time"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of messages from the collection",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Message"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/upload": {
+        "post": {
+          "summary": "Upload Messages",
+          "description": "Uploads messages to a new or existing collection.",
+          "consumes": ["multipart/form-data"],
+          "parameters": [
+            {
+              "name": "files",
+              "in": "formData",
+              "required": true,
+              "type": "file",
+              "description": "The JSON files containing messages."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Messages uploaded successfully.",
+              "schema": {
+                "$ref": "#/definitions/UploadResponse"
+              }
+            }
+          }
+        }
+      },
+      "/delete/{collectionName}": {
+        "delete": {
+          "summary": "Delete Collection",
+          "description": "Deletes a specific message collection.",
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Name of the collection to be deleted."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Collection deleted successfully.",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  },
+                  "collectionName": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/messages/{collectionName}/photo": {
+        "get": {
+          "summary": "Check Photo Availability",
+          "description": "Checks if a photo is available for a specified collection.",
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Name of the collection."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Photo availability information.",
+              "schema": {
+                "$ref": "#/definitions/PhotoInfo"
+              }
+            }
+          }
+        }
+      },      
+      "/upload/photo/{collectionName}": {
+        "post": {
+          "summary": "Upload Photo",
+          "description": "Uploads a photo for a specific collection.",
+          "consumes": ["multipart/form-data"],
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Name of the collection."
+            },
+            {
+              "name": "photo",
+              "in": "formData",
+              "required": true,
+              "type": "file",
+              "description": "Photo to be uploaded."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Photo uploaded successfully.",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/serve/photo/{collectionName}": {
+        "get": {
+          "summary": "Serve Photo",
+          "description": "Serves a photo for a specific collection.",
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Name of the collection."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Photo served successfully.",
+              "schema": {
+                "type": "file"
+              }
+            },
+            "404": {
+              "description": "Photo not found."
+            }
+          }
+        }
+      },
+      "/delete/photo/{collectionName}": {
+        "delete": {
+          "summary": "Delete Photo",
+          "description": "Deletes a photo for a specific collection.",
+          "parameters": [
+            {
+              "name": "collectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Name of the collection."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Photo deleted successfully or database updated.",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Photo not found and nothing to update in database."
+            }
+          }
+        }
+      },
+      "/rename/{currentCollectionName}": {
+        "put": {
+          "summary": "Rename Collection",
+          "description": "Renames an existing collection.",
+          "parameters": [
+            {
+              "name": "currentCollectionName",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "Current name of the collection."
+            },
+            {
+              "name": "newCollectionName",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "newCollectionName": {
+                    "type": "string"
+                  }
+                }
+              },
+              "description": "New name for the collection."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Collection renamed successfully.",
+              "schema": {
+                "$ref": "#/definitions/RenameResponse"
+              }
+            }
+          }
+        }
+      },
+      "/search": {
+        "post": {
+          "summary": "Search Collections",
+          "description": "Performs a search across all collections.",
+          "consumes": ["application/json"],
+          "parameters": [
+            {
+              "name": "searchQuery",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                }
+              },
+              "description": "The search query."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Search results returned successfully.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SearchResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/load-cpu": {
+        "get": {
+          "summary": "CPU Load Test",
+          "description": "Endpoint to test CPU load.",
+          "responses": {
+            "200": {
+              "description": "CPU load generated.",
+              "schema": {
+                "$ref": "#/definitions/LoadCpuResponse"
+              }
+            }
+          }
+        }
+      },
+      "/stress-test": {
+        "get": {
+          "summary": "Stress Test",
+          "description": "Endpoint to perform a stress test on the server.",
+          "responses": {
+            "200": {
+              "description": "Stress test executed.",
+              "schema": {
+                "$ref": "#/definitions/StressTestResponse"
+              }
+            }
+          }
+        }
+      }                        
+    },
+    "definitions": {
+      "Collection": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "messageCount": {
+            "type": "integer"
+          }
+        }
+      },
+      "Message": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "integer"
+          },
+          "sender_name": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      },
+      "UploadResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "uploadedCount": {
+            "type": "integer"
+          }
+        }
+      },
+      "SearchResult": {
+        "type": "object",
+        "properties": {
+          "collectionName": {
+            "type": "string"
+          },
+          "messages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Message"
+            }
+          }
+        }
+      },
+      "PhotoInfo": {
+        "type": "object",
+        "properties": {
+          "isPhotoAvailable": {
+            "type": "boolean"
+          },
+          "photoUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "RenameResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "oldName": {
+            "type": "string"
+          },
+          "newName": {
+            "type": "string"
+          }
+        }
+      },
+      "LoadCpuResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "StressTestResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      }                        
+    }
+  }
+  

@@ -1,7 +1,10 @@
 /** @format */
 
 require("dotenv").config();
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 const express = require("express");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -9,6 +12,7 @@ let generate, count;
 import("random-words").then((randomWords) => {
   ({ generate, count } = randomWords);
 });
+const Redis = require('ioredis');
 const app = express();
 const port = process.env.PORT || 5555;
 const multer = require("multer");
@@ -17,11 +21,9 @@ const path = require("path");
 const os = require("os");
 const bodyParser = require("body-parser");
 const { combine_and_convert_json_files } = require("./json_combiner");
-const { LRUCache } = require("lru-cache");
 const { v4: uuidv4 } = require("uuid");
 const compression = require("compression");
 const diacritics = require("diacritics");
-
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, {
@@ -41,47 +43,24 @@ const client = new MongoClient(uri, {
 });
 
 const MESSAGE_DATABASE = "kocouratciMessenger";
+const redis = new Redis({
+  port: 6379,      
+  host: '127.0.0.1',   
+});
+redis.on('error', (err) => {
+  console.log('Redis Error: ', err);
+});
 
-function sizeof(object) {
-  const stringifiedObject = JSON.stringify(object);
-  const bytes = Buffer.from(stringifiedObject).length;
-  return bytes;
-}
+// Optionally handle connection events
+redis.on('connect', () => {
+  console.log('Connected to Redis');
+});
 
-const cacheOptions = {
-  maxSize: 12 * 1024 * 1024 * 1024, // 8
-  ttl: 1 * 24 * 60 * 60 * 1000, // 1 day
-  sizeCalculation: (value) => {
-    // Assuming each message is a JSON string, adjust if needed
-    return Buffer.from(JSON.stringify(value)).length;
-  },
-  length: (value) => {
-    // Return the number of objects in the cached collection
-    return Array.isArray(value) ? value.length : 1;
-  },
-  dispose: (value, key) => {
-    // Handle any cleanup if needed when an item is removed from cache
-  },
-};
-
-const cache = new LRUCache(cacheOptions);
-
+// Remember to gracefully close the Redis connection when your app exits
+process.on('exit', () => {
+  redis.quit();
+});
 client.connect();
-
-// app.use(cors({
-//   origin: [
-//     "https://kocouratko.cz",
-//     "https://server.kocouratko.eu",
-//     "http://localhost:5009",
-//     "http://193.86.152.148:5009",
-//     "http://193.86.152.148:3000",
-//     "http://localhost:3000",
-//     "http://localhost:3001",
-//     "http://localhost:3335",
-//     "app://.",
-//     "tauri://localhost",
-//   ],
-// }));
 
 //ALLOW CORS FOR LOAD BALANCER
 app.use(
@@ -90,10 +69,10 @@ app.use(
   })
 );
 
-app.use(morgan("combined")); // Using Morgan for logging
+app.use(morgan("combined"));
 app.use(compression());
 app.use(bodyParser.json());
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get("/", (req, res) => {
   res.send("Hi, Blackbox, grab some data! omnomnomnom...");
 });
@@ -210,59 +189,6 @@ async function logError(error) {
   return errorLog;
 }
 
-async function cacheAllCollections() {
-  const startTime = Date.now();
-  const db = client.db(MESSAGE_DATABASE);
-  const collections = await db.listCollections().toArray();
-
-  const collectionData = [];
-  let totalMessages = 0;
-
-  for (const collection of collections) {
-    const collectionName = collection.name;
-    const messages = await db
-      .collection(collectionName)
-      .aggregate([
-        { $sort: { timestamp_ms: 1 } },
-        { $addFields: { timestamp: { $toDate: "$timestamp_ms" } } },
-      ])
-      .toArray();
-    totalMessages += messages.length;
-
-    // Cache the messages for each collection
-    cache.set(`messages-${collectionName}`, messages);
-
-    const count = await db.collection(collectionName).countDocuments();
-    collectionData.push({
-      name: collectionName,
-      messageCount: count,
-    });
-  }
-
-  // Sort collections by message count in descending order
-  collectionData.sort((a, b) => b.messageCount - a.messageCount);
-
-  // Cache the sorted list of collection data (name and message count)
-  cache.set("collections", collectionData);
-
-  const endTime = Date.now();
-  const timeTaken = (endTime - startTime) / 1000; // in seconds
-
-  // Calculate the total size of the cache in bytes
-  let totalSize = 0;
-  cache.forEach((value) => {
-    totalSize += sizeof(value);
-  });
-  // totalSize in MB as integer (rounded down)
-  const totalSizeMB = Math.floor(totalSize / 1024 / 1024);
-
-  console.log(
-    `Cached ${collections.length} collections with ${totalMessages} messages in ${timeTaken} seconds. Total cache size: ${totalSizeMB} MB`
-  );
-}
-
-// cacheAllCollections(); // -> too heavy now, turn of for perf testing
-
 async function sanitizeCollections() {
   try {
     await client.connect();
@@ -321,48 +247,63 @@ async function sanitizeCollections() {
 
 // Start the sanitization process when the server starts
 sanitizeCollections();
+async function updateCollectionsCache() {
+  const db = client.db(MESSAGE_DATABASE);
+  const collections = await db.listCollections().toArray();
+
+  let collectionsData = [];
+  for (const collection of collections) {
+    const count = await db.collection(collection.name).countDocuments();
+    collectionsData.push({
+      name: collection.name,
+      messageCount: count,
+    });
+  }
+
+  // Sort and store in Redis
+  const sortedByCount = [...collectionsData].sort((a, b) => b.messageCount - a.messageCount);
+  const sortedAlphabetically = [...collectionsData].sort((a, b) => a.name.localeCompare(b.name));
+
+  // Use JSON.stringify to store array data as a string
+  await redis.set('collections', JSON.stringify(sortedByCount));
+  await redis.set('collectionsAlphabetical', JSON.stringify(sortedAlphabetically));
+}
+
+// Initial cache population
+updateCollectionsCache();
+
+// Set an interval to update the cache every minute
+setInterval(updateCollectionsCache, 60000);
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
-  const db = client.db(MESSAGE_DATABASE);
-  const collections = await db.listCollections().toArray();
-
-  const collectionData = [];
-  for (const collection of collections) {
-    const count = await db.collection(collection.name).countDocuments();
-    collectionData.push({
-      name: collection.name,
-      messageCount: count,
-    });
-  }
-
-  // Sort collections by message count
-  collectionData.sort((a, b) => b.messageCount - a.messageCount);
-
   logEndpointInfo(req, res, "GET /collections");
-  res.status(200).json(collectionData);
-});
-
-// Endpoint to get collections sorted alphabetically
-app.get("/collections/alphabetical", async (req, res) => {
-  const db = client.db(MESSAGE_DATABASE);
-  const collections = await db.listCollections().toArray();
-
-  const collectionData = [];
-  for (const collection of collections) {
-    const count = await db.collection(collection.name).countDocuments();
-    collectionData.push({
-      name: collection.name,
-      messageCount: count,
-    });
+  try {
+    const cachedData = await redis.get('collections');
+    if (cachedData) {
+      return res.status(200).json(JSON.parse(cachedData));
+    }
+    res.status(404).send('No data found');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
   }
-
-  // Sort collections alphabetically
-  collectionData.sort((a, b) => a.name.localeCompare(b.name));
-
-  logEndpointInfo(req, res, "GET /collections/alphabetical");
-  res.status(200).json(collectionData);
 });
+
+app.get("/collections/alphabetical", async (req, res) => {
+  logEndpointInfo(req, res, "GET /collections/alphabetical");
+  try {
+    const cachedData = await redis.get('collectionsAlphabetical');
+    if (cachedData) {
+      return res.status(200).json(JSON.parse(cachedData));
+    }
+    res.status(404).send('No data found');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
 
 // Endpoint to get messages by collection name
 
@@ -375,47 +316,58 @@ app.get("/messages/:collectionName", async (req, res) => {
     ? new Date(`${req.query.toDate}T23:59:59Z`).getTime()
     : null;
   const cacheKey = `messages-${collectionName}-${fromDate}-${toDate}`;
-  const cachedData = cache.get(cacheKey);
 
-  if (cachedData) {
-    return res.status(200).json(cachedData);
-  }
-  console.log(`fromDate timestamp: ${fromDate}, toDate timestamp: ${toDate}`);
-  const db = client.db(MESSAGE_DATABASE);
-  const collection = db.collection(collectionName);
+  try {
+    // Try to get data from Redis cache
+    const cachedData = await redis.get(cacheKey);
 
-  const pipeline = [
-    // Add the match stage to filter by date
-    ...(fromDate !== null || toDate !== null
-      ? [
-          {
-            $match: {
-              ...(fromDate !== null && { timestamp_ms: { $gte: fromDate } }),
-              ...(toDate !== null && { timestamp_ms: { $lte: toDate } }),
+    if (cachedData) {
+      return res.status(200).json(JSON.parse(cachedData));
+    }
+
+    console.log(`fromDate timestamp: ${fromDate}, toDate timestamp: ${toDate}`);
+    const db = client.db(MESSAGE_DATABASE);
+    const collection = db.collection(collectionName);
+
+    const pipeline = [
+      // Add the match stage to filter by date
+      ...(fromDate !== null || toDate !== null
+        ? [
+            {
+              $match: {
+                ...(fromDate !== null && { timestamp_ms: { $gte: fromDate } }),
+                ...(toDate !== null && { timestamp_ms: { $lte: toDate } }),
+              },
             },
-          },
-        ]
-      : []),
-    { $sort: { timestamp_ms: 1 } },
-    {
-      $project: {
-        _id: 0,
-        timestamp: 1,
-        timestamp_ms: 1,
-        sender_name: 1,
-        content: 1,
-        photos: 1,
+          ]
+        : []),
+      { $sort: { timestamp_ms: 1 } },
+      {
+        $project: {
+          _id: 0,
+          timestamp: 1,
+          timestamp_ms: 1,
+          sender_name: 1,
+          content: 1,
+          photos: 1,
+        },
       },
-    },
-  ];
+    ];
 
-  const messages = await collection.aggregate(pipeline).toArray();
+    const messages = await collection.aggregate(pipeline).toArray();
 
-  cache.set(cacheKey, messages);
+    // Save the fetched data in Redis
+    await redis.set(cacheKey, JSON.stringify(messages), 'EX', 36000); // Setting an expiry of 10 hours
 
-  logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
-  res.status(200).json(messages);
+    logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
+    res.status(200).json(messages);
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
 });
+
 
 // Endpoint to upload messages
 const normalizeAndSanitize = (str) => {
@@ -720,12 +672,11 @@ app.use((err, req, res, next) => {
 // ----------------- STRESS TESTING ----------------- //
 app.get("/load-cpu", (req, res) => {
   let total = 0;
-
-  // Simulate CPU-intensive task
   for (let i = 0; i < 7000000; i++) {
     total += Math.sqrt(i) * Math.random();
+    total -= Math.pow(i, 2) * Math.random();
+    total *= Math.sin(i) * Math.random();
   }
-
   res.send(`The result of the CPU intensive task is ${total}\n`);
 });
 
