@@ -42,7 +42,8 @@ const client = new MongoClient(uri, {
   writeConcern: { w: "majority", wtimeout: 5000 },
 });
 
-const MESSAGE_DATABASE = "kocouratciMessenger";
+let MESSAGE_DATABASE = "kocouratciMessenger";
+
 const redis = new Redis({
   port: 6379,
   host: "127.0.0.1",
@@ -703,6 +704,26 @@ app.get("/photos/:collectionName", async (req, res) => {
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send("Something broke!");
+});
+
+// ----------------- DB SWITCHING----------------- //
+// Add an endpoint to switch the database based on the URL parameter
+app.get("/switch_db/:dbName", (req, res) => {
+  const { dbName } = req.params;
+  MESSAGE_DATABASE = dbName; // Update the MESSAGE_DATABASE variable
+  res.send(`Database switched to: ${MESSAGE_DATABASE}`);
+});
+// Add another endpoint to toggle the MESSAGE_DATABASE between two values
+app.get("/switch_db/", (req, res) => {
+  MESSAGE_DATABASE =
+    MESSAGE_DATABASE === "kocouratciMessenger"
+      ? "messages"
+      : "kocouratciMessenger";
+  res.send(`Database toggled to: ${MESSAGE_DATABASE}`);
+});
+// Example usage of the MESSAGE_DATABASE variable
+app.get("/current_db", (req, res) => {
+  res.send(`${MESSAGE_DATABASE}`);
 });
 
 // ----------------- STRESS TESTING ----------------- //
