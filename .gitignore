@@ -10,3 +10,7 @@ stress-test.py
 package-lock.json
 /inbox/*
 __pycache__
+nvim-linux64/
+.mypy_cache
+nvim-linux64.tar.gz
+*.csv

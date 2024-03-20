@@ -1,10 +1,10 @@
 /** @format */
 
 require("dotenv").config();
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
 const express = require("express");
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -12,7 +12,7 @@ let generate, count;
 import("random-words").then((randomWords) => {
   ({ generate, count } = randomWords);
 });
-const Redis = require('ioredis');
+const Redis = require("ioredis");
 const app = express();
 const port = process.env.PORT || 5555;
 const multer = require("multer");
@@ -44,20 +44,20 @@ const client = new MongoClient(uri, {
 
 const MESSAGE_DATABASE = "kocouratciMessenger";
 const redis = new Redis({
-  port: 6379,      
-  host: '127.0.0.1',   
+  port: 6379,
+  host: "127.0.0.1",
 });
-redis.on('error', (err) => {
-  console.log('Redis Error: ', err);
+redis.on("error", (err) => {
+  console.log("Redis Error: ", err);
 });
 
 // Optionally handle connection events
-redis.on('connect', () => {
-  console.log('Connected to Redis');
+redis.on("connect", () => {
+  console.log("Connected to Redis");
 });
 
 // Remember to gracefully close the Redis connection when your app exits
-process.on('exit', () => {
+process.on("exit", () => {
   redis.quit();
 });
 client.connect();
@@ -72,7 +72,7 @@ app.use(
 app.use(morgan("combined"));
 app.use(compression());
 app.use(bodyParser.json());
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get("/", (req, res) => {
   res.send("Hi, Blackbox, grab some data! omnomnomnom...");
 });
@@ -261,12 +261,19 @@ async function updateCollectionsCache() {
   }
 
   // Sort and store in Redis
-  const sortedByCount = [...collectionsData].sort((a, b) => b.messageCount - a.messageCount);
-  const sortedAlphabetically = [...collectionsData].sort((a, b) => a.name.localeCompare(b.name));
+  const sortedByCount = [...collectionsData].sort(
+    (a, b) => b.messageCount - a.messageCount
+  );
+  const sortedAlphabetically = [...collectionsData].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
 
   // Use JSON.stringify to store array data as a string
-  await redis.set('collections', JSON.stringify(sortedByCount));
-  await redis.set('collectionsAlphabetical', JSON.stringify(sortedAlphabetically));
+  await redis.set("collections", JSON.stringify(sortedByCount));
+  await redis.set(
+    "collectionsAlphabetical",
+    JSON.stringify(sortedAlphabetically)
+  );
 }
 
 // Initial cache population
@@ -279,31 +286,30 @@ setInterval(updateCollectionsCache, 60000);
 app.get("/collections", async (req, res) => {
   logEndpointInfo(req, res, "GET /collections");
   try {
-    const cachedData = await redis.get('collections');
+    const cachedData = await redis.get("collections");
     if (cachedData) {
       return res.status(200).json(JSON.parse(cachedData));
     }
-    res.status(404).send('No data found');
+    res.status(404).send("No data found");
   } catch (error) {
     console.error(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 });
 
 app.get("/collections/alphabetical", async (req, res) => {
   logEndpointInfo(req, res, "GET /collections/alphabetical");
   try {
-    const cachedData = await redis.get('collectionsAlphabetical');
+    const cachedData = await redis.get("collectionsAlphabetical");
     if (cachedData) {
       return res.status(200).json(JSON.parse(cachedData));
     }
-    res.status(404).send('No data found');
+    res.status(404).send("No data found");
   } catch (error) {
     console.error(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 });
-
 
 // Endpoint to get messages by collection name
 
@@ -357,17 +363,15 @@ app.get("/messages/:collectionName", async (req, res) => {
     const messages = await collection.aggregate(pipeline).toArray();
 
     // Save the fetched data in Redis
-    await redis.set(cacheKey, JSON.stringify(messages), 'EX', 36000); // Setting an expiry of 10 hours
+    await redis.set(cacheKey, JSON.stringify(messages), "EX", 36000); // Setting an expiry of 10 hours
 
     logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
     res.status(200).json(messages);
-
   } catch (error) {
     console.error(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 });
-
 
 // Endpoint to upload messages
 const normalizeAndSanitize = (str) => {
@@ -663,6 +667,38 @@ app.post("/search", express.json(), async (req, res) => {
   }
 });
 
+app.get("/photos/:collectionName", async (req, res) => {
+  const collectionName = decodeURIComponent(req.params.collectionName);
+  try {
+    const db = client.db(MESSAGE_DATABASE);
+    const collection = db.collection(collectionName);
+
+    const pipeline = [
+      {
+        $match: {
+          sender_name: { $ne: "Tadeáš Fořt" },
+          photos: { $exists: true, $not: { $size: 0 } },
+        },
+      },
+      {
+        $project: {
+          _id: 0,
+          sender_name: 1,
+          timestamp_ms: 1,
+          photos: 1,
+          timestamp: 1,
+        },
+      },
+    ];
+
+    const results = await collection.aggregate(pipeline).toArray();
+    res.status(200).json(results);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -694,7 +730,7 @@ app.get("/stress-test", async (req, res) => {
 
     // Fetch all collection names
     const collections = await db.listCollections().toArray();
-    const collectionNames = collections.map(c => c.name);
+    const collectionNames = collections.map((c) => c.name);
 
     // Construct the initial pipeline with $match and $addFields for the first collection
     const initialPipeline = [
@@ -713,7 +749,7 @@ app.get("/stress-test", async (req, res) => {
     ];
 
     // Dynamically add $unionWith stages for the remaining collections
-    const unionWithStages = collectionNames.slice(1).map(collectionName => ({
+    const unionWithStages = collectionNames.slice(1).map((collectionName) => ({
       $unionWith: {
         coll: collectionName,
         pipeline: [
@@ -745,16 +781,19 @@ app.get("/stress-test", async (req, res) => {
 
     // Respond with the time taken to complete the stress test
     res.json({
-      message: 'Stress test completed successfully',
+      message: "Stress test completed successfully",
       searchString: randomWord,
       duration: `${duration} ms`,
       searchMatches: potentialMatches.length,
-    randomMatch: potentialMatches[Math.floor(Math.random() * potentialMatches.length)],
-    data: potentialMatches
+      randomMatch:
+        potentialMatches[Math.floor(Math.random() * potentialMatches.length)],
+      data: potentialMatches,
     });
   } catch (error) {
     console.error("Error during stress-test:", error);
-    res.status(500).json({ error: "An error occurred during the stress test." });
+    res
+      .status(500)
+      .json({ error: "An error occurred during the stress test." });
   }
 });
 
