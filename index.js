@@ -281,7 +281,7 @@ async function updateCollectionsCache() {
 updateCollectionsCache();
 
 // Set an interval to update the cache every minute
-setInterval(updateCollectionsCache, 60000);
+setInterval(updateCollectionsCache, 5000);
 
 // Endpoint to get collections
 app.get("/collections", async (req, res) => {
@@ -717,7 +717,7 @@ app.get("/switch_db/:dbName", (req, res) => {
 app.get("/switch_db/", (req, res) => {
   MESSAGE_DATABASE =
     MESSAGE_DATABASE === "kocouratciMessenger"
-      ? "messages"
+      ? "messages_backup"
       : "kocouratciMessenger";
   res.send(`Database toggled to: ${MESSAGE_DATABASE}`);
 });
