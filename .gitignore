@@ -14,3 +14,6 @@ nvim-linux64/
 .mypy_cache
 nvim-linux64.tar.gz
 *.csv
+.vscode
+.vscode/*
+.vscode/settings.json
