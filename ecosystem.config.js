@@ -5,8 +5,7 @@ module.exports = {
     {
       name: "fb-exp",
       script: "./index.js", // Replace with the path to your server file
-      instances: "8", // This will use all available CPU cores
-      exec_mode: "cluster",
+      instances: "1", // This will use all available CPU cores
       env: {
         NODE_ENV: "production",
       },
