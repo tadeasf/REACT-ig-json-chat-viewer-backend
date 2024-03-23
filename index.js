@@ -670,7 +670,17 @@ app.post("/search", express.json(), async (req, res) => {
 
 app.get("/photos/:collectionName", async (req, res) => {
   const collectionName = decodeURIComponent(req.params.collectionName);
+  const cacheKey = `photos-${collectionName}`; // Generate a unique cache key
+
   try {
+    const cachedData = await redis.get(cacheKey); // Try to get data from Redis cache
+
+    if (cachedData) {
+      console.log(`Cache hit for ${cacheKey}.`);
+      return res.status(200).json(JSON.parse(cachedData));
+    }
+
+    console.log(`Cache miss for ${cacheKey}. Fetching from DB.`);
     const db = client.db(MESSAGE_DATABASE);
     const collection = db.collection(collectionName);
 
@@ -693,6 +703,10 @@ app.get("/photos/:collectionName", async (req, res) => {
     ];
 
     const results = await collection.aggregate(pipeline).toArray();
+
+    // Save the fetched data in Redis with an optional expiry time
+    await redis.set(cacheKey, JSON.stringify(results), "EX", 36000); // 10 hours expiry
+
     res.status(200).json(results);
   } catch (error) {
     console.error(error);
@@ -714,13 +728,22 @@ app.get("/switch_db/:dbName", (req, res) => {
   res.send(`Database switched to: ${MESSAGE_DATABASE}`);
 });
 // Add another endpoint to toggle the MESSAGE_DATABASE between two values
-app.get("/switch_db/", (req, res) => {
+app.get("/switch_db/", async (req, res) => {
   MESSAGE_DATABASE =
     MESSAGE_DATABASE === "kocouratciMessenger"
       ? "messages_backup"
       : "kocouratciMessenger";
-  res.send(`Database toggled to: ${MESSAGE_DATABASE}`);
+
+  try {
+    await redis.flushdb(); // Flushes the current database
+    // If you need to flush all databases in Redis, use await redis.flushall();
+    res.send(`Database toggled to: ${MESSAGE_DATABASE}. Cache cleared.`);
+  } catch (error) {
+    console.error("Error flushing Redis cache:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
+
 // Example usage of the MESSAGE_DATABASE variable
 app.get("/current_db", (req, res) => {
   res.send(`${MESSAGE_DATABASE}`);
