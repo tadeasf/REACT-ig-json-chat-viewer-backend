@@ -735,11 +735,13 @@ app.get("/switch_db/", async (req, res) => {
       : "kocouratciMessenger";
 
   try {
-    await redis.flushdb(); // Flushes the current database
-    // If you need to flush all databases in Redis, use await redis.flushall();
-    res.send(`Database toggled to: ${MESSAGE_DATABASE}. Cache cleared.`);
+    await redis.flushdb();
+    res.send("Database switched and cache warmer triggered.");
   } catch (error) {
-    console.error("Error flushing Redis cache:", error);
+    console.error(
+      "Error switching database or triggering cache warmer:",
+      error
+    );
     res.status(500).send("Internal Server Error");
   }
 });

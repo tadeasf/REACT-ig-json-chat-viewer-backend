@@ -1,0 +1,17 @@
+{
+  "name": "cachewarmer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cacheWarmer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1",
+    "node-fetch": "^3.3.2",
+    "redis": "^4.6.13"
+  }
+}
