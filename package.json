@@ -33,6 +33,7 @@
     "nodemon": "^2.0.21",
     "os": "^0.1.2",
     "path": "^0.12.7",
+    "pm2": "^5.3.1",
     "prom-client": "^14.2.0",
     "python-shell": "^5.0.0",
     "random-string": "^0.2.0",
