@@ -751,6 +751,16 @@ app.get("/current_db", (req, res) => {
   res.send(`${MESSAGE_DATABASE}`);
 });
 
+app.get("/flush_redis", async (req, res) => {
+  try {
+    await redis.flushdb();
+    res.send("Redis cache flushed successfully.");
+  } catch (error) {
+    console.error("Error flushing Redis cache:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
 // ----------------- STRESS TESTING ----------------- //
 app.get("/load-cpu", (req, res) => {
   let total = 0;
