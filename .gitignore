@@ -17,3 +17,5 @@ nvim-linux64.tar.gz
 .vscode
 .vscode/*
 .vscode/settings.json
+meta_data
+meta_backup
