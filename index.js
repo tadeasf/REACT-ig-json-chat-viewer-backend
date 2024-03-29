@@ -750,7 +750,8 @@ app.get("/switch_db/:dbName", (req, res) => {
 });
 // Add another endpoint to toggle the MESSAGE_DATABASE between two values
 app.get("/switch_db/", async (req, res) => {
-  MESSAGE_DATABASE = MESSAGE_DATABASE === "messages" ? "messages" : "messages";
+  MESSAGE_DATABASE =
+    MESSAGE_DATABASE === "messages" ? "messages" : "kocouratciMessenger";
   // MESSAGE_DATABASE === "kocouratciMessenger"
   // ? "messages_backup"
   // : "kocouratciMessenger";
