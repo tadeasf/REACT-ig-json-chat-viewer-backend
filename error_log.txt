@@ -1,0 +1,6 @@
+Directory: /root/REACT-ig-json-chat-viewer-backend/inbox/annmarietomaj_1011641238870031
+Error occurred: 502 Server Error: Bad Gateway for url: https://secondary.dev.tadeasfort.com/upload - Status code: 502
+Directory: /root/REACT-ig-json-chat-viewer-backend/inbox/annasophova_1019217094779112
+Error occurred: 502 Server Error: Bad Gateway for url: https://secondary.dev.tadeasfort.com/upload - Status code: 502
+Directory: /root/REACT-ig-json-chat-viewer-backend/inbox/veronikazarubova_10206999099433308
+Error occurred: 502 Server Error: Bad Gateway for url: https://secondary.dev.tadeasfort.com/upload - Status code: 502

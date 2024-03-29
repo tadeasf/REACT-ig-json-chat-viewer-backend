@@ -3,7 +3,7 @@
 module.exports = {
   apps: [
     {
-      name: "messenger-backend",
+      name: "a-messenger-backend",
       script: "./index.js", // Replace with the path to your server file
       instances: "1", // This will use all available CPU cores
       env: {

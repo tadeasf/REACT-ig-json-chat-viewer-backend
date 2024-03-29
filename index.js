@@ -42,7 +42,7 @@ const client = new MongoClient(uri, {
   writeConcern: { w: "majority", wtimeout: 5000 },
 });
 
-let MESSAGE_DATABASE = "kocouratciMessenger";
+let MESSAGE_DATABASE = "messages";
 
 const redis = new Redis({
   port: 6379,
@@ -254,6 +254,11 @@ async function updateCollectionsCache() {
 
   let collectionsData = [];
   for (const collection of collections) {
+    // Skip system.profile and other collections you want to exclude
+    if (collection.name === "system.profile") {
+      continue;
+    }
+
     const count = await db.collection(collection.name).countDocuments();
     collectionsData.push({
       name: collection.name,
@@ -383,6 +388,8 @@ const normalizeAndSanitize = (str) => {
 };
 
 app.post("/upload", upload.array("files"), async (req, res) => {
+  console.log("Request body:", req.body);
+  console.log("Files:", req.files);
   const combinedJson = await combine_and_convert_json_files(
     req.files.map((file) => file.path)
   );
@@ -714,10 +721,24 @@ app.get("/photos/:collectionName", async (req, res) => {
   }
 });
 
-// Error handling middleware
+// Custom error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
+  if (err instanceof multer.MulterError) {
+    // A Multer error occurred when uploading.
+    console.error("MulterError encountered:", err);
+    return res
+      .status(400)
+      .json({ error: "File upload error", details: err.message });
+  } else if (err) {
+    // An unknown error occurred.
+    console.error("An unknown error occurred:", err);
+    return res
+      .status(500)
+      .json({ error: "An error occurred", details: err.message });
+  }
+
+  // Pass to next middleware if no errors
+  next();
 });
 
 // ----------------- DB SWITCHING----------------- //
@@ -729,10 +750,10 @@ app.get("/switch_db/:dbName", (req, res) => {
 });
 // Add another endpoint to toggle the MESSAGE_DATABASE between two values
 app.get("/switch_db/", async (req, res) => {
-  MESSAGE_DATABASE =
-    MESSAGE_DATABASE === "kocouratciMessenger"
-      ? "messages_backup"
-      : "kocouratciMessenger";
+  MESSAGE_DATABASE = MESSAGE_DATABASE === "messages" ? "messages" : "messages";
+  // MESSAGE_DATABASE === "kocouratciMessenger"
+  // ? "messages_backup"
+  // : "kocouratciMessenger";
 
   try {
     await redis.flushdb();
