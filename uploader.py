@@ -1,7 +1,6 @@
 import os
-import requests
 import json
-import time
+import requests
 
 root_dir = "/root/REACT-ig-json-chat-viewer-backend/inbox"
 
@@ -21,65 +20,40 @@ def is_valid_json(file_path):
         return False
 
 
+# Function to upload files
+def upload_files(subdir, files_to_upload):
+    if files_to_upload:
+        print(f"Uploading files in subdirectory: {subdir}")
+        try:
+            response = requests.post(
+                "https://secondary.dev.tadeasfort.com/upload", files=files_to_upload
+            )
+            response.raise_for_status()  # This will raise an exception for HTTP error codes
+            print(f"Response from server: {response.text}")
+        except requests.exceptions.RequestException as e:
+            print(f"Error occurred during upload: {e}")
+        finally:
+            # Correctly close the file handles
+            for _, file_tuple in files_to_upload:
+                file_object = file_tuple[1]  # Extract the file object from the tuple
+                file_object.close()
+
+
 # Iterate over all subdirectories in the root directory
 for subdir, dirs, files in os.walk(root_dir):
-    # Filter files that start with "message_"
-    message_files = [file for file in files if file.startswith("message_")]
-    # Skip subdirectories with no message files
-    if not message_files:
-        continue
-    # Skip subdirectories with only one message file that has less than 2500 lines
-    if len(message_files) == 1:
-        with open(os.path.join(subdir, message_files[0]), "r") as f:
-            lines = f.readlines()
-            if len(lines) < 2500:
-                print(
-                    f"Skipping subdirectory: {subdir} (message file has less than 2500 lines)"
-                )
-                continue
-    # Upload all message files in the subdirectory
-    print(f"Uploading files in subdirectory: {subdir}")
-    # Adjust here to use the "files" field name
-    # Further filter to keep only valid JSON files
-    valid_message_files = [
-        file for file in message_files if is_valid_json(os.path.join(subdir, file))
-    ]
-
-    # Skip subdirectories with no valid JSON message files
-    if not valid_message_files:
-        print(f"Skipping subdirectory: {subdir} (no valid JSON message files)")
+    if not any(file.startswith("message_") for file in files):
+        print(f"Skipping subdirectory with no message files: {subdir}")
         continue
 
-    for file in valid_message_files:
-        with open(os.path.join(subdir, file), "rb") as file_to_upload:
-            try:
-                print("calling the endpoint")
-                response = requests.post(
-                    "https://secondary.dev.tadeasfort.com/upload",
-                    files={"files": (file, file_to_upload)},
-                )
-                response.raise_for_status()
-                print(f"Response from server: {response.text}")
-            except requests.exceptions.HTTPError as http_err:
-                # Check if the error is one of the specified types
-                if response.status_code not in [200, 202]:
-                    print(
-                        f"HTTP error occurred: {http_err} - Status code: {response.status_code}"
-                    )
-                    print("Waiting for 10 seconds before retrying...")
-                    with open("error_log.txt", "a") as log_file:
-                        log_file.write(
-                            f"Directory: {subdir}\n"
-                            f"Error occurred: {http_err} - Status code: {response.status_code}\n"
-                        )
-                    time.sleep(10)
-                    # Optionally, you might want to retry the request here or just continue to the next file
-                else:
-                    print(
-                        f"Other HTTP error occurred: {http_err} - Status code: {response.status_code}"
-                    )
-            except requests.exceptions.RequestException as err:
-                print(f"Request error: {err}")
-            finally:
-                # The file is automatically closed when exiting the 'with' block
-                pass
+    # Prepare a list to hold file tuples for uploading
+    files_to_upload = []
+
+    for file in files:
+        if file.startswith("message_") and is_valid_json(os.path.join(subdir, file)):
+            file_path = os.path.join(subdir, file)
+            # Open the file in binary mode for uploading
+            file_to_upload = open(file_path, "rb")
+            files_to_upload.append(("files", (file, file_to_upload)))
+
+    # Upload all collected files in a single request
+    upload_files(subdir, files_to_upload)

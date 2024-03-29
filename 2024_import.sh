@@ -23,4 +23,3 @@ for SOURCE_DIR in "${SOURCE_DIRS[@]}"; do
 done
 
 echo "All directories have been synced."
-
