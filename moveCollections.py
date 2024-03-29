@@ -4,6 +4,7 @@ import os
 
 load_dotenv()
 
+
 def move_collections(uri, input_db_name, output_db_name, collection_names):
     # Connect to MongoDB
     client = MongoClient(uri)
@@ -35,12 +36,12 @@ def move_collections(uri, input_db_name, output_db_name, collection_names):
 
 if __name__ == "__main__":
     uri = os.getenv("MONGO_URI_CONTABO")
-    input_db_name = "kocouratciMessenger"
-    output_db_name = "kocouratciMessengerBackup"
+    input_db_name = "messages"
+    output_db_name = "message_backup"
     collection_names = [
         "collection1",
         "collection2",
         "collection3",
-    ]  # Replace with your collection names
+    ]
 
     move_collections(uri, input_db_name, output_db_name, collection_names)
