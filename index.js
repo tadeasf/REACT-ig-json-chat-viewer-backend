@@ -362,6 +362,7 @@ app.get("/messages/:collectionName", async (req, res) => {
           sender_name: 1,
           content: 1,
           photos: 1,
+          is_geoblocked_for_viewer: 1,
         },
       },
     ];
