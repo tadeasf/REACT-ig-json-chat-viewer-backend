@@ -53,9 +53,13 @@ redis.on("error", (err) => {
 });
 
 // Optionally handle connection events
-redis.on("connect", () => {
-  console.log("Connected to Redis");
-});
+try {
+  redis.on("connect", () => {
+    console.log("Connected to Redis");
+  });
+} catch (error) {
+  console.error("Error connecting to Redis:", error);
+}
 
 // Remember to gracefully close the Redis connection when your app exits
 process.on("exit", () => {
@@ -292,11 +296,40 @@ setInterval(updateCollectionsCache, 5000);
 app.get("/collections", async (req, res) => {
   logEndpointInfo(req, res, "GET /collections");
   try {
-    const cachedData = await redis.get("collections");
+    let cachedData = null;
+    try {
+      cachedData = await redis.get("collections");
+    } catch (redisError) {
+      console.error(
+        "Redis error, falling back to database:",
+        redisError.message
+      );
+    }
+
     if (cachedData) {
       return res.status(200).json(JSON.parse(cachedData));
     }
-    res.status(404).send("No data found");
+
+    // Assuming `db` is your MongoDB database instance
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map((c) => c.name);
+
+    try {
+      await redis.set(
+        "collections",
+        JSON.stringify(collectionNames),
+        "EX",
+        36000
+      );
+    } catch (redisError) {
+      console.error("Failed to save data to Redis:", redisError.message);
+    }
+
+    if (collectionNames.length > 0) {
+      res.status(200).json(collectionNames);
+    } else {
+      res.status(404).send("No data found");
+    }
   } catch (error) {
     console.error(error);
     res.status(500).send("Internal Server Error");
@@ -306,11 +339,40 @@ app.get("/collections", async (req, res) => {
 app.get("/collections/alphabetical", async (req, res) => {
   logEndpointInfo(req, res, "GET /collections/alphabetical");
   try {
-    const cachedData = await redis.get("collectionsAlphabetical");
+    let cachedData = null;
+    try {
+      cachedData = await redis.get("collectionsAlphabetical");
+    } catch (redisError) {
+      console.error(
+        "Redis error, falling back to database:",
+        redisError.message
+      );
+    }
+
     if (cachedData) {
       return res.status(200).json(JSON.parse(cachedData));
     }
-    res.status(404).send("No data found");
+
+    // Assuming `db` is your MongoDB database instance and collections have names to sort alphabetically
+    const collections = await db.listCollections().toArray();
+    const collectionNames = collections.map((c) => c.name).sort();
+
+    try {
+      await redis.set(
+        "collectionsAlphabetical",
+        JSON.stringify(collectionNames),
+        "EX",
+        36000
+      );
+    } catch (redisError) {
+      console.error("Failed to save data to Redis:", redisError.message);
+    }
+
+    if (collectionNames.length > 0) {
+      res.status(200).json(collectionNames);
+    } else {
+      res.status(404).send("No data found");
+    }
   } catch (error) {
     console.error(error);
     res.status(500).send("Internal Server Error");
@@ -330,8 +392,19 @@ app.get("/messages/:collectionName", async (req, res) => {
   const cacheKey = `messages-${collectionName}-${fromDate}-${toDate}`;
 
   try {
-    // Try to get data from Redis cache
-    const cachedData = await redis.get(cacheKey);
+    // Initialize variable to hold cached data or null
+    let cachedData = null;
+
+    try {
+      // Try to get data from Redis cache
+      cachedData = await redis.get(cacheKey);
+    } catch (redisError) {
+      console.error(
+        "Redis error, falling back to database:",
+        redisError.message
+      );
+      // Don't return or throw; simply log the error and move on to fetching from the database
+    }
 
     if (cachedData) {
       return res.status(200).json(JSON.parse(cachedData));
@@ -342,7 +415,6 @@ app.get("/messages/:collectionName", async (req, res) => {
     const collection = db.collection(collectionName);
 
     const pipeline = [
-      // Add the match stage to filter by date
       ...(fromDate !== null || toDate !== null
         ? [
             {
@@ -369,13 +441,18 @@ app.get("/messages/:collectionName", async (req, res) => {
 
     const messages = await collection.aggregate(pipeline).toArray();
 
-    // Save the fetched data in Redis
-    await redis.set(cacheKey, JSON.stringify(messages), "EX", 36000); // Setting an expiry of 10 hours
+    // Try to save the fetched data in Redis with a catch for errors
+    try {
+      await redis.set(cacheKey, JSON.stringify(messages), "EX", 36000); // Setting an expiry of 10 hours
+    } catch (redisError) {
+      console.error("Failed to save data to Redis:", redisError.message);
+      // Again, only log the error; don't throw, to ensure we still return MongoDB data
+    }
 
     logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
     res.status(200).json(messages);
   } catch (error) {
-    console.error(error);
+    console.error("Failed to fetch messages:", error);
     res.status(500).send("Internal Server Error");
   }
 });
@@ -751,11 +828,9 @@ app.get("/switch_db/:dbName", (req, res) => {
 });
 // Add another endpoint to toggle the MESSAGE_DATABASE between two values
 app.get("/switch_db/", async (req, res) => {
+  // Toggle the MESSAGE_DATABASE variable between two values - "messages" and "messages_backup"
   MESSAGE_DATABASE =
-    MESSAGE_DATABASE === "messages" ? "messages" : "kocouratciMessenger";
-  // MESSAGE_DATABASE === "kocouratciMessenger"
-  // ? "messages_backup"
-  // : "kocouratciMessenger";
+    MESSAGE_DATABASE === "messages" ? "message_backup" : "messages";
 
   try {
     await redis.flushdb();
