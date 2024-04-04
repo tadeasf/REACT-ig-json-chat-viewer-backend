@@ -4,9 +4,9 @@ module.exports = {
   apps: [
     {
       name: "a-messenger-backend",
-      script: "./index.js",
-      instances: "1",
-      exec_mode: "fork",
+      script: "./swagger.js",
+      instances: "2",
+      exec_mode: "cluster",
       env: {
         NODE_ENV: "production",
       },

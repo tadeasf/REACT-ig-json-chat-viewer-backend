@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "production": "NODE_ENV=production node index.js"
+    "production": "NODE_ENV=production node index.js",
+    "swagger": "node ./swagger.js"
   },
   "author": "Tadeáš Fořt",
   "license": "ISC",
@@ -39,9 +40,11 @@
     "random-string": "^0.2.0",
     "random-words": "^2.0.0",
     "sharp": "^0.32.6",
-    "swagger-autogen": "^2.23.7",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
   }
 }

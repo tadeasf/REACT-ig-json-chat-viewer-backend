@@ -4,7 +4,7 @@ require("dotenv").config();
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 const express = require("express");
 const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("./swagger.json");
+const swaggerDocument = require("./swagger-output.json");
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -24,25 +24,64 @@ const { combine_and_convert_json_files } = require("./json_combiner");
 const { v4: uuidv4 } = require("uuid");
 const compression = require("compression");
 const diacritics = require("diacritics");
+// Redis client for commands
+const redisCommand = new Redis({
+  port: 6379, // Redis port
+  host: "127.0.0.1", // Redis host
+});
+redisCommand.on("error", (err) => {
+  console.error("Redis Command Client Error: ", err);
+});
+
+// Redis client for subscription
+const redisSubscribe = new Redis({
+  port: 6379, // Redis port
+  host: "127.0.0.1", // Redis host
+});
+redisSubscribe.on("error", (err) => {
+  console.error("Redis Subscribe Client Error: ", err);
+});
+
+// Default database name
+let MESSAGE_DATABASE = "messages";
+
+// Subscribe to Redis channel for DB name updates
+redisSubscribe.subscribe("DB_SWITCH_CHANNEL", (err, count) => {
+  if (err) {
+    console.error("Failed to subscribe: %s", err.message);
+  } else {
+    console.log(
+      `Subscribed successfully! This client is currently subscribed to ${count} channels.`
+    );
+  }
+});
+redisSubscribe.on("message", (channel, message) => {
+  console.log(`Received the following message from ${channel}: ${message}`);
+  MESSAGE_DATABASE = message;
+});
+
 // Database Connection Management
 const uri = process.env.MONGODB_URI;
+console.log("URI: ", uri);
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  connectTimeoutMS: 3600,
-  socketTimeoutMS: 3600,
-  maxPoolSize: 50,
-  minPoolSize: 10,
-  maxConnecting: 5,
-  maxIdleTimeMS: 60000,
-  waitQueueTimeoutMS: 30000,
+  replicaSet: "fortReplicaSet",
+  readPreference: "secondaryPreferred",
+  connectTimeoutMS: 30000,
+  socketTimeoutMS: 30000,
+  maxPoolSize: 350,
+  minPoolSize: 5,
+  maxConnecting: 32,
+  maxIdleTimeMS: 5000,
+  waitQueueTimeoutMS: 15000,
   retryReads: true,
   retryWrites: true,
   directConnection: false,
   writeConcern: { w: "majority", wtimeout: 5000 },
+  compressors: "zlib",
+  zlibCompressionLevel: 7,
 });
-
-let MESSAGE_DATABASE = "messages";
 
 const redis = new Redis({
   port: 6379,
@@ -66,7 +105,6 @@ process.on("exit", () => {
   redis.quit();
 });
 client.connect();
-
 //ALLOW CORS FOR LOAD BALANCER
 app.use(
   cors({
@@ -77,7 +115,7 @@ app.use(
 app.use(morgan("combined"));
 app.use(compression());
 app.use(bodyParser.json());
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get("/", (req, res) => {
   res.send("Hi, Blackbox, grab some data! omnomnomnom...");
 });
@@ -686,13 +724,23 @@ app.put("/rename/:currentCollectionName", async (req, res) => {
 });
 
 app.post("/search", express.json(), async (req, res) => {
+  logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
+
   const query = req.body.query;
   const db = client.db(MESSAGE_DATABASE);
 
   try {
     // Fetch all collection names
     const collections = await db.listCollections().toArray();
-    const collectionNames = collections.map((c) => c.name);
+    // remove system.profile, system.index and unified_collections from the listCollection
+    const collectionNames = collections
+      .map((c) => c.name)
+      .filter(
+        (name) =>
+          !["system.profile", "system.indexes", "unified_collection"].includes(
+            name
+          )
+      );
 
     // Construct the initial pipeline with $match and $addFields for the first collection
     const initialPipeline = [
@@ -700,6 +748,85 @@ app.post("/search", express.json(), async (req, res) => {
         $match: {
           sanitizedContent: {
             $regex: new RegExp(diacritics.remove(query), "i"),
+          },
+        },
+      },
+      {
+        $addFields: {
+          collectionName: collectionNames[0], // <-- Add the collection name here
+        },
+      },
+    ];
+
+    // Dynamically add $unionWith stages for the remaining collections
+    const unionWithStages = collectionNames.slice(1).map((collectionName) => ({
+      $unionWith: {
+        coll: collectionName,
+        pipeline: [
+          {
+            $match: {
+              sanitizedContent: {
+                $regex: new RegExp(diacritics.remove(query), "i"),
+              },
+            },
+          },
+          {
+            $addFields: {
+              collectionName: collectionName, // <-- Add the collection name here
+            },
+          },
+        ],
+      },
+    }));
+
+    const finalPipeline = initialPipeline.concat(unionWithStages);
+
+    const potentialMatches = await db
+      .collection(collectionNames[0])
+      .aggregate(finalPipeline)
+      .toArray();
+
+    // Filter out sanitizedContent and convert to lowercase
+    const actualMatches = potentialMatches.map((doc) => {
+      const { sanitizedContent, ...rest } = doc;
+      return { ...rest };
+    });
+
+    res.json(actualMatches);
+  } catch (error) {
+    console.error("Error during aggregation:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while performing the search." });
+  }
+});
+
+app.post("/search_text", express.json(), async (req, res) => {
+  logEndpointInfo(req, res, `GET /messages/${req.params.collectionName}`);
+
+  const query = req.body.query;
+  const db = client.db(MESSAGE_DATABASE);
+
+  try {
+    // Fetch all collection names
+    const collections = await db.listCollections().toArray();
+    // remove system.profile, system.index and unified_collections from the listCollection
+    const collectionNames = collections
+      .map((c) => c.name)
+      .filter(
+        (name) =>
+          !["system.profile", "system.indexes", "unified_collection"].includes(
+            name
+          )
+      );
+
+    // Construct the initial pipeline with $match and $addFields for the first collection
+    const initialPipeline = [
+      {
+        $match: {
+          // do text search instead of regex
+          $text: {
+            $search: query,
           },
         },
       },
@@ -821,25 +948,27 @@ app.use((err, req, res, next) => {
 
 // ----------------- DB SWITCHING----------------- //
 // Add an endpoint to switch the database based on the URL parameter
-app.get("/switch_db/:dbName", (req, res) => {
+app.get("/switch_db/:dbName", async (req, res) => {
   const { dbName } = req.params;
-  MESSAGE_DATABASE = dbName; // Update the MESSAGE_DATABASE variable
-  res.send(`Database switched to: ${MESSAGE_DATABASE}`);
+  await redis.publish("DB_SWITCH_CHANNEL", dbName);
+  res.send(`Database switch initiated: ${dbName}`);
 });
+
 // Add another endpoint to toggle the MESSAGE_DATABASE between two values
 app.get("/switch_db/", async (req, res) => {
-  // Toggle the MESSAGE_DATABASE variable between two values - "messages" and "messages_backup"
-  MESSAGE_DATABASE =
-    MESSAGE_DATABASE === "messages" ? "message_backup" : "messages";
+  // Determine the new database value
+  const newDb = MESSAGE_DATABASE === "messages" ? "message_backup" : "messages";
 
   try {
+    // Publish the new database name to a Redis channel
+    await redis.publish("DB_SWITCH_CHANNEL", newDb);
+
+    // Optionally, flush Redis database if needed
     await redis.flushdb();
-    res.send("Database switched and cache warmer triggered.");
+
+    res.send(`Database switch initiated: ${newDb}`);
   } catch (error) {
-    console.error(
-      "Error switching database or triggering cache warmer:",
-      error
-    );
+    console.error("Error switching database:", error);
     res.status(500).send("Internal Server Error");
   }
 });
@@ -890,8 +1019,8 @@ app.get("/stress-test", async (req, res) => {
     const initialPipeline = [
       {
         $match: {
-          content: {
-            $regex: new RegExp(sanitizedRandomWord, "i"),
+          $text: {
+            $search: sanitizedRandomWord,
           },
         },
       },
