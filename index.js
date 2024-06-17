@@ -66,8 +66,8 @@ console.log("URI: ", uri);
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  replicaSet: "fortReplicaSet",
-  readPreference: "secondaryPreferred",
+  // replicaSet: "fortReplicaSet",
+  // readPreference: "secondaryPreferred",
   connectTimeoutMS: 30000,
   socketTimeoutMS: 30000,
   maxPoolSize: 350,
@@ -991,13 +991,22 @@ app.get("/flush_redis", async (req, res) => {
 // ----------------- STRESS TESTING ----------------- //
 app.get("/load-cpu", (req, res) => {
   let total = 0;
+  // start timer to measure the time taken
+  const startTime = Date.now();
   for (let i = 0; i < 7000000; i++) {
     total += Math.sqrt(i) * Math.random();
     total -= Math.pow(i, 2) * Math.random();
     total *= Math.sin(i) * Math.random();
   }
-  res.send(`The result of the CPU intensive task is ${total}\n`);
-});
+  const endTime = Date.now();
+  const duration = endTime - startTime;
+  // return duration in seconds + result to the clinet
+  res.json({
+    duration: `${duration} ms`,
+    result: total,
+  });
+}
+);
 
 app.get("/stress-test", async (req, res) => {
   try {
